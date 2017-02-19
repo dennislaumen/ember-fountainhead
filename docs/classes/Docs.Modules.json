@@ -1,94 +1,20 @@
 {
   "name": "Docs.Modules",
   "shortname": "Docs.Modules",
-  "classitems": [
-    {
-      "file": "addon/routes/docs/modules.js",
-      "line": 28,
-      "description": "<p>Reset page scroll on any transition. Note that Fountainhead is inside of\na fake page, so we scroll that instead of the body</p>\n",
-      "itemtype": "event",
-      "name": "didTransition",
-      "class": "Docs.Modules",
-      "srcFileId": "addon_routes_docs_modules.js"
-    },
-    {
-      "file": "addon/routes/docs/modules.js",
-      "line": 14,
-      "description": "<p>Fetches modules's JSON at: <code>${this.get('fountainhead.apiNamespace')}/modules/${params.file_id}.json</code></p>\n",
-      "itemtype": "method",
-      "name": "model",
-      "params": [
-        {
-          "name": "params",
-          "description": null,
-          "type": "Object",
-          "props": [
-            {
-              "name": "module_id",
-              "description": "Name of this class, use to fetch data",
-              "type": "String"
-            }
-          ]
-        }
-      ],
-      "return": {
-        "description": "jQuery ajax promise",
-        "type": "Promise"
-      },
-      "class": "Docs.Modules",
-      "srcFileId": "addon_routes_docs_modules.js"
-    }
-  ],
+  "classitems": [],
   "plugins": [],
   "extensions": [],
   "plugin_for": [],
   "extension_for": [],
   "module": "Addon",
   "file": "addon/routes/docs/modules.js",
-  "line": 5,
-  "description": "<p>Route to be created for handling modules</p>\n",
+  "line": 3,
+  "description": "<p>Docs Route for modules</p>\n",
   "is_constructor": 1,
   "extends": "Ember.Route",
-  "method": [
-    {
-      "file": "addon/routes/docs/modules.js",
-      "line": 14,
-      "description": "<p>Fetches modules's JSON at: <code>${this.get('fountainhead.apiNamespace')}/modules/${params.file_id}.json</code></p>\n",
-      "itemtype": "method",
-      "name": "model",
-      "params": [
-        {
-          "name": "params",
-          "description": null,
-          "type": "Object",
-          "props": [
-            {
-              "name": "module_id",
-              "description": "Name of this class, use to fetch data",
-              "type": "String"
-            }
-          ]
-        }
-      ],
-      "return": {
-        "description": "jQuery ajax promise",
-        "type": "Promise"
-      },
-      "class": "Docs.Modules",
-      "srcFileId": "addon_routes_docs_modules.js"
-    }
-  ],
+  "deprecated": true,
+  "method": [],
   "property": [],
-  "event": [
-    {
-      "file": "addon/routes/docs/modules.js",
-      "line": 28,
-      "description": "<p>Reset page scroll on any transition. Note that Fountainhead is inside of\na fake page, so we scroll that instead of the body</p>\n",
-      "itemtype": "event",
-      "name": "didTransition",
-      "class": "Docs.Modules",
-      "srcFileId": "addon_routes_docs_modules.js"
-    }
-  ],
+  "event": [],
   "srcFileId": "addon_routes_docs_modules.js"
 }

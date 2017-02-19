@@ -1,0 +1,66 @@
+{
+  "name": "GuideNavigation",
+  "shortname": "GuideNavigation",
+  "classitems": [
+    {
+      "file": "addon/components/guide-navigation.js",
+      "line": 16,
+      "description": "<p>Fountainhead documentation meta. Component uses the <code>guides</code> meta to create\nlinks to each guide page.</p>\n",
+      "itemtype": "property",
+      "name": "meta",
+      "type": "{Object}",
+      "passed": "Fountainhead",
+      "required": 1,
+      "class": "GuideNavigation",
+      "srcFileId": "addon_components_guide-navigation.js"
+    },
+    {
+      "file": "addon/components/guide-navigation.js",
+      "line": 28,
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "default": "''",
+      "class": "GuideNavigation",
+      "srcFileId": "addon_components_guide-navigation.js"
+    }
+  ],
+  "plugins": [],
+  "extensions": [],
+  "plugin_for": [],
+  "extension_for": [],
+  "module": "Addon",
+  "file": "addon/components/guide-navigation.js",
+  "line": 4,
+  "description": "<p>Guides page navigation is distinct from the API navigation. The Fountainhead\nmeta object is passed into this component.</p>\n",
+  "is_constructor": 1,
+  "extends": "Ember.Component",
+  "experimental": "",
+  "method": [],
+  "property": [
+    {
+      "file": "addon/components/guide-navigation.js",
+      "line": 16,
+      "description": "<p>Fountainhead documentation meta. Component uses the <code>guides</code> meta to create\nlinks to each guide page.</p>\n",
+      "itemtype": "property",
+      "name": "meta",
+      "type": "{Object}",
+      "passed": "Fountainhead",
+      "required": 1,
+      "class": "GuideNavigation",
+      "srcFileId": "addon_components_guide-navigation.js"
+    },
+    {
+      "file": "addon/components/guide-navigation.js",
+      "line": 28,
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "default": "''",
+      "class": "GuideNavigation",
+      "srcFileId": "addon_components_guide-navigation.js"
+    }
+  ],
+  "event": [],
+  "srcFileId": "addon_components_guide-navigation.js"
+}

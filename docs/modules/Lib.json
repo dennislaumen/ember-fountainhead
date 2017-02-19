@@ -4,20 +4,19 @@
   "elements": {},
   "classes": {
     "DataTypes.GenerateClasses": 1,
-    "DataTypes.GenerateModules": 1,
     "DataTypes.GenerateSrcFile": 1,
+    "DataTypes.GenerateModules": 1,
     "createDirs": 1,
     "decorateConfig": 1,
     "generateFountainheadData": 1,
     "Index": 1,
-    "parseMarkdown": 1,
-    "readWatchmanConfig": 1,
-    "updateWatchmanConfig": 1
+    "logger": 1,
+    "parseMarkdown": 1
   },
   "fors": {},
   "namespaces": {},
   "tag": "module",
-  "file": "lib/update-watchman-config.js",
-  "line": 9,
+  "file": "lib/parse-markdown.js",
+  "line": 11,
   "description": "<p>Modules in the <code>./lib</code> directory handle generating -&gt; parsing -&gt; decorating -&gt;\nsaving all data required for Fountainhead. Fountainhead is backed by REST APIs\nrather than static file generation. Each module, class and file are saved as\nJSON fetched on demand by the client.</p>\n<p>See this module for details/classes on the Node data generation application.\nSee below for a high level overview of the flow of the application through\nthe related modules.</p>\n<h2>Lib Classes Overview:</h2>\n<h4>Validation &amp;&amp; Preparation</h4>\n<ul>\n<li><code>index.js</code>: Primary entry point to Node application</li>\n<li><code>decorate-config</code>: Validate and merge addon configs, package JSON and default configs</li>\n<li><code>create-dirs</code>: Create directories required for JSON files</li>\n</ul>\n<h4>Generation &amp;&amp; Decoration</h4>\n<ul>\n<li><code>generate-fountainhead-data</code>: Coordinates parsing raw YUIDoc using <code>data-types</code> modules</li>\n<li><code>data-types/generate-modules</code>: Parse &amp;&amp; decorate raw modules data</li>\n<li><code>data-types/generate-classes</code>: Parse &amp;&amp; decorate raw class &amp;&amp; class items data</li>\n<li><code>data-types/generate-file</code>: Parse &amp;&amp; decorate source files</li>\n<li><code>parse-markdown</code>: Called for every description, parses markdown contents to HTML</li>\n</ul>\n"
 }

@@ -1,0 +1,106 @@
+{
+  "name": "APINavigation",
+  "shortname": "APINavigation",
+  "classitems": [
+    {
+      "file": "addon/components/api-navigation.js",
+      "line": 37,
+      "description": "<p>Method to filter on doc elements for search.</p>\n",
+      "itemtype": "method",
+      "name": "doFilter",
+      "params": [
+        {
+          "name": "query",
+          "description": "<p>The search query to filter on</p>\n",
+          "type": "String"
+        }
+      ],
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "APINavigation",
+      "srcFileId": "addon_components_api-navigation.js"
+    },
+    {
+      "file": "addon/components/api-navigation.js",
+      "line": 16,
+      "description": "<p>Fountainhead meta passed from service</p>\n",
+      "itemtype": "property",
+      "name": "meta",
+      "type": "{Object}",
+      "passed": "Fountainhead",
+      "required": 1,
+      "class": "APINavigation",
+      "srcFileId": "addon_components_api-navigation.js"
+    },
+    {
+      "file": "addon/components/api-navigation.js",
+      "line": 27,
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "default": "''",
+      "class": "APINavigation",
+      "srcFileId": "addon_components_api-navigation.js"
+    }
+  ],
+  "plugins": [],
+  "extensions": [],
+  "plugin_for": [],
+  "extension_for": [],
+  "module": "Addon",
+  "file": "addon/components/api-navigation.js",
+  "line": 4,
+  "description": "<p>Parent navigation component for API route. Requires the entire docs meta\nobject.</p>\n",
+  "is_constructor": 1,
+  "extends": "Ember.Component",
+  "method": [
+    {
+      "file": "addon/components/api-navigation.js",
+      "line": 37,
+      "description": "<p>Method to filter on doc elements for search.</p>\n",
+      "itemtype": "method",
+      "name": "doFilter",
+      "params": [
+        {
+          "name": "query",
+          "description": "<p>The search query to filter on</p>\n",
+          "type": "String"
+        }
+      ],
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "APINavigation",
+      "srcFileId": "addon_components_api-navigation.js"
+    }
+  ],
+  "property": [
+    {
+      "file": "addon/components/api-navigation.js",
+      "line": 16,
+      "description": "<p>Fountainhead meta passed from service</p>\n",
+      "itemtype": "property",
+      "name": "meta",
+      "type": "{Object}",
+      "passed": "Fountainhead",
+      "required": 1,
+      "class": "APINavigation",
+      "srcFileId": "addon_components_api-navigation.js"
+    },
+    {
+      "file": "addon/components/api-navigation.js",
+      "line": 27,
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "default": "''",
+      "class": "APINavigation",
+      "srcFileId": "addon_components_api-navigation.js"
+    }
+  ],
+  "event": [],
+  "srcFileId": "addon_components_api-navigation.js"
+}

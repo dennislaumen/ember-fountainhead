@@ -4,7 +4,7 @@
   "classitems": [
     {
       "file": "addon/components/fountainhead-pages/module.js",
-      "line": 24,
+      "line": 34,
       "description": "<p>Handle nulling out properties <code>submodules</code> and <code>classes</code> if they don't have\nany keys.</p>\n",
       "itemtype": "event",
       "name": "didReceiveAttrs",
@@ -13,10 +13,20 @@
     },
     {
       "file": "addon/components/fountainhead-pages/module.js",
-      "line": 13,
+      "line": 15,
       "description": "<p>Module model content</p>\n",
       "itemtype": "property",
       "name": "module",
+      "type": "{string}",
+      "default": "''",
+      "class": "FountainheadPages.Module",
+      "srcFileId": "addon_components_fountainhead-pages_module.js"
+    },
+    {
+      "file": "addon/components/fountainhead-pages/module.js",
+      "line": 25,
+      "itemtype": "property",
+      "name": "tagName",
       "type": "{string}",
       "default": "''",
       "class": "FountainheadPages.Module",
@@ -37,10 +47,20 @@
   "property": [
     {
       "file": "addon/components/fountainhead-pages/module.js",
-      "line": 13,
+      "line": 15,
       "description": "<p>Module model content</p>\n",
       "itemtype": "property",
       "name": "module",
+      "type": "{string}",
+      "default": "''",
+      "class": "FountainheadPages.Module",
+      "srcFileId": "addon_components_fountainhead-pages_module.js"
+    },
+    {
+      "file": "addon/components/fountainhead-pages/module.js",
+      "line": 25,
+      "itemtype": "property",
+      "name": "tagName",
       "type": "{string}",
       "default": "''",
       "class": "FountainheadPages.Module",
@@ -50,7 +70,7 @@
   "event": [
     {
       "file": "addon/components/fountainhead-pages/module.js",
-      "line": 24,
+      "line": 34,
       "description": "<p>Handle nulling out properties <code>submodules</code> and <code>classes</code> if they don't have\nany keys.</p>\n",
       "itemtype": "event",
       "name": "didReceiveAttrs",

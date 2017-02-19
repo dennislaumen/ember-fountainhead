@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg class="fountainhead-logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="32" viewBox="0 0 100 32">
+  <style>
+    .outline { fill: #E6E6E6; }
+    .line-a { fill: #ffcc95; }
+    .line-b { fill: #FF9AC1; }
+    .line-c { fill: #7cfce9; }
+    .line-d { fill: #6FC1FF; }
+    .line-e { fill: #B084EB; }
+  </style>
+  <path class="outline" d="M16,1.82,22.39,9H16.5c-.22,0-.5-.42-.5-.75Z"/>
+  <path class="outline" d="M24,9.45a.48.48,0,0,0,0-.07.49.49,0,0,0-.09-.19v0l-8-9h0A.49.49,0,0,0,15.64,0h-.06L15.5,0H1.5A1.5,1.5,0,0,0,0,1.5v29A1.5,1.5,0,0,0,1.5,32h21A1.5,1.5,0,0,0,24,30.5V9.5S24,9.47,24,9.45Zm-1,21a.5.5,0,0,1-.5.5H1.5a.5.5,0,0,1-.5-.5V1.5A.5.5,0,0,1,1.5,1H15V8.25A1.73,1.73,0,0,0,16.5,10H23Z"/>
+  <path class="line-a" d="M5.5,14h13a.5.5,0,0,0,0-1H5.5a.5.5,0,0,0,0,1Z"/>
+  <path class="line-b" d="M5.5,18h13a.5.5,0,0,0,0-1H5.5a.5.5,0,0,0,0,1Z"/>
+  <path class="line-c" d="M5.5,10h6a.5.5,0,0,0,0-1h-6a.5.5,0,0,0,0,1Z"/>
+  <path class="line-d" d="M5.5,22h13a.5.5,0,0,0,0-1H5.5a.5.5,0,0,0,0,1Z"/>
+  <path class="line-e" d="M5.5,26h13a.5.5,0,0,0,0-1H5.5a.5.5,0,0,0,0,1Z"/>
+  <text font-size="12" x="27" y="15" font-family="sans-serif" fill="#E6E6E6" font-weight="300">Ember</text>
+  <text font-size="12" x="27" y="30" font-family="sans-serif" fill="#E6E6E6" font-weight="300">Fountainhead</text>
+</svg>

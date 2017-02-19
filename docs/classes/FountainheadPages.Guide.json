@@ -1,0 +1,64 @@
+{
+  "name": "FountainheadPages.Guide",
+  "shortname": "FountainheadPages.Guide",
+  "classitems": [
+    {
+      "file": "addon/components/fountainhead-pages/guide.js",
+      "line": 17,
+      "description": "<p>Guide backing model matching structure:</p>\n<pre class=\"language-javascript\"><code class=\"language-javascript\"><span class=\"token punctuation\">{</span>\n  id\n  attributes\n  body<span class=\"token punctuation\">,</span>\n<span class=\"token punctuation\">}</span>\n</code></pre>\n",
+      "itemtype": "property",
+      "name": "file",
+      "type": "{string}",
+      "default": "''",
+      "class": "FountainheadPages.Guide",
+      "srcFileId": "addon_components_fountainhead-pages_guide.js"
+    },
+    {
+      "file": "addon/components/fountainhead-pages/guide.js",
+      "line": 34,
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "default": "''",
+      "class": "FountainheadPages.Guide",
+      "srcFileId": "addon_components_fountainhead-pages_guide.js"
+    }
+  ],
+  "plugins": [],
+  "extensions": [],
+  "plugin_for": [],
+  "extension_for": [],
+  "module": "Addon",
+  "file": "addon/components/fountainhead-pages/guide.js",
+  "line": 5,
+  "description": "<p>Fountainhead <code>/guide</code> page component</p>\n",
+  "is_constructor": 1,
+  "extends": "Ember.Component",
+  "experimental": "",
+  "method": [],
+  "property": [
+    {
+      "file": "addon/components/fountainhead-pages/guide.js",
+      "line": 17,
+      "description": "<p>Guide backing model matching structure:</p>\n<pre class=\"language-javascript\"><code class=\"language-javascript\"><span class=\"token punctuation\">{</span>\n  id\n  attributes\n  body<span class=\"token punctuation\">,</span>\n<span class=\"token punctuation\">}</span>\n</code></pre>\n",
+      "itemtype": "property",
+      "name": "file",
+      "type": "{string}",
+      "default": "''",
+      "class": "FountainheadPages.Guide",
+      "srcFileId": "addon_components_fountainhead-pages_guide.js"
+    },
+    {
+      "file": "addon/components/fountainhead-pages/guide.js",
+      "line": 34,
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "default": "''",
+      "class": "FountainheadPages.Guide",
+      "srcFileId": "addon_components_fountainhead-pages_guide.js"
+    }
+  ],
+  "event": [],
+  "srcFileId": "addon_components_fountainhead-pages_guide.js"
+}

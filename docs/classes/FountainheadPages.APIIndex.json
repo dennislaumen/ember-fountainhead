@@ -1,0 +1,41 @@
+{
+  "name": "FountainheadPages.APIIndex",
+  "shortname": "FountainheadPages.APIIndex",
+  "classitems": [
+    {
+      "file": "addon/components/fountainhead-pages/api-index.js",
+      "line": 16,
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "default": "''",
+      "class": "FountainheadPages.APIIndex",
+      "srcFileId": "addon_components_fountainhead-pages_api-index.js"
+    }
+  ],
+  "plugins": [],
+  "extensions": [],
+  "plugin_for": [],
+  "extension_for": [],
+  "module": "Addon",
+  "file": "addon/components/fountainhead-pages/api-index.js",
+  "line": 5,
+  "description": "<p>Fountainhead <code>/api</code> index page component</p>\n",
+  "is_constructor": 1,
+  "extends": "Ember.Component",
+  "method": [],
+  "property": [
+    {
+      "file": "addon/components/fountainhead-pages/api-index.js",
+      "line": 16,
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "default": "''",
+      "class": "FountainheadPages.APIIndex",
+      "srcFileId": "addon_components_fountainhead-pages_api-index.js"
+    }
+  ],
+  "event": [],
+  "srcFileId": "addon_components_fountainhead-pages_api-index.js"
+}

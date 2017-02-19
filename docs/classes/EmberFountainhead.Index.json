@@ -4,14 +4,10 @@
   "classitems": [
     {
       "file": "blueprints/ember-fountainhead/index.js",
-      "line": 31,
-      "description": "<p>After install of addon read in consuming application's gitignore. If there\nisn't an entry for <code>vendor/feature-flags.js</code>, use node <code>fs</code> to append it.</p>\n",
+      "line": 22,
+      "description": "<p>Say a quick hello.</p>\n",
       "itemtype": "method",
       "name": "afterInstall",
-      "return": {
-        "description": "",
-        "type": "Undefined"
-      },
       "class": "EmberFountainhead.Index",
       "module": "Blueprints",
       "srcFileId": "blueprints_ember-fountainhead_index.js"
@@ -24,21 +20,17 @@
   "module": "Blueprints",
   "namespace": "",
   "file": "blueprints/ember-fountainhead/index.js",
-  "line": 14,
-  "description": "<p>Fountainhead index blueprint is used to update the consuming application's\n<code>.gitignore</code> to ignore the auto generated <code>vendor/feature-flags.js</code> file\ncreated by <code>ember-radical</code>. This file is used to create global variables if\nthe consuming application has turned off JSUglify code stripping.</p>\n",
+  "line": 10,
+  "description": "<p>Fountainhead's blueprint prints a friendly hello after install.</p>\n",
   "is_constructor": 1,
   "extends": "EmberCLI.Blueprint",
   "method": [
     {
       "file": "blueprints/ember-fountainhead/index.js",
-      "line": 31,
-      "description": "<p>After install of addon read in consuming application's gitignore. If there\nisn't an entry for <code>vendor/feature-flags.js</code>, use node <code>fs</code> to append it.</p>\n",
+      "line": 22,
+      "description": "<p>Say a quick hello.</p>\n",
       "itemtype": "method",
       "name": "afterInstall",
-      "return": {
-        "description": "",
-        "type": "Undefined"
-      },
       "class": "EmberFountainhead.Index",
       "module": "Blueprints",
       "srcFileId": "blueprints_ember-fountainhead_index.js"

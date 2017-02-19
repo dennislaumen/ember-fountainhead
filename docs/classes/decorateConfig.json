@@ -4,24 +4,11 @@
   "classitems": [
     {
       "file": "lib/decorate-config.js",
-      "line": 21,
-      "description": "<p>Configuration entry should be an array of directory paths (YUIDoc can't\nparse individual files unfortunately). The default entry is <code>app</code> when the\nconsumer is an application and <code>addon</code> when the consumer is an addon.</p>\n",
+      "line": 18,
+      "description": "<p>Fountianhead default configurations are targeted at Ember applications and\ninclude a sane default for every option with the goal of being able to\ninstall and use the addon with zero configuration for simple/standard Ember\napps.\nTODO: Document defaults</p>\n",
       "itemtype": "property",
-      "name": "entry",
-      "type": "{Array}",
-      "default": "['app'] | ['addon']",
-      "class": "decorateConfig",
-      "module": "Lib",
-      "srcFileId": "lib_decorate-config.js"
-    },
-    {
-      "file": "lib/decorate-config.js",
-      "line": 29,
-      "description": "<p>Configuration output path should be a directory path. The default is <code>public/docs</code>\nwhen the consumer is an application and <code>tests/dummy/public/docs</code> when the\nconsumer is an addon (Outputting the docs to <code>/public</code> in an addon signals\nEmber CLI to bundle your docs into any consuming applications <code>/public</code> dir\nwhich is not the default behavior we want).</p>\n",
-      "itemtype": "property",
-      "name": "outputPath",
-      "type": "{string}",
-      "default": "'public/docs' | 'tests/dummy/public/docs'",
+      "name": "defaultConfigurations",
+      "type": "{Object}",
       "class": "decorateConfig",
       "module": "Lib",
       "srcFileId": "lib_decorate-config.js"
@@ -59,24 +46,11 @@
   "property": [
     {
       "file": "lib/decorate-config.js",
-      "line": 21,
-      "description": "<p>Configuration entry should be an array of directory paths (YUIDoc can't\nparse individual files unfortunately). The default entry is <code>app</code> when the\nconsumer is an application and <code>addon</code> when the consumer is an addon.</p>\n",
+      "line": 18,
+      "description": "<p>Fountianhead default configurations are targeted at Ember applications and\ninclude a sane default for every option with the goal of being able to\ninstall and use the addon with zero configuration for simple/standard Ember\napps.\nTODO: Document defaults</p>\n",
       "itemtype": "property",
-      "name": "entry",
-      "type": "{Array}",
-      "default": "['app'] | ['addon']",
-      "class": "decorateConfig",
-      "module": "Lib",
-      "srcFileId": "lib_decorate-config.js"
-    },
-    {
-      "file": "lib/decorate-config.js",
-      "line": 29,
-      "description": "<p>Configuration output path should be a directory path. The default is <code>public/docs</code>\nwhen the consumer is an application and <code>tests/dummy/public/docs</code> when the\nconsumer is an addon (Outputting the docs to <code>/public</code> in an addon signals\nEmber CLI to bundle your docs into any consuming applications <code>/public</code> dir\nwhich is not the default behavior we want).</p>\n",
-      "itemtype": "property",
-      "name": "outputPath",
-      "type": "{string}",
-      "default": "'public/docs' | 'tests/dummy/public/docs'",
+      "name": "defaultConfigurations",
+      "type": "{Object}",
       "class": "decorateConfig",
       "module": "Lib",
       "srcFileId": "lib_decorate-config.js"

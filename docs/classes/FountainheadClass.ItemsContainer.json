@@ -4,7 +4,7 @@
   "classitems": [
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 108,
+      "line": 107,
       "description": "<p>Internal method to handle selecting a tab panel and then scrolling to an\nitem in that panel.</p>\n<p>Method will:</p>\n<ul>\n<li>Change to the panel matching the doc item type</li>\n<li>Scroll to that item using the itemtype and name to construct the DOM id</li>\n</ul>\n",
       "itemtype": "method",
       "name": "_scrollToItem",
@@ -34,7 +34,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 146,
+      "line": 145,
       "description": "<p>Handles finding the classitem model using the <code>item</code> query param value.\nIf a classitem is found, initiate a scroll.</p>\n",
       "itemtype": "method",
       "name": "_scrollToQueryParamItem",
@@ -52,7 +52,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 79,
+      "line": 78,
       "description": "<p>The currently active tab. This is controlled by this component to allow\nus to change the tab whenever a documentation item is clicked in the index\npanel.</p>\n",
       "itemtype": "property",
       "name": "activeTab",
@@ -65,7 +65,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 89,
+      "line": 88,
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
@@ -75,7 +75,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 24,
+      "line": 23,
       "description": "<p>Array of <em>ALL</em> items for this class. Used to find the type when an item is\nspecified in a query param.</p>\n",
       "itemtype": "property",
       "name": "classitems",
@@ -86,7 +86,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 95,
+      "line": 94,
       "description": "<p>The panel that that the tabs should render on creation. The tabs component\ntracks this separately and it needs to be updated separately when a class\npage is loaded with an item query parameter.</p>\n",
       "itemtype": "property",
       "name": "defaultTab",
@@ -97,23 +97,16 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 176,
+      "line": 175,
       "description": "<p>Handle resetting tabs container to the index panel any time that this\ncomponent's attrs update. The only props passed in to this component are\nthe class items for the container, so we know if they change in any way\nthat this is the right time to update the tabs panel.</p>\n<p>NOTE: GUESS WHAT! This hook doens't only get called when passed props\nchange! There is some crazy behavior where this hook will get called ONCE\nand only ONCE when an internal property changes after the props for this\ncomponent has changed. Super weird. For now we're 'fixing' it by also\npassing in the class name and using that as a check to reset the <code>activeTab</code></p>\n",
       "itemtype": "event",
       "name": "didUpdateAttrs",
-      "params": [
-        {
-          "name": "attrs",
-          "description": "<p>Object with <code>oldAttrs</code> and <code>newAttrs</code></p>\n",
-          "type": "Object"
-        }
-      ],
       "class": "FountainheadClass.ItemsContainer",
       "srcFileId": "addon_components_fountainhead-class_items-container.js"
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 32,
+      "line": 31,
       "description": "<p>This class' array of event documentation items.</p>\n",
       "itemtype": "property",
       "name": "event",
@@ -125,7 +118,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 218,
+      "line": 225,
       "description": "<p>Action bound to each documentation item in the index panel. Clicking any\nitem will trigger this with the documentation item as an argument. Use\nthe passed doc item to internally call\n{{cross-link class='FountainheadClass.ItemsContainer' item='_scrollToItem'}}\nto scroll to clicked item.</p>\n",
       "itemtype": "method",
       "name": "goToItem",
@@ -154,7 +147,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 202,
+      "line": 209,
       "description": "<p>Check for a passed <code>item</code> query param. When it exists call\n{{cross-link class='FountainheadClass.ItemsContainer' item='_scrollToQueryParamItem'}}\nto scroll to that cross linked item.</p>\n",
       "itemtype": "method",
       "name": "init",
@@ -163,7 +156,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 40,
+      "line": 39,
       "description": "<p>Item query param passed down from controller. When this property is present,\nor changes handle scrolling to the item. When the specified doc class is\nthe same but the item query param is different the model hooks will not be\ncalled, so we need to handle scrolling to the item when it changes.</p>\n",
       "itemtype": "property",
       "name": "item",
@@ -175,7 +168,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 51,
+      "line": 50,
       "description": "<p>This class' array of method documentation items.</p>\n",
       "itemtype": "property",
       "name": "method",
@@ -187,7 +180,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 59,
+      "line": 58,
       "description": "<p>Name of the class. Is checked in <code>didUpdateAttrs</code> to know if the tabs\nshould be reset to the index panel</p>\n",
       "itemtype": "property",
       "name": "name",
@@ -198,7 +191,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 67,
+      "line": 66,
       "description": "<p>This class' array of property documentation items.</p>\n",
       "itemtype": "property",
       "name": "property",
@@ -210,7 +203,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 233,
+      "line": 240,
       "description": "<p>Closure action passed into the tab component. This action is called\nwhenever a tab is clicked with the id of the tab. Use this to update the\ncontrolling <code>activeTab</code> property for the tabs DDAU style.</p>\n",
       "itemtype": "method",
       "name": "tabsChanged",
@@ -239,14 +232,14 @@
   "extension_for": [],
   "module": "Addon",
   "file": "addon/components/fountainhead-class/items-container.js",
-  "line": 7,
-  "description": "<p>Tab container for the class' documentation items. Component handles running\na controlled instance of <code>core-tabs</code> by tracking <code>activeTab</code> internally and\npassing <code>tabsChanged</code> to the <code>core-tabs</code> instance.</p>\n<p>The active tab is reset to the index panel anytime that the <code>name</code> (of the\nclass) changes.</p>\n",
+  "line": 6,
+  "description": "<p>Tab container for the class' documentation items. Component handles running\na controlled instance of <code>fountainhead-tabs</code> by tracking <code>activeTab</code>\ninternally and passing <code>tabsChanged</code> to the <code>fountainhead-tabs</code> instance.</p>\n<p>The active tab is reset to the index panel anytime that the <code>name</code> (of the\nclass) changes.</p>\n",
   "is_constructor": 1,
   "extends": "Ember.Component",
   "method": [
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 108,
+      "line": 107,
       "description": "<p>Internal method to handle selecting a tab panel and then scrolling to an\nitem in that panel.</p>\n<p>Method will:</p>\n<ul>\n<li>Change to the panel matching the doc item type</li>\n<li>Scroll to that item using the itemtype and name to construct the DOM id</li>\n</ul>\n",
       "itemtype": "method",
       "name": "_scrollToItem",
@@ -276,7 +269,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 146,
+      "line": 145,
       "description": "<p>Handles finding the classitem model using the <code>item</code> query param value.\nIf a classitem is found, initiate a scroll.</p>\n",
       "itemtype": "method",
       "name": "_scrollToQueryParamItem",
@@ -294,7 +287,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 218,
+      "line": 225,
       "description": "<p>Action bound to each documentation item in the index panel. Clicking any\nitem will trigger this with the documentation item as an argument. Use\nthe passed doc item to internally call\n{{cross-link class='FountainheadClass.ItemsContainer' item='_scrollToItem'}}\nto scroll to clicked item.</p>\n",
       "itemtype": "method",
       "name": "goToItem",
@@ -323,7 +316,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 202,
+      "line": 209,
       "description": "<p>Check for a passed <code>item</code> query param. When it exists call\n{{cross-link class='FountainheadClass.ItemsContainer' item='_scrollToQueryParamItem'}}\nto scroll to that cross linked item.</p>\n",
       "itemtype": "method",
       "name": "init",
@@ -332,7 +325,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 233,
+      "line": 240,
       "description": "<p>Closure action passed into the tab component. This action is called\nwhenever a tab is clicked with the id of the tab. Use this to update the\ncontrolling <code>activeTab</code> property for the tabs DDAU style.</p>\n",
       "itemtype": "method",
       "name": "tabsChanged",
@@ -358,7 +351,7 @@
   "property": [
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 79,
+      "line": 78,
       "description": "<p>The currently active tab. This is controlled by this component to allow\nus to change the tab whenever a documentation item is clicked in the index\npanel.</p>\n",
       "itemtype": "property",
       "name": "activeTab",
@@ -371,7 +364,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 89,
+      "line": 88,
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
@@ -381,7 +374,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 24,
+      "line": 23,
       "description": "<p>Array of <em>ALL</em> items for this class. Used to find the type when an item is\nspecified in a query param.</p>\n",
       "itemtype": "property",
       "name": "classitems",
@@ -392,7 +385,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 95,
+      "line": 94,
       "description": "<p>The panel that that the tabs should render on creation. The tabs component\ntracks this separately and it needs to be updated separately when a class\npage is loaded with an item query parameter.</p>\n",
       "itemtype": "property",
       "name": "defaultTab",
@@ -403,7 +396,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 32,
+      "line": 31,
       "description": "<p>This class' array of event documentation items.</p>\n",
       "itemtype": "property",
       "name": "event",
@@ -415,7 +408,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 40,
+      "line": 39,
       "description": "<p>Item query param passed down from controller. When this property is present,\nor changes handle scrolling to the item. When the specified doc class is\nthe same but the item query param is different the model hooks will not be\ncalled, so we need to handle scrolling to the item when it changes.</p>\n",
       "itemtype": "property",
       "name": "item",
@@ -427,7 +420,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 51,
+      "line": 50,
       "description": "<p>This class' array of method documentation items.</p>\n",
       "itemtype": "property",
       "name": "method",
@@ -439,7 +432,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 59,
+      "line": 58,
       "description": "<p>Name of the class. Is checked in <code>didUpdateAttrs</code> to know if the tabs\nshould be reset to the index panel</p>\n",
       "itemtype": "property",
       "name": "name",
@@ -450,7 +443,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 67,
+      "line": 66,
       "description": "<p>This class' array of property documentation items.</p>\n",
       "itemtype": "property",
       "name": "property",
@@ -464,17 +457,10 @@
   "event": [
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 176,
+      "line": 175,
       "description": "<p>Handle resetting tabs container to the index panel any time that this\ncomponent's attrs update. The only props passed in to this component are\nthe class items for the container, so we know if they change in any way\nthat this is the right time to update the tabs panel.</p>\n<p>NOTE: GUESS WHAT! This hook doens't only get called when passed props\nchange! There is some crazy behavior where this hook will get called ONCE\nand only ONCE when an internal property changes after the props for this\ncomponent has changed. Super weird. For now we're 'fixing' it by also\npassing in the class name and using that as a check to reset the <code>activeTab</code></p>\n",
       "itemtype": "event",
       "name": "didUpdateAttrs",
-      "params": [
-        {
-          "name": "attrs",
-          "description": "<p>Object with <code>oldAttrs</code> and <code>newAttrs</code></p>\n",
-          "type": "Object"
-        }
-      ],
       "class": "FountainheadClass.ItemsContainer",
       "srcFileId": "addon_components_fountainhead-class_items-container.js"
     }

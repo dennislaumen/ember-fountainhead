@@ -1,0 +1,45 @@
+{
+  "name": "FountainheadPages.API",
+  "shortname": "FountainheadPages.API",
+  "classitems": [
+    {
+      "file": "addon/components/fountainhead-pages/api.js",
+      "line": 31,
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "default": "''",
+      "class": "FountainheadPages.API",
+      "srcFileId": "addon_components_fountainhead-pages_api.js"
+    }
+  ],
+  "plugins": [],
+  "extensions": [],
+  "plugin_for": [],
+  "extension_for": [],
+  "module": "Addon",
+  "file": "addon/components/fountainhead-pages/api.js",
+  "line": 5,
+  "description": "<p>Fountainhead <code>/api</code> page component handles rendering the API sidebar, welcome\nmessaging and all API related subroutes including modules, classes and source\nfiles. The <code>outlet</code> for this route is yielded by this component, which\nis how we use components to handle rendering all of our pages, even with\nsubroutes.</p>\n<p>Because we want the default setup of Fountainhead to look like it's own app\nwe render everything in a <code>fh-page-in-page-wrapper</code> wrapper which is position\nfixed to cover the entire screen. This allows us to have our own header and\nfooter even if a consuming application has one in their <code>application.hbs</code>\ntemplate.</p>\n<p>Page data is passed from the <code>fountainhead</code> service, which is the primary\nstore for the addon and handles fetching the meta data for the API docs.</p>\n",
+  "uses": [
+    "FountainheadRepoLink",
+    "FountainheadSidebar.Sidebar"
+  ],
+  "is_constructor": 1,
+  "extends": "Ember.Component",
+  "method": [],
+  "property": [
+    {
+      "file": "addon/components/fountainhead-pages/api.js",
+      "line": 31,
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "default": "''",
+      "class": "FountainheadPages.API",
+      "srcFileId": "addon_components_fountainhead-pages_api.js"
+    }
+  ],
+  "event": [],
+  "srcFileId": "addon_components_fountainhead-pages_api.js"
+}

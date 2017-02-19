@@ -4,7 +4,7 @@
   "classitems": [
     {
       "file": "lib/generate-fountainhead-data.js",
-      "line": 63,
+      "line": 66,
       "description": "<p>The <code>docsMeta</code> object is the guide for the documentation data. It contains\ndescriptions of the project as well as arrays of module and class routing\ninformation</p>\n",
       "itemtype": "property",
       "name": "docsMeta",
@@ -15,7 +15,7 @@
     },
     {
       "file": "lib/generate-fountainhead-data.js",
-      "line": 38,
+      "line": 41,
       "description": "<p>Call to handle saving data to a file. Requires a file path and data to save.\nIf data is not a string, it will be stringified</p>\n",
       "itemtype": "method",
       "name": "saveObjectToJSON",
@@ -49,7 +49,7 @@
   "module": "Lib",
   "namespace": "",
   "file": "lib/generate-fountainhead-data.js",
-  "line": 9,
+  "line": 12,
   "description": "<p>This module handles coordinating parsing/reading/saving all of the individual\nFountainhead data files after the configs have been validated and the raw\nYUIDoc data has been generated.</p>\n<p>Module should:</p>\n<ul>\n<li>create and populate <code>docsMeta</code> that will be saved as <code>meta.json</code></li>\n<li>generate decorated modules files</li>\n<li>generate decorated class files</li>\n<li>generate decorated src file files</li>\n</ul>\n<p>NOTE: When switching doc generation from an executable to a function call\nall file operations had to be changed to a synchronous operation b/c the ember\ncommand finishes before the async file operations are complete and the contents\nare not written to file. This can be switched back to an async method by\nassembling and returning a promise.all for all async file calls</p>\n",
   "is_constructor": 1,
   "uses": [
@@ -76,7 +76,7 @@
   "method": [
     {
       "file": "lib/generate-fountainhead-data.js",
-      "line": 38,
+      "line": 41,
       "description": "<p>Call to handle saving data to a file. Requires a file path and data to save.\nIf data is not a string, it will be stringified</p>\n",
       "itemtype": "method",
       "name": "saveObjectToJSON",
@@ -104,7 +104,7 @@
   "property": [
     {
       "file": "lib/generate-fountainhead-data.js",
-      "line": 63,
+      "line": 66,
       "description": "<p>The <code>docsMeta</code> object is the guide for the documentation data. It contains\ndescriptions of the project as well as arrays of module and class routing\ninformation</p>\n",
       "itemtype": "property",
       "name": "docsMeta",

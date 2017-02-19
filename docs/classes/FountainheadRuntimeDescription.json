@@ -88,20 +88,6 @@
       "description": "<p>Whenever attrs are received fire the <code>_generateDescription</code> method to\ngenerate a partial that will be rendered.</p>\n",
       "itemtype": "event",
       "name": "didReceiveAttrs",
-      "params": [
-        {
-          "name": "attrs",
-          "description": "<p>Ember attrs object</p>\n",
-          "type": "Object",
-          "props": [
-            {
-              "name": "newAttrs",
-              "description": "The new attrs received",
-              "type": "Object"
-            }
-          ]
-        }
-      ],
       "class": "FountainheadRuntimeDescription",
       "srcFileId": "addon_components_fountainhead-runtime-description.js"
     },
@@ -245,20 +231,6 @@
       "description": "<p>Whenever attrs are received fire the <code>_generateDescription</code> method to\ngenerate a partial that will be rendered.</p>\n",
       "itemtype": "event",
       "name": "didReceiveAttrs",
-      "params": [
-        {
-          "name": "attrs",
-          "description": "<p>Ember attrs object</p>\n",
-          "type": "Object",
-          "props": [
-            {
-              "name": "newAttrs",
-              "description": "The new attrs received",
-              "type": "Object"
-            }
-          ]
-        }
-      ],
       "class": "FountainheadRuntimeDescription",
       "srcFileId": "addon_components_fountainhead-runtime-description.js"
     }

@@ -12,13 +12,23 @@
       "default": "''",
       "class": "FountainheadRepoLink",
       "srcFileId": "addon_components_fountainhead-repo-link.js"
+    },
+    {
+      "file": "addon/components/fountainhead-repo-link.js",
+      "line": 26,
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "default": "''",
+      "class": "FountainheadRepoLink",
+      "srcFileId": "addon_components_fountainhead-repo-link.js"
     }
   ],
   "plugins": [],
   "extensions": [],
   "plugin_for": [],
   "extension_for": [
-    "FountainheadPages.Docs"
+    "FountainheadPages.API"
   ],
   "module": "Addon",
   "file": "addon/components/fountainhead-repo-link.js",
@@ -34,6 +44,16 @@
       "description": "<p>Repository URL from fountainhead configurations. If a URL has been specified\nin the configs or the <code>package.json</code> this github logo will show with a link\nto the repo</p>\n",
       "itemtype": "property",
       "name": "repository",
+      "type": "{string}",
+      "default": "''",
+      "class": "FountainheadRepoLink",
+      "srcFileId": "addon_components_fountainhead-repo-link.js"
+    },
+    {
+      "file": "addon/components/fountainhead-repo-link.js",
+      "line": 26,
+      "itemtype": "property",
+      "name": "tagName",
       "type": "{string}",
       "default": "''",
       "class": "FountainheadRepoLink",

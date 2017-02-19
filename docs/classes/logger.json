@@ -1,0 +1,38 @@
+{
+  "name": "logger",
+  "shortname": "logger",
+  "classitems": [],
+  "plugins": [],
+  "extensions": [],
+  "plugin_for": [],
+  "extension_for": [],
+  "module": "Lib",
+  "namespace": "",
+  "file": "lib/logger.js",
+  "line": 7,
+  "description": "<p>Logger method that takes in YUIDoc warnings array and checks those warnings\nagainst special features that we support. This allows us to use special tags\nfor Ember apps, and still support logging for incorrect tags, but suppress\nwarnings for unknown tags we have added</p>\n",
+  "is_constructor": 1,
+  "params": [
+    {
+      "name": "options",
+      "description": "Contains logger options and data to handle",
+      "type": "Object",
+      "props": [
+        {
+          "name": "warnings",
+          "description": "YUIDoc generated warnings array of type: `{ message, line }`",
+          "type": "Array"
+        },
+        {
+          "name": "whiteListTags",
+          "description": "Tags whitelisted for support in Ember Fountainhead",
+          "type": "Array"
+        }
+      ]
+    }
+  ],
+  "method": [],
+  "property": [],
+  "event": [],
+  "srcFileId": "lib_logger.js"
+}

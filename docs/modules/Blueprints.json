@@ -9,6 +9,6 @@
   "namespaces": {},
   "tag": "module",
   "file": "blueprints/ember-fountainhead/index.js",
-  "line": 14,
+  "line": 10,
   "description": "<p>When an addon has an <code>index.js</code> file under <code>/blueprints/ADDON_NAME</code>, Ember\nCLI will call the hooks defined there. We use this to handle anything that\nneeds to be updated in the consuming application only once during the addon\nsetup.</p>\n"
 }

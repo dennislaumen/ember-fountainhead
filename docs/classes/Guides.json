@@ -1,0 +1,120 @@
+{
+  "name": "Guides",
+  "shortname": "Guides",
+  "classitems": [
+    {
+      "file": "addon/routes/guides.js",
+      "line": 14,
+      "description": "<p>We check for and fetch meta data if needed in the parent routes of\nFountainhead. This lets consumers overwrite the <code>apiNamespace</code> if they\nneed before we request the meta data that drives Fountainhead.</p>\n<p>NOTE: We only fetch meta data if it isn't present yet.</p>\n",
+      "itemtype": "method",
+      "name": "beforeModel",
+      "return": {
+        "description": "",
+        "type": "Promise|true"
+      },
+      "class": "Guides",
+      "srcFileId": "addon_routes_guides.js"
+    },
+    {
+      "file": "addon/routes/guides.js",
+      "line": 51,
+      "description": "<p>Reset page scroll on any transition. Note that Fountainhead is inside of\na fake page, so we scroll that instead of the body</p>\n",
+      "itemtype": "event",
+      "name": "didTransition",
+      "class": "Guides",
+      "srcFileId": "addon_routes_guides.js"
+    },
+    {
+      "file": "addon/routes/guides.js",
+      "line": 30,
+      "description": "<p>Fetches modules's JSON at: <code>${this.get('fountainhead.apiNamespace')}/modules/${params.file_id}.json</code></p>\n",
+      "itemtype": "method",
+      "name": "model",
+      "params": [
+        {
+          "name": "params",
+          "description": null,
+          "type": "Object",
+          "props": [
+            {
+              "name": "guide_id",
+              "description": "Name of this class, use to fetch data",
+              "type": "String"
+            }
+          ]
+        }
+      ],
+      "return": {
+        "description": "jQuery ajax promise",
+        "type": "Promise"
+      },
+      "class": "Guides",
+      "srcFileId": "addon_routes_guides.js"
+    }
+  ],
+  "plugins": [],
+  "extensions": [],
+  "plugin_for": [],
+  "extension_for": [],
+  "module": "Addon",
+  "file": "addon/routes/guides.js",
+  "line": 5,
+  "description": "<p>Fountainhead guides route.</p>\n",
+  "is_constructor": 1,
+  "extends": "Ember.Route",
+  "method": [
+    {
+      "file": "addon/routes/guides.js",
+      "line": 14,
+      "description": "<p>We check for and fetch meta data if needed in the parent routes of\nFountainhead. This lets consumers overwrite the <code>apiNamespace</code> if they\nneed before we request the meta data that drives Fountainhead.</p>\n<p>NOTE: We only fetch meta data if it isn't present yet.</p>\n",
+      "itemtype": "method",
+      "name": "beforeModel",
+      "return": {
+        "description": "",
+        "type": "Promise|true"
+      },
+      "class": "Guides",
+      "srcFileId": "addon_routes_guides.js"
+    },
+    {
+      "file": "addon/routes/guides.js",
+      "line": 30,
+      "description": "<p>Fetches modules's JSON at: <code>${this.get('fountainhead.apiNamespace')}/modules/${params.file_id}.json</code></p>\n",
+      "itemtype": "method",
+      "name": "model",
+      "params": [
+        {
+          "name": "params",
+          "description": null,
+          "type": "Object",
+          "props": [
+            {
+              "name": "guide_id",
+              "description": "Name of this class, use to fetch data",
+              "type": "String"
+            }
+          ]
+        }
+      ],
+      "return": {
+        "description": "jQuery ajax promise",
+        "type": "Promise"
+      },
+      "class": "Guides",
+      "srcFileId": "addon_routes_guides.js"
+    }
+  ],
+  "property": [],
+  "event": [
+    {
+      "file": "addon/routes/guides.js",
+      "line": 51,
+      "description": "<p>Reset page scroll on any transition. Note that Fountainhead is inside of\na fake page, so we scroll that instead of the body</p>\n",
+      "itemtype": "event",
+      "name": "didTransition",
+      "class": "Guides",
+      "srcFileId": "addon_routes_guides.js"
+    }
+  ],
+  "srcFileId": "addon_routes_guides.js"
+}

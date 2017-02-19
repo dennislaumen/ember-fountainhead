@@ -4,31 +4,31 @@
   "classitems": [
     {
       "file": "addon/components/fountainhead-svg.js",
-      "line": 30,
-      "description": "<p>Allow direct binding of <code>data-test</code> attributes so that icons can be\ndirectly targeted in automated testing.</p>\n",
+      "line": 33,
       "itemtype": "property",
       "name": "attributeBindings",
       "type": "{Array}",
+      "default": "['data-test']",
       "class": "FountainheadSVG",
       "srcFileId": "addon_components_fountainhead-svg.js"
     },
     {
       "file": "addon/components/fountainhead-svg.js",
-      "line": 44,
-      "description": "<p>Bound classNames: <code>svgId</code></p>\n",
+      "line": 45,
       "itemtype": "property",
       "name": "classNameBindings",
       "type": "{Array}",
+      "default": "['svgId']",
       "class": "FountainheadSVG",
       "srcFileId": "addon_components_fountainhead-svg.js"
     },
     {
       "file": "addon/components/fountainhead-svg.js",
-      "line": 38,
-      "description": "<p>Class names: <code>core-svg</code></p>\n",
+      "line": 39,
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
+      "default": "['fh-svg']",
       "class": "FountainheadSVG",
       "srcFileId": "addon_components_fountainhead-svg.js"
     },
@@ -39,27 +39,31 @@
       "itemtype": "property",
       "name": "filePath",
       "type": "{string}",
+      "passed": "",
+      "optional": 1,
       "default": "assets/svg-defs.svg",
       "class": "FountainheadSVG",
       "srcFileId": "addon_components_fountainhead-svg.js"
     },
     {
       "file": "addon/components/fountainhead-svg.js",
-      "line": 20,
-      "description": "<p>The id of the svg.</p>\n",
+      "line": 22,
+      "description": "<p>External SVG definitions file reference SVG id.</p>\n",
       "itemtype": "property",
       "name": "svgId",
       "type": "{string}",
+      "passed": "",
+      "required": 1,
       "class": "FountainheadSVG",
       "srcFileId": "addon_components_fountainhead-svg.js"
     },
     {
       "file": "addon/components/fountainhead-svg.js",
-      "line": 50,
-      "description": "<p>SVG DOM element</p>\n",
+      "line": 51,
       "itemtype": "property",
       "name": "tagName",
       "type": "{string}",
+      "default": "'svg'",
       "class": "FountainheadSVG",
       "srcFileId": "addon_components_fountainhead-svg.js"
     }
@@ -77,31 +81,31 @@
   "property": [
     {
       "file": "addon/components/fountainhead-svg.js",
-      "line": 30,
-      "description": "<p>Allow direct binding of <code>data-test</code> attributes so that icons can be\ndirectly targeted in automated testing.</p>\n",
+      "line": 33,
       "itemtype": "property",
       "name": "attributeBindings",
       "type": "{Array}",
+      "default": "['data-test']",
       "class": "FountainheadSVG",
       "srcFileId": "addon_components_fountainhead-svg.js"
     },
     {
       "file": "addon/components/fountainhead-svg.js",
-      "line": 44,
-      "description": "<p>Bound classNames: <code>svgId</code></p>\n",
+      "line": 45,
       "itemtype": "property",
       "name": "classNameBindings",
       "type": "{Array}",
+      "default": "['svgId']",
       "class": "FountainheadSVG",
       "srcFileId": "addon_components_fountainhead-svg.js"
     },
     {
       "file": "addon/components/fountainhead-svg.js",
-      "line": 38,
-      "description": "<p>Class names: <code>core-svg</code></p>\n",
+      "line": 39,
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
+      "default": "['fh-svg']",
       "class": "FountainheadSVG",
       "srcFileId": "addon_components_fountainhead-svg.js"
     },
@@ -112,27 +116,31 @@
       "itemtype": "property",
       "name": "filePath",
       "type": "{string}",
+      "passed": "",
+      "optional": 1,
       "default": "assets/svg-defs.svg",
       "class": "FountainheadSVG",
       "srcFileId": "addon_components_fountainhead-svg.js"
     },
     {
       "file": "addon/components/fountainhead-svg.js",
-      "line": 20,
-      "description": "<p>The id of the svg.</p>\n",
+      "line": 22,
+      "description": "<p>External SVG definitions file reference SVG id.</p>\n",
       "itemtype": "property",
       "name": "svgId",
       "type": "{string}",
+      "passed": "",
+      "required": 1,
       "class": "FountainheadSVG",
       "srcFileId": "addon_components_fountainhead-svg.js"
     },
     {
       "file": "addon/components/fountainhead-svg.js",
-      "line": 50,
-      "description": "<p>SVG DOM element</p>\n",
+      "line": 51,
       "itemtype": "property",
       "name": "tagName",
       "type": "{string}",
+      "default": "'svg'",
       "class": "FountainheadSVG",
       "srcFileId": "addon_components_fountainhead-svg.js"
     }

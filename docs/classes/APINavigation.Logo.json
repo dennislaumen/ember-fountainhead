@@ -1,0 +1,63 @@
+{
+  "name": "APINavigation.Logo",
+  "shortname": "APINavigation.Logo",
+  "classitems": [
+    {
+      "file": "addon/components/api-navigation/logo.js",
+      "line": 18,
+      "description": "<p>Path to a custom logo, can be set in your\n<a href=\"/guides/configuration\"><span class='mono'>fountainhead.js</span></a> file.</p>\n",
+      "itemtype": "property",
+      "name": "logo",
+      "type": "{?string}",
+      "passed": "APINavigation",
+      "class": "APINavigation.Logo",
+      "srcFileId": "addon_components_api-navigation_logo.js"
+    },
+    {
+      "file": "addon/components/api-navigation/logo.js",
+      "line": 29,
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "default": "''",
+      "class": "APINavigation.Logo",
+      "srcFileId": "addon_components_api-navigation_logo.js"
+    }
+  ],
+  "plugins": [],
+  "extensions": [],
+  "plugin_for": [],
+  "extension_for": [],
+  "module": "Addon",
+  "file": "addon/components/api-navigation/logo.js",
+  "line": 4,
+  "description": "<p>The logo at the top of the API navigation is a component so that you can\neasily extend it for custom logos that can't be contained in a merge image.</p>\n<p>If {{c-l class='Fountainhead' item='meta'}} has a logo, that will be used\notherwise we fall back to the Fountainhead logo.</p>\n",
+  "is_constructor": 1,
+  "extends": "Ember.Component",
+  "method": [],
+  "property": [
+    {
+      "file": "addon/components/api-navigation/logo.js",
+      "line": 18,
+      "description": "<p>Path to a custom logo, can be set in your\n<a href=\"/guides/configuration\"><span class='mono'>fountainhead.js</span></a> file.</p>\n",
+      "itemtype": "property",
+      "name": "logo",
+      "type": "{?string}",
+      "passed": "APINavigation",
+      "class": "APINavigation.Logo",
+      "srcFileId": "addon_components_api-navigation_logo.js"
+    },
+    {
+      "file": "addon/components/api-navigation/logo.js",
+      "line": 29,
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "default": "''",
+      "class": "APINavigation.Logo",
+      "srcFileId": "addon_components_api-navigation_logo.js"
+    }
+  ],
+  "event": [],
+  "srcFileId": "addon_components_api-navigation_logo.js"
+}

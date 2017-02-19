@@ -14,13 +14,30 @@
   "line": 5,
   "description": "<p>Handle syntax highlighting and creating meta information for a src file</p>\n",
   "is_constructor": 1,
+  "experimental": "",
   "params": [
     {
-      "name": "filePath",
-      "description": "File filepath from class definition",
-      "type": "String"
+      "name": "guideOptions",
+      "description": "Options for generating guide data",
+      "type": "Object",
+      "props": [
+        {
+          "name": "fileContents",
+          "description": "Contents of the guide in a string",
+          "type": "String"
+        },
+        {
+          "name": "guidePath",
+          "description": "File path to guide src",
+          "type": "String"
+        }
+      ]
     }
   ],
+  "return": {
+    "description": "Return an object with guide data in the form of:\n                 `{ attributes, body }`\n                 With the body parsed for markdown and glimmer contents",
+    "type": "Object"
+  },
   "method": [],
   "property": [],
   "event": [],

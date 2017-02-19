@@ -1,0 +1,189 @@
+{
+  "name": "API.Classes",
+  "shortname": "API.Classes",
+  "classitems": [
+    {
+      "file": "addon/routes/api/classes.js",
+      "line": 47,
+      "description": "<p>Reset page scroll on any transition. Note that Fountainhead is inside of\na fake page, so we scroll that instead of the body</p>\n",
+      "itemtype": "event",
+      "name": "didTransition",
+      "class": "API.Classes",
+      "srcFileId": "addon_routes_api_classes.js"
+    },
+    {
+      "file": "addon/controllers/api/classes.js",
+      "line": 17,
+      "description": "<p>Item query param is available for scrolling to a doc item.</p>\n",
+      "itemtype": "property",
+      "name": "item",
+      "type": "{?string}",
+      "default": "null",
+      "class": "API.Classes",
+      "srcFileId": "addon_controllers_api_classes.js"
+    },
+    {
+      "file": "addon/routes/api/classes.js",
+      "line": 17,
+      "description": "<p>Fetches class' JSON at: <code>${this.get('fountainhead.apiNamespace')}/classes/${params.class_id}.json</code></p>\n",
+      "itemtype": "method",
+      "name": "model",
+      "params": [
+        {
+          "name": "params",
+          "description": null,
+          "type": "Object",
+          "props": [
+            {
+              "name": "class_id",
+              "description": "Name of this class, use to fetch data",
+              "type": "String"
+            }
+          ]
+        }
+      ],
+      "return": {
+        "description": "jQuery ajax promise",
+        "type": "Promise"
+      },
+      "class": "API.Classes",
+      "srcFileId": "addon_routes_api_classes.js"
+    },
+    {
+      "file": "addon/controllers/api/classes.js",
+      "line": 11,
+      "itemtype": "property",
+      "name": "queryParams",
+      "type": "{Array}",
+      "default": "['item']",
+      "class": "API.Classes",
+      "srcFileId": "addon_controllers_api_classes.js"
+    },
+    {
+      "file": "addon/routes/api/classes.js",
+      "line": 27,
+      "description": "<p>We don't want the class <code>item</code> query param to be sticky. If it is, then you\ncan end up pre-scrolled to some previously crosslinked item when returning\nto a class.</p>\n<p>The <code>resetController</code> hook is called anytime a route's model changes or the\nroute is exited, and is the recommended time to reset query param values on\na controller.</p>\n",
+      "itemtype": "method",
+      "name": "resetController",
+      "params": [
+        {
+          "name": "controller",
+          "description": null,
+          "type": "Object"
+        },
+        {
+          "name": "isExiting",
+          "description": null,
+          "type": "Boolean"
+        },
+        {
+          "name": "transition",
+          "description": null,
+          "type": "Object"
+        }
+      ],
+      "class": "API.Classes",
+      "srcFileId": "addon_routes_api_classes.js"
+    }
+  ],
+  "plugins": [],
+  "extensions": [],
+  "plugin_for": [],
+  "extension_for": [],
+  "module": "Addon",
+  "file": "addon/routes/api/classes.js",
+  "line": 5,
+  "description": "<p>Route handles fetching data for an individual class.</p>\n",
+  "is_constructor": 1,
+  "extends": "Ember.Controller",
+  "method": [
+    {
+      "file": "addon/routes/api/classes.js",
+      "line": 17,
+      "description": "<p>Fetches class' JSON at: <code>${this.get('fountainhead.apiNamespace')}/classes/${params.class_id}.json</code></p>\n",
+      "itemtype": "method",
+      "name": "model",
+      "params": [
+        {
+          "name": "params",
+          "description": null,
+          "type": "Object",
+          "props": [
+            {
+              "name": "class_id",
+              "description": "Name of this class, use to fetch data",
+              "type": "String"
+            }
+          ]
+        }
+      ],
+      "return": {
+        "description": "jQuery ajax promise",
+        "type": "Promise"
+      },
+      "class": "API.Classes",
+      "srcFileId": "addon_routes_api_classes.js"
+    },
+    {
+      "file": "addon/routes/api/classes.js",
+      "line": 27,
+      "description": "<p>We don't want the class <code>item</code> query param to be sticky. If it is, then you\ncan end up pre-scrolled to some previously crosslinked item when returning\nto a class.</p>\n<p>The <code>resetController</code> hook is called anytime a route's model changes or the\nroute is exited, and is the recommended time to reset query param values on\na controller.</p>\n",
+      "itemtype": "method",
+      "name": "resetController",
+      "params": [
+        {
+          "name": "controller",
+          "description": null,
+          "type": "Object"
+        },
+        {
+          "name": "isExiting",
+          "description": null,
+          "type": "Boolean"
+        },
+        {
+          "name": "transition",
+          "description": null,
+          "type": "Object"
+        }
+      ],
+      "class": "API.Classes",
+      "srcFileId": "addon_routes_api_classes.js"
+    }
+  ],
+  "property": [
+    {
+      "file": "addon/controllers/api/classes.js",
+      "line": 17,
+      "description": "<p>Item query param is available for scrolling to a doc item.</p>\n",
+      "itemtype": "property",
+      "name": "item",
+      "type": "{?string}",
+      "default": "null",
+      "class": "API.Classes",
+      "srcFileId": "addon_controllers_api_classes.js"
+    },
+    {
+      "file": "addon/controllers/api/classes.js",
+      "line": 11,
+      "itemtype": "property",
+      "name": "queryParams",
+      "type": "{Array}",
+      "default": "['item']",
+      "class": "API.Classes",
+      "srcFileId": "addon_controllers_api_classes.js"
+    }
+  ],
+  "event": [
+    {
+      "file": "addon/routes/api/classes.js",
+      "line": 47,
+      "description": "<p>Reset page scroll on any transition. Note that Fountainhead is inside of\na fake page, so we scroll that instead of the body</p>\n",
+      "itemtype": "event",
+      "name": "didTransition",
+      "class": "API.Classes",
+      "srcFileId": "addon_routes_api_classes.js"
+    }
+  ],
+  "srcFileId": "addon_routes_api_classes.js"
+}

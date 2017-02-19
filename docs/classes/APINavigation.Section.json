@@ -1,0 +1,111 @@
+{
+  "name": "APINavigation.Section",
+  "shortname": "APINavigation.Section",
+  "classitems": [
+    {
+      "file": "addon/components/api-navigation/section.js",
+      "line": 45,
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "default": "['nav-section']",
+      "class": "APINavigation.Section",
+      "srcFileId": "addon_components_api-navigation_section.js"
+    },
+    {
+      "file": "addon/components/api-navigation/section.js",
+      "line": 18,
+      "description": "<p>Array of documentation items to create links for. Each item should be of\nform:</p>\n<pre class=\"language-json\"><code class=\"language-json\"><span class=\"token punctuation\">{</span>\n  name<span class=\"token punctuation\">:</span> <span class=\"token string\">'Item name - used as text for anchor'</span><span class=\"token punctuation\">,</span>\n  type<span class=\"token punctuation\">:</span> <span class=\"token string\">'Either classes or modules'</span>\n<span class=\"token punctuation\">}</span>\n</code></pre>\n",
+      "itemtype": "property",
+      "name": "items",
+      "type": "{Array}",
+      "passed": "APINavigation",
+      "required": 1,
+      "class": "APINavigation.Section",
+      "srcFileId": "addon_components_api-navigation_section.js"
+    },
+    {
+      "file": "addon/components/api-navigation/section.js",
+      "line": 51,
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "default": "'section'",
+      "class": "APINavigation.Section",
+      "srcFileId": "addon_components_api-navigation_section.js"
+    },
+    {
+      "file": "addon/components/api-navigation/section.js",
+      "line": 33,
+      "description": "<p>Section header text content</p>\n",
+      "itemtype": "property",
+      "name": "title",
+      "type": "{string}",
+      "passed": "",
+      "optional": 1,
+      "default": "''",
+      "class": "APINavigation.Section",
+      "srcFileId": "addon_components_api-navigation_section.js"
+    }
+  ],
+  "plugins": [],
+  "extensions": [],
+  "plugin_for": [],
+  "extension_for": [],
+  "module": "Addon",
+  "file": "addon/components/api-navigation/section.js",
+  "line": 4,
+  "description": "<p>Component creates a section for the {{c-l class='APINavigation'}}. Accepts\na {{c-l 'title'}} and an {{c-l 'items'}} array, both optional.</p>\n<p>Component can be used in block form if just the wrapping section markup is\nneeded with a header.</p>\n",
+  "is_constructor": 1,
+  "extends": "Ember.Component",
+  "method": [],
+  "property": [
+    {
+      "file": "addon/components/api-navigation/section.js",
+      "line": 45,
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "default": "['nav-section']",
+      "class": "APINavigation.Section",
+      "srcFileId": "addon_components_api-navigation_section.js"
+    },
+    {
+      "file": "addon/components/api-navigation/section.js",
+      "line": 18,
+      "description": "<p>Array of documentation items to create links for. Each item should be of\nform:</p>\n<pre class=\"language-json\"><code class=\"language-json\"><span class=\"token punctuation\">{</span>\n  name<span class=\"token punctuation\">:</span> <span class=\"token string\">'Item name - used as text for anchor'</span><span class=\"token punctuation\">,</span>\n  type<span class=\"token punctuation\">:</span> <span class=\"token string\">'Either classes or modules'</span>\n<span class=\"token punctuation\">}</span>\n</code></pre>\n",
+      "itemtype": "property",
+      "name": "items",
+      "type": "{Array}",
+      "passed": "APINavigation",
+      "required": 1,
+      "class": "APINavigation.Section",
+      "srcFileId": "addon_components_api-navigation_section.js"
+    },
+    {
+      "file": "addon/components/api-navigation/section.js",
+      "line": 51,
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "default": "'section'",
+      "class": "APINavigation.Section",
+      "srcFileId": "addon_components_api-navigation_section.js"
+    },
+    {
+      "file": "addon/components/api-navigation/section.js",
+      "line": 33,
+      "description": "<p>Section header text content</p>\n",
+      "itemtype": "property",
+      "name": "title",
+      "type": "{string}",
+      "passed": "",
+      "optional": 1,
+      "default": "''",
+      "class": "APINavigation.Section",
+      "srcFileId": "addon_components_api-navigation_section.js"
+    }
+  ],
+  "event": [],
+  "srcFileId": "addon_components_api-navigation_section.js"
+}

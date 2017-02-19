@@ -4,7 +4,7 @@
   "classitems": [
     {
       "file": "lib/create-dirs.js",
-      "line": 19,
+      "line": 20,
       "description": "<p>Synchronous mkdir that handles creating a potentially nested directory</p>\n",
       "itemtype": "method",
       "name": "mkdirSync",
@@ -50,7 +50,7 @@
   "method": [
     {
       "file": "lib/create-dirs.js",
-      "line": 19,
+      "line": 20,
       "description": "<p>Synchronous mkdir that handles creating a potentially nested directory</p>\n",
       "itemtype": "method",
       "name": "mkdirSync",

@@ -1,6 +1,33 @@
 {
   "project": {},
   "files": {
+    "addon/components/api-navigation/logo.js": {
+      "name": "addon/components/api-navigation/logo.js",
+      "modules": {},
+      "classes": {
+        "APINavigation.Logo": 1
+      },
+      "fors": {},
+      "namespaces": {}
+    },
+    "addon/components/api-navigation/search-bar.js": {
+      "name": "addon/components/api-navigation/search-bar.js",
+      "modules": {},
+      "classes": {
+        "APINavigation.SearchBar": 1
+      },
+      "fors": {},
+      "namespaces": {}
+    },
+    "addon/components/api-navigation/section.js": {
+      "name": "addon/components/api-navigation/section.js",
+      "modules": {},
+      "classes": {
+        "APINavigation.Section": 1
+      },
+      "fors": {},
+      "namespaces": {}
+    },
     "addon/components/fountainhead-class/header.js": {
       "name": "addon/components/fountainhead-class/header.js",
       "modules": {},
@@ -32,7 +59,25 @@
       "name": "addon/components/fountainhead-class/meta.js",
       "modules": {},
       "classes": {
-        "FountaineadClass.Meta": 1
+        "FountainheadClass.Meta": 1
+      },
+      "fors": {},
+      "namespaces": {}
+    },
+    "addon/components/fountainhead-pages/api-index.js": {
+      "name": "addon/components/fountainhead-pages/api-index.js",
+      "modules": {},
+      "classes": {
+        "FountainheadPages.APIIndex": 1
+      },
+      "fors": {},
+      "namespaces": {}
+    },
+    "addon/components/fountainhead-pages/api.js": {
+      "name": "addon/components/fountainhead-pages/api.js",
+      "modules": {},
+      "classes": {
+        "FountainheadPages.API": 1
       },
       "fors": {},
       "namespaces": {}
@@ -46,29 +91,20 @@
       "fors": {},
       "namespaces": {}
     },
-    "addon/components/fountainhead-pages/docs-index.js": {
-      "name": "addon/components/fountainhead-pages/docs-index.js",
-      "modules": {},
-      "classes": {
-        "FountainheadPages.DocsIndex": 1
-      },
-      "fors": {},
-      "namespaces": {}
-    },
-    "addon/components/fountainhead-pages/docs.js": {
-      "name": "addon/components/fountainhead-pages/docs.js",
-      "modules": {},
-      "classes": {
-        "FountainheadPages.Docs": 1
-      },
-      "fors": {},
-      "namespaces": {}
-    },
     "addon/components/fountainhead-pages/file.js": {
       "name": "addon/components/fountainhead-pages/file.js",
       "modules": {},
       "classes": {
         "FountainheadPages.File": 1
+      },
+      "fors": {},
+      "namespaces": {}
+    },
+    "addon/components/fountainhead-pages/guide.js": {
+      "name": "addon/components/fountainhead-pages/guide.js",
+      "modules": {},
+      "classes": {
+        "FountainheadPages.Guide": 1
       },
       "fors": {},
       "namespaces": {}
@@ -82,38 +118,11 @@
       "fors": {},
       "namespaces": {}
     },
-    "addon/components/fountainhead-sidebar/group.js": {
-      "name": "addon/components/fountainhead-sidebar/group.js",
+    "addon/components/api-navigation.js": {
+      "name": "addon/components/api-navigation.js",
       "modules": {},
       "classes": {
-        "FountainheadSidebar.Group": 1
-      },
-      "fors": {},
-      "namespaces": {}
-    },
-    "addon/components/fountainhead-sidebar/search-bar.js": {
-      "name": "addon/components/fountainhead-sidebar/search-bar.js",
-      "modules": {},
-      "classes": {
-        "FountainheadSidebar.SearchBar": 1
-      },
-      "fors": {},
-      "namespaces": {}
-    },
-    "addon/components/fountainhead-sidebar/section.js": {
-      "name": "addon/components/fountainhead-sidebar/section.js",
-      "modules": {},
-      "classes": {
-        "FountainheadSidebar.Section": 1
-      },
-      "fors": {},
-      "namespaces": {}
-    },
-    "addon/components/fountainhead-sidebar/sidebar.js": {
-      "name": "addon/components/fountainhead-sidebar/sidebar.js",
-      "modules": {},
-      "classes": {
-        "FountainheadSidebar.Sidebar": 1
+        "APINavigation": 1
       },
       "fors": {},
       "namespaces": {}
@@ -172,6 +181,15 @@
       "fors": {},
       "namespaces": {}
     },
+    "addon/components/fountainhead-state.js": {
+      "name": "addon/components/fountainhead-state.js",
+      "modules": {},
+      "classes": {
+        "FountainheadState": 1
+      },
+      "fors": {},
+      "namespaces": {}
+    },
     "addon/components/fountainhead-svg.js": {
       "name": "addon/components/fountainhead-svg.js",
       "modules": {},
@@ -208,8 +226,24 @@
       "fors": {},
       "namespaces": {}
     },
-    "addon/controllers/docs/classes.js": {
-      "name": "addon/controllers/docs/classes.js",
+    "addon/components/guide-navigation.js": {
+      "name": "addon/components/guide-navigation.js",
+      "modules": {},
+      "classes": {
+        "GuideNavigation": 1
+      },
+      "fors": {},
+      "namespaces": {}
+    },
+    "addon/controllers/api/classes.js": {
+      "name": "addon/controllers/api/classes.js",
+      "modules": {},
+      "classes": {},
+      "fors": {},
+      "namespaces": {}
+    },
+    "addon/controllers/api/modules.js": {
+      "name": "addon/controllers/api/modules.js",
       "modules": {},
       "classes": {},
       "fors": {},
@@ -220,6 +254,33 @@
       "modules": {},
       "classes": {
         "Helper.Eq": 1
+      },
+      "fors": {},
+      "namespaces": {}
+    },
+    "addon/routes/api/classes.js": {
+      "name": "addon/routes/api/classes.js",
+      "modules": {},
+      "classes": {
+        "API.Classes": 1
+      },
+      "fors": {},
+      "namespaces": {}
+    },
+    "addon/routes/api/files.js": {
+      "name": "addon/routes/api/files.js",
+      "modules": {},
+      "classes": {
+        "API.Files": 1
+      },
+      "fors": {},
+      "namespaces": {}
+    },
+    "addon/routes/api/modules.js": {
+      "name": "addon/routes/api/modules.js",
+      "modules": {},
+      "classes": {
+        "API.Modules": 1
       },
       "fors": {},
       "namespaces": {}
@@ -247,6 +308,24 @@
       "modules": {},
       "classes": {
         "Docs.Modules": 1
+      },
+      "fors": {},
+      "namespaces": {}
+    },
+    "addon/routes/api.js": {
+      "name": "addon/routes/api.js",
+      "modules": {},
+      "classes": {
+        "API": 1
+      },
+      "fors": {},
+      "namespaces": {}
+    },
+    "addon/routes/guides.js": {
+      "name": "addon/routes/guides.js",
+      "modules": {},
+      "classes": {
+        "Guides": 1
       },
       "fors": {},
       "namespaces": {}
@@ -309,6 +388,13 @@
       "fors": {},
       "namespaces": {}
     },
+    "lib/data-types/generate-guide.js": {
+      "name": "lib/data-types/generate-guide.js",
+      "modules": {},
+      "classes": {},
+      "fors": {},
+      "namespaces": {}
+    },
     "lib/data-types/generate-modules.js": {
       "name": "lib/data-types/generate-modules.js",
       "modules": {},
@@ -363,29 +449,20 @@
       "fors": {},
       "namespaces": {}
     },
+    "lib/logger.js": {
+      "name": "lib/logger.js",
+      "modules": {},
+      "classes": {
+        "logger": 1
+      },
+      "fors": {},
+      "namespaces": {}
+    },
     "lib/parse-markdown.js": {
       "name": "lib/parse-markdown.js",
       "modules": {},
       "classes": {
         "parseMarkdown": 1
-      },
-      "fors": {},
-      "namespaces": {}
-    },
-    "lib/read-watchman-config.js": {
-      "name": "lib/read-watchman-config.js",
-      "modules": {},
-      "classes": {
-        "readWatchmanConfig": 1
-      },
-      "fors": {},
-      "namespaces": {}
-    },
-    "lib/update-watchman-config.js": {
-      "name": "lib/update-watchman-config.js",
-      "modules": {},
-      "classes": {
-        "updateWatchmanConfig": 1
       },
       "fors": {},
       "namespaces": {}
@@ -397,40 +474,48 @@
       "submodules": {},
       "elements": {},
       "classes": {
+        "APINavigation.Logo": 1,
+        "APINavigation.SearchBar": 1,
+        "APINavigation.Section": 1,
         "FountaineadClass.Header": 1,
         "FountaineadClass.Item": 1,
         "FountainheadClass.ItemsContainer": 1,
-        "FountaineadClass.Meta": 1,
+        "FountainheadClass.Meta": 1,
+        "FountainheadPages.APIIndex": 1,
+        "FountainheadPages.API": 1,
         "FountainheadPages.Class": 1,
-        "FountainheadPages.DocsIndex": 1,
-        "FountainheadPages.Docs": 1,
         "FountainheadPages.File": 1,
+        "FountainheadPages.Guide": 1,
         "FountainheadPages.Module": 1,
-        "FountainheadSidebar.Group": 1,
-        "FountainheadSidebar.SearchBar": 1,
-        "FountainheadSidebar.Section": 1,
-        "FountainheadSidebar.Sidebar": 1,
+        "APINavigation": 1,
         "CrossLink": 1,
         "FountainheadAlert": 1,
         "FountainheadButton": 1,
         "FountainheadGetStarted": 1,
         "FountainheadRepoLink": 1,
         "FountainheadRuntimeDescription": 1,
+        "FountainheadState": 1,
         "FountainheadSVG": 1,
         "FountainheadTabsContent": 1,
         "FountainheadTabs": 1,
         "FountainheadWelcome": 1,
-        "Docs.Classes": 1,
+        "GuideNavigation": 1,
+        "API.Classes": 1,
+        "API.Modules": 1,
         "Helper.Eq": 1,
+        "API.Files": 1,
+        "Docs.Classes": 1,
         "Docs.Files": 1,
         "Docs.Modules": 1,
+        "API": 1,
+        "Guides": 1,
         "Fountainhead": 1
       },
       "fors": {},
       "namespaces": {},
       "tag": "module",
       "file": "addon/services/fountainhead.js",
-      "line": 7,
+      "line": 6,
       "description": "Addon module contains the components, routes and utils for generating docs\napplication."
     },
     "App": {
@@ -458,7 +543,7 @@
       "namespaces": {},
       "tag": "module",
       "file": "blueprints/ember-fountainhead/index.js",
-      "line": 14,
+      "line": 10,
       "description": "When an addon has an `index.js` file under `/blueprints/ADDON_NAME`, Ember\nCLI will call the hooks defined there. We use this to handle anything that\nneeds to be updated in the consuming application only once during the addon\nsetup."
     },
     "Lib": {
@@ -467,25 +552,69 @@
       "elements": {},
       "classes": {
         "DataTypes.GenerateClasses": 1,
-        "DataTypes.GenerateModules": 1,
         "DataTypes.GenerateSrcFile": 1,
+        "DataTypes.GenerateModules": 1,
         "createDirs": 1,
         "decorateConfig": 1,
         "generateFountainheadData": 1,
         "Index": 1,
-        "parseMarkdown": 1,
-        "readWatchmanConfig": 1,
-        "updateWatchmanConfig": 1
+        "logger": 1,
+        "parseMarkdown": 1
       },
       "fors": {},
       "namespaces": {},
       "tag": "module",
-      "file": "lib/update-watchman-config.js",
-      "line": 9,
+      "file": "lib/parse-markdown.js",
+      "line": 11,
       "description": "Modules in the `./lib` directory handle generating -> parsing -> decorating ->\nsaving all data required for Fountainhead. Fountainhead is backed by REST APIs\nrather than static file generation. Each module, class and file are saved as\nJSON fetched on demand by the client.\n\nSee this module for details/classes on the Node data generation application.\nSee below for a high level overview of the flow of the application through\nthe related modules.\n\n## Lib Classes Overview:\n\n#### Validation && Preparation\n- `index.js`: Primary entry point to Node application\n- `decorate-config`: Validate and merge addon configs, package JSON and default configs\n- `create-dirs`: Create directories required for JSON files\n\n#### Generation && Decoration\n- `generate-fountainhead-data`: Coordinates parsing raw YUIDoc using `data-types` modules\n- `data-types/generate-modules`: Parse && decorate raw modules data\n- `data-types/generate-classes`: Parse && decorate raw class && class items data\n- `data-types/generate-file`: Parse && decorate source files\n- `parse-markdown`: Called for every description, parses markdown contents to HTML"
     }
   },
   "classes": {
+    "APINavigation.Logo": {
+      "name": "APINavigation.Logo",
+      "shortname": "APINavigation.Logo",
+      "classitems": [],
+      "plugins": [],
+      "extensions": [],
+      "plugin_for": [],
+      "extension_for": [],
+      "module": "Addon",
+      "file": "addon/components/api-navigation/logo.js",
+      "line": 4,
+      "description": "The logo at the top of the API navigation is a component so that you can\neasily extend it for custom logos that can't be contained in a merge image.\n\nIf {{c-l class='Fountainhead' item='meta'}} has a logo, that will be used\notherwise we fall back to the Fountainhead logo.",
+      "is_constructor": 1,
+      "extends": "Ember.Component"
+    },
+    "APINavigation.SearchBar": {
+      "name": "APINavigation.SearchBar",
+      "shortname": "APINavigation.SearchBar",
+      "classitems": [],
+      "plugins": [],
+      "extensions": [],
+      "plugin_for": [],
+      "extension_for": [],
+      "module": "Addon",
+      "file": "addon/components/api-navigation/search-bar.js",
+      "line": 4,
+      "description": "Not operational sidebar search component",
+      "is_constructor": 1,
+      "extends": "Ember.Component"
+    },
+    "APINavigation.Section": {
+      "name": "APINavigation.Section",
+      "shortname": "APINavigation.Section",
+      "classitems": [],
+      "plugins": [],
+      "extensions": [],
+      "plugin_for": [],
+      "extension_for": [],
+      "module": "Addon",
+      "file": "addon/components/api-navigation/section.js",
+      "line": 4,
+      "description": "Component creates a section for the {{c-l class='APINavigation'}}. Accepts\na {{c-l 'title'}} and an {{c-l 'items'}} array, both optional.\n\nComponent can be used in block form if just the wrapping section markup is\nneeded with a header.",
+      "is_constructor": 1,
+      "extends": "Ember.Component"
+    },
     "FountaineadClass.Header": {
       "name": "FountaineadClass.Header",
       "shortname": "FountaineadClass.Header",
@@ -526,14 +655,14 @@
       "extension_for": [],
       "module": "Addon",
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 7,
-      "description": "Tab container for the class' documentation items. Component handles running\na controlled instance of `core-tabs` by tracking `activeTab` internally and\npassing `tabsChanged` to the `core-tabs` instance.\n\nThe active tab is reset to the index panel anytime that the `name` (of the\nclass) changes.",
+      "line": 6,
+      "description": "Tab container for the class' documentation items. Component handles running\na controlled instance of `fountainhead-tabs` by tracking `activeTab`\ninternally and passing `tabsChanged` to the `fountainhead-tabs` instance.\n\nThe active tab is reset to the index panel anytime that the `name` (of the\nclass) changes.",
       "is_constructor": 1,
       "extends": "Ember.Component"
     },
-    "FountaineadClass.Meta": {
-      "name": "FountaineadClass.Meta",
-      "shortname": "FountaineadClass.Meta",
+    "FountainheadClass.Meta": {
+      "name": "FountainheadClass.Meta",
+      "shortname": "FountainheadClass.Meta",
       "classitems": [],
       "plugins": [],
       "extensions": [],
@@ -543,6 +672,40 @@
       "file": "addon/components/fountainhead-class/meta.js",
       "line": 4,
       "description": "Creates meta information for a documentation class.\n\nTODO: Document which YUIDoc tags generate what meta data",
+      "is_constructor": 1,
+      "extends": "Ember.Component"
+    },
+    "FountainheadPages.APIIndex": {
+      "name": "FountainheadPages.APIIndex",
+      "shortname": "FountainheadPages.APIIndex",
+      "classitems": [],
+      "plugins": [],
+      "extensions": [],
+      "plugin_for": [],
+      "extension_for": [],
+      "module": "Addon",
+      "file": "addon/components/fountainhead-pages/api-index.js",
+      "line": 5,
+      "description": "Fountainhead `/api` index page component",
+      "is_constructor": 1,
+      "extends": "Ember.Component"
+    },
+    "FountainheadPages.API": {
+      "name": "FountainheadPages.API",
+      "shortname": "FountainheadPages.API",
+      "classitems": [],
+      "plugins": [],
+      "extensions": [],
+      "plugin_for": [],
+      "extension_for": [],
+      "module": "Addon",
+      "file": "addon/components/fountainhead-pages/api.js",
+      "line": 5,
+      "description": "Fountainhead `/api` page component handles rendering the API sidebar, welcome\nmessaging and all API related subroutes including modules, classes and source\nfiles. The `outlet` for this route is yielded by this component, which\nis how we use components to handle rendering all of our pages, even with\nsubroutes.\n\nBecause we want the default setup of Fountainhead to look like it's own app\nwe render everything in a `fh-page-in-page-wrapper` wrapper which is position\nfixed to cover the entire screen. This allows us to have our own header and\nfooter even if a consuming application has one in their `application.hbs`\ntemplate.\n\nPage data is passed from the `fountainhead` service, which is the primary\nstore for the addon and handles fetching the meta data for the API docs.",
+      "uses": [
+        "FountainheadRepoLink",
+        "FountainheadSidebar.Sidebar"
+      ],
       "is_constructor": 1,
       "extends": "Ember.Component"
     },
@@ -557,41 +720,7 @@
       "module": "Addon",
       "file": "addon/components/fountainhead-pages/class.js",
       "line": 4,
-      "description": "Fountainhead `/doc/class` page component",
-      "is_constructor": 1,
-      "extends": "Ember.Component"
-    },
-    "FountainheadPages.DocsIndex": {
-      "name": "FountainheadPages.DocsIndex",
-      "shortname": "FountainheadPages.DocsIndex",
-      "classitems": [],
-      "plugins": [],
-      "extensions": [],
-      "plugin_for": [],
-      "extension_for": [],
-      "module": "Addon",
-      "file": "addon/components/fountainhead-pages/docs-index.js",
-      "line": 5,
-      "description": "Fountainhead `/doc/index` page component",
-      "is_constructor": 1,
-      "extends": "Ember.Component"
-    },
-    "FountainheadPages.Docs": {
-      "name": "FountainheadPages.Docs",
-      "shortname": "FountainheadPages.Docs",
-      "classitems": [],
-      "plugins": [],
-      "extensions": [],
-      "plugin_for": [],
-      "extension_for": [],
-      "module": "Addon",
-      "file": "addon/components/fountainhead-pages/docs.js",
-      "line": 5,
-      "description": "Fountainhead `/doc` page component serves as the wrapping template for all of\nFountainhead. The `outlet` for the route is yielded by this component, which\nis how we use components to handle rendering all of our markup, even with\nsubroutes.\n\nBecause we want the default setup of Fountainhead to look like it's own app\nwe render everything in a `fh-page-in-page-wrapper` wrapper which is position\nfixed to cover the entire screen. This allows us to have our own header and\nfooter even if a consuming application has one in their `application.hbs`\ntemplate.\n\nThe `fountainhead` service is the primary store for the addon and handles\nfetching the meta data for the docs.",
-      "uses": [
-        "FountainheadRepoLink",
-        "FountainheadSidebar.Sidebar"
-      ],
+      "description": "Fountainhead `/api/class` page component.",
       "is_constructor": 1,
       "extends": "Ember.Component"
     },
@@ -610,6 +739,22 @@
       "is_constructor": 1,
       "extends": "Ember.Component"
     },
+    "FountainheadPages.Guide": {
+      "name": "FountainheadPages.Guide",
+      "shortname": "FountainheadPages.Guide",
+      "classitems": [],
+      "plugins": [],
+      "extensions": [],
+      "plugin_for": [],
+      "extension_for": [],
+      "module": "Addon",
+      "file": "addon/components/fountainhead-pages/guide.js",
+      "line": 5,
+      "description": "Fountainhead `/guide` page component",
+      "is_constructor": 1,
+      "extends": "Ember.Component",
+      "experimental": ""
+    },
     "FountainheadPages.Module": {
       "name": "FountainheadPages.Module",
       "shortname": "FountainheadPages.Module",
@@ -625,65 +770,18 @@
       "is_constructor": 1,
       "extends": "Ember.Component"
     },
-    "FountainheadSidebar.Group": {
-      "name": "FountainheadSidebar.Group",
-      "shortname": "FountainheadSidebar.Group",
+    "APINavigation": {
+      "name": "APINavigation",
+      "shortname": "APINavigation",
       "classitems": [],
       "plugins": [],
       "extensions": [],
       "plugin_for": [],
       "extension_for": [],
       "module": "Addon",
-      "file": "addon/components/fountainhead-sidebar/group.js",
+      "file": "addon/components/api-navigation.js",
       "line": 4,
-      "description": "Group Component for {{crosslink class='FountainheadSidebar.Sidebar'}}",
-      "is_constructor": 1,
-      "extends": "Ember.Component"
-    },
-    "FountainheadSidebar.SearchBar": {
-      "name": "FountainheadSidebar.SearchBar",
-      "shortname": "FountainheadSidebar.SearchBar",
-      "classitems": [],
-      "plugins": [],
-      "extensions": [],
-      "plugin_for": [],
-      "extension_for": [],
-      "module": "Addon",
-      "file": "addon/components/fountainhead-sidebar/search-bar.js",
-      "line": 4,
-      "description": "Not operational sidebar search component",
-      "is_constructor": 1,
-      "extends": "Ember.Component"
-    },
-    "FountainheadSidebar.Section": {
-      "name": "FountainheadSidebar.Section",
-      "shortname": "FountainheadSidebar.Section",
-      "classitems": [],
-      "plugins": [],
-      "extensions": [],
-      "plugin_for": [],
-      "extension_for": [],
-      "module": "Addon",
-      "file": "addon/components/fountainhead-sidebar/section.js",
-      "line": 4,
-      "description": "Section Component for {{crosslink class='FountainheadSidebar.Sidebar'}}",
-      "is_constructor": 1,
-      "extends": "Ember.Component"
-    },
-    "FountainheadSidebar.Sidebar": {
-      "name": "FountainheadSidebar.Sidebar",
-      "shortname": "FountainheadSidebar.Sidebar",
-      "classitems": [],
-      "plugins": [],
-      "extensions": [],
-      "plugin_for": [],
-      "extension_for": [
-        "FountainheadPages.Docs"
-      ],
-      "module": "Addon",
-      "file": "addon/components/fountainhead-sidebar/sidebar.js",
-      "line": 5,
-      "description": "Wrapper component for the sidebar components. Expects the entire docs meta\nobject.",
+      "description": "Parent navigation component for API route. Requires the entire docs meta\nobject.",
       "is_constructor": 1,
       "extends": "Ember.Component"
     },
@@ -697,8 +795,8 @@
       "extension_for": [],
       "module": "Addon",
       "file": "addon/components/cross-link.js",
-      "line": 4,
-      "description": "Use a `cross-link` component to handle cross referencing another documentation\nitem in your application. Internally the component handles creating a `link-to`\nusing the passed properties.\n\nProperty | Description\n--- | ---\n`text` | Inner HTML for link\n`class` | Documentation class to link to\n`module` | Documentation module to link to\n`item` | Specific documentation item to link to, appended as a query param\n\n#### Examples:\nGenerate a link to module 'YourModule'\n```glimmer\n{{cross-link module='YourModule'}}\n```\n\nGenerate a link to class 'YourClass'\n```glimmer\n{{cross-link class='YourClass'}}\n```\n\nGenerate a link to 'someMethod' on 'YourClass'\n```glimmer\n{{cross-link class='YourClass' item='someMethod'}}\n```\n\n*NOTE* Component requires either a `class` or `module` passed in.\nAn `item` may be passed to link to a specific class item.",
+      "line": 5,
+      "description": "The `{{cross-link}}` component lets you easily reference other classes,\nmodules, properties and methods in your documentation.\n\n#### Example\n```glimmer\nCheck out {{cross-link class='FountainheadClass.Meta' item='access'}}\n```\nWhen used as an inline component, the rendered link-to's text will be the\nID of the module or class along with any passed query params. If you want\ndifferent link text you can use the component in block form.\n\n```glimmer\n{{#cross-link class='FountainheadClass.Meta' item='access'}}\n  Check out the FountainheadClass.Meta components access property\n{{/cross-link}}\n```\n\n#### Positional Params\nThe component can also be used with positional parameters when referencing a\nproperty or method on the same class.\n```glimmer\nCheck out this components init method: {{cross-link 'init'}}\n```\n\n#### Alternate Invocation\nFor _maximum_ terseness Fountainhead also exports the cross link component as\n`{{c-l}}`\n```glimmer\nCheck out this components init method: {{c-l 'init'}}\n```\n\nProperty | Description\n--- | ---\n`class` | Documentation class to link to\n`module` | Documentation module to link to\n`item` | Specific documentation item to link to, appended as a query param\n\n{{! --------------------------------------------------------------------- }}\n{{! TEST CASES: B/c Ember Integration Tests + link-to === 💣              }}\n{{! Uncomment cases below and check in browser                            }}\n{{! --------------------------------------------------------------------- }}\n{{! Postional Params }}\n{{!-- {{c-l 'init'}}<br> --}}\n{{!-- {{#c-l 'init'}}BLOCK TEXT{{/c-l}}<br> --}}\n{{! Passed Item }}\n{{!-- {{c-l item='init'}}<br> --}}\n{{!-- {{#c-l item='init'}}BLOCK TEXT{{/c-l}}<br> --}}\n{{! Passed Module }}\n{{!-- {{c-l module='Addon'}}<br> --}}\n{{!-- {{#c-l module='Addon'}}ADDON MODULE{{/c-l}}<br> --}}\n{{! Passed Class }}\n{{!-- {{c-l class='CrossLink' item='init'}} <br> --}}\n{{!-- {{#c-l class='CrossLink' item='init'}}BLOCK TEXT{{/c-l}}<br> --}}\n{{!-- {{c-l class='FountainheadWelcome'}}<br> --}}\n{{!-- {{c-l class='FountainheadWelcome' item='classNames'}}<br> --}}\n{{!-- {{#c-l class='FountainheadWelcome' item='classNames'}}BLOCK TEXT{{/c-l}}<br> --}}",
       "is_constructor": 1,
       "extends": "Ember.Component"
     },
@@ -755,7 +853,7 @@
       "extensions": [],
       "plugin_for": [],
       "extension_for": [
-        "FountainheadPages.Docs"
+        "FountainheadPages.API"
       ],
       "module": "Addon",
       "file": "addon/components/fountainhead-repo-link.js",
@@ -778,6 +876,21 @@
       "description": "Generates a description during runtime by using HTMLBars to compile any\nstring to a partial. This allows us to create descriptions from JSON\nresponses with components inside of them.\n\nTODO: Name partials by class+type+name for re-use",
       "is_constructor": 1,
       "extends": "Ember.Component"
+    },
+    "FountainheadState": {
+      "name": "FountainheadState",
+      "shortname": "FountainheadState",
+      "classitems": [],
+      "plugins": [],
+      "extensions": [],
+      "plugin_for": [],
+      "extension_for": [],
+      "module": "Addon",
+      "file": "addon/components/fountainhead-state.js",
+      "line": 4,
+      "description": "## Ember-Radical `rad-state` Component\n\nComponent that can be used for tracking state changes with modals or drawers.\nWrap either in one of these and use the yielded state and actions to handle\nshowing/hiding/controlling your component.\n\nUseful mainly for demonstration/documentation purposes, but also handy for\nwhen you don't have a convenient place to store state (particularly during\nearly development stages). It's also kind of nice for not cluttering up your\nparent scope with a bunch of extra state and actions you might not want to\nhang onto. Go nuts!\n\n## Usage\n\nInstances of `rad-state` yield an `active` property and a hash of `actions`\nfor manipulating that state: `open`, `close`, and `toggleState`.\n\n```handlebars\n{{#rad-state as |state stateActions|}}\n  {{bank-vault\n    isOpen=state\n    closeVault=stateActions.close\n    openVault=stateActions.open}}\n{{/rad-state}}\n```\n\nOr for a smipler toggling implementation:\n\n```handlebars\n{{#rad-state as |switchState switchActions|}}\n  {{light-switch isOn=switchState toggleSwitch=switchActions.toggleState}}\n{{/rad-state}}\n```\n\nThe actions in the actions hash have already been yielded via the action\nhelper, so it is not necessary to continue using that helper when passing\nactions into child components as properties (but you totally still can if\nyou would prefer to.",
+      "is_constructor": 1,
+      "extends": "EmberRadical.RadState"
     },
     "FountainheadSVG": {
       "name": "FountainheadSVG",
@@ -804,7 +917,7 @@
       "module": "Addon",
       "file": "addon/components/fountainhead-tabs-content.js",
       "line": 7,
-      "description": "This component is yielded by the `core-tabs` component. The `activeId` and\nactions `registerTab` and `updateTab` are privately bound for internal use.\n\nOn init each tab will register itself with the `core-tabs` wrapping container,\npassing all its data. The `core-tabs` container uses this to build out the\ntab buttons.\n\n```handlebars\n{{#core-tabs defaultTab=\"dumpsterShrimp\" as |components|}}\n  {{#components.content label=\"Shrimp\" elementId=\"dumpsterShrimp\" tabDataTest=\"a-nifty-tab-button\"}}\n    BRINGO! There's some pretty good lil' shrimpers in here, lets check it out.\n  {{/components.content}}\n{{/core-tabs}}\n```\n\nConfiguration | Type | Default | Description\n--- | --- | --- | ---\n`label` | string | null | Text label of the tab button for this panel\n`elementId` | string | null | Set a specific id for this component when using container `defaultTab`\n`tabDataTest` | string | null | `data-test` for the tab button",
+      "description": "This component is yielded by the `fountainhead-tabs` component. The `activeId` and\nactions `registerTab` and `updateTab` are privately bound for internal use.\n\nOn init each tab will register itself with the `fountainhead-tabs` wrapping container,\npassing all its data. The `fountainhead-tabs` container uses this to build out the\ntab buttons.\n\n```handlebars\n{{#fountainhead-tabs defaultTab=\"dumpsterShrimp\" as |components|}}\n  {{#components.content label=\"Shrimp\" elementId=\"dumpsterShrimp\" tabDataTest=\"a-nifty-tab-button\"}}\n    BRINGO! There's some pretty good lil' shrimpers in here, lets check it out.\n  {{/components.content}}\n{{/fountainhead-tabs}}\n```\n\nConfiguration | Type | Default | Description\n--- | --- | --- | ---\n`label` | string | null | Text label of the tab button for this panel\n`elementId` | string | null | Set a specific id for this component when using container `defaultTab`\n`tabDataTest` | string | null | `data-test` for the tab button",
       "is_constructor": 1,
       "extends": "Ember.Component"
     },
@@ -819,7 +932,7 @@
       "module": "Addon",
       "file": "addon/components/fountainhead-tabs.js",
       "line": 10,
-      "description": "A++ Accessible tabs. The `core-tabs` component is the parent container for\na given set of tabs and handles managing the active state of the tabs and tab\npanels. The `core-tabs` component yields a `content` contextual component\ninside of the `components` hash.\n\n#### Usage\n\n```handlebars\n{{#core-tabs as |components|}}\n  {{#components.content label=\"Delgrango's\"}}\n    This is my favorite resaurant at the marinara, name of Delgrango's\n  {{/components.content}}\n  {{#components.content label=\"Fresh Water\"}}\n    Boy I sure did work up a thirst after eating all them shramps. Time to\n    wash it down with a cool glass of marina water.\n  {{/components.content}}\n{{/core-tabs}}\n```\n\nYou can include any number of `components.content` contextual components.\n_(However keep in mind that adding too many `content` components may result in\nthe tab labels becoming unreadable depending on the space alotted for\ndisplaying them.)_\n\nYou can also specify a default tab by setting the `defaultTab` parameter to\nmatch one of content components' HTML id property:\n\n```handlebars\n{{#core-tabs defaultTab=\"shrimpers\" as |components|}}\n  {{#components.content label=\"Shrimp\" elementId=\"shrimpers\"}}\n    BRINGO! There's some pretty good lil' shrimpers in here, lets check it out.\n  {{/components.content}}\n  {{#components.content label=\"Delgrango's\"}}\n    This is my favorite resaurant at the marinara, name of Delgrango's\n  {{/components.content}}\n{{/core-tabs}}\n```\n\n### Controlled Tabs\nIf you need to programatically open tabs within your application you can\ncreate a controlled instance of `core-tabs` by specifying the `activeId` for\nthe component. This means that you need to track the `activeId` in a parent\ncomponent or service and pass it down into the controlled tab instance. To do\nthis pass an `onChange` closure into the component. It will be called with\nthe `elementId` of the selected tab any time a user changes tabs.\n\nTODO: Template && JS Examples\n\nConfiguration | Type | Default | Description\n--- | --- | ---\n`activeId` | string | null | The `elementId` of the tab that should be opened\n`buttonStyle` | boolean | true | Set to false for tab buttons without primary background-color\n`defaultTab` | string | null | Tab to render shown by default\n`onChange` | function | null | Optional closure that will be called when any tab is opened\n`scrollOnClick` | boolean | false | Set to true to scroll page to top on tab click\n`scrollTarget` | jQuery selector | 'body, html' | Specify scroll animation target\n\n### A++ Accessibility\n- Tabs have `aria-controls` set to the `elementId` of the `tabpanel` they show.\n- Tabs have `role=tab` for role identification\n- Tabs are instances of `core-button` for keyboard access\n- Show/hide of tabs and panels are managed through `aria-hidden` attr\n\n### Feature Notes:\n- The tab list is a flexbox container with flex-grow 1 for each tab. This auto\n  magically grows the tabs to fill the entire width of tab container.",
+      "description": "A++ Accessible tabs. The `fountainhead-tabs` component is the parent\ncontainer for a given set of tabs and handles managing the active state of\nthe tabs and tab panels. The `fountainhead-tabs` component yields a `content`\ncontextual component inside of the `components` hash.\n\n#### Usage\n\n```handlebars\n{{#fountainhead-tabs as |components|}}\n  {{#components.content label=\"Delgrango's\"}}\n    This is my favorite resaurant at the marinara, name of Delgrango's\n  {{/components.content}}\n  {{#components.content label=\"Fresh Water\"}}\n    Boy I sure did work up a thirst after eating all them shramps. Time to\n    wash it down with a cool glass of marina water.\n  {{/components.content}}\n{{/fountainhead-tabs}}\n```\n\nYou can include any number of `components.content` contextual components.\n_(However keep in mind that adding too many `content` components may result in\nthe tab labels becoming unreadable depending on the space alotted for\ndisplaying them.)_\n\nYou can also specify a default tab by setting the `defaultTab` parameter to\nmatch one of content components' HTML id property:\n\n```handlebars\n{{#fountainhead-tabs defaultTab=\"shrimpers\" as |components|}}\n  {{#components.content label=\"Shrimp\" elementId=\"shrimpers\"}}\n    BRINGO! There's some pretty good lil' shrimpers in here, lets check it out.\n  {{/components.content}}\n  {{#components.content label=\"Delgrango's\"}}\n    This is my favorite resaurant at the marinara, name of Delgrango's\n  {{/components.content}}\n{{/fountainhead-tabs}}\n```\n\n### Controlled Tabs\nIf you need to programatically open tabs within your application you can\ncreate a controlled instance of `fountainhead-tabs` by specifying the\n`activeId` for the component. This means that you need to track the\n`activeId` in a parent component or service and pass it down into the\ncontrolled tab instance. To do this pass an `onChange` closure into the\ncomponent. It will be called with the `elementId` of the selected tab any\ntime a user changes tabs.\n\nTODO: Template & JS Examples\n\nConfiguration | Type | Default | Description\n--- | --- | ---\n`activeId` | string | null | The `elementId` of the tab that should be opened\n`buttonStyle` | boolean | true | Set to false for tab buttons without primary background-color\n`defaultTab` | string | null | Tab to render shown by default\n`onChange` | function | null | Optional closure that will be called when any tab is opened\n`scrollOnClick` | boolean | false | Set to true to scroll page to top on tab click\n`scrollTarget` | jQuery selector | 'body, html' | Specify scroll animation target\n\n### A++ Accessibility\n- Tabs have `aria-controls` set to the `elementId` of the `tabpanel` they show.\n- Tabs have `role=tab` for role identification\n- Tabs are instances of `fountainhead-button` for keyboard access\n- Show/hide of tabs and panels are managed through `aria-hidden` attr\n\n### Feature Notes:\n- The tab list is a flexbox container with flex-grow 1 for each tab. This auto\n  magically grows the tabs to fill the entire width of tab container.",
       "is_constructor": 1,
       "extends": "Ember.Component"
     },
@@ -838,18 +951,49 @@
       "is_constructor": 1,
       "extends": "Ember.Component"
     },
-    "Docs.Classes": {
-      "name": "Docs.Classes",
-      "shortname": "Docs.Classes",
+    "GuideNavigation": {
+      "name": "GuideNavigation",
+      "shortname": "GuideNavigation",
       "classitems": [],
       "plugins": [],
       "extensions": [],
       "plugin_for": [],
       "extension_for": [],
       "module": "Addon",
-      "file": "addon/routes/docs/classes.js",
+      "file": "addon/components/guide-navigation.js",
+      "line": 4,
+      "description": "Guides page navigation is distinct from the API navigation. The Fountainhead\nmeta object is passed into this component.",
+      "is_constructor": 1,
+      "extends": "Ember.Component",
+      "experimental": ""
+    },
+    "API.Classes": {
+      "name": "API.Classes",
+      "shortname": "API.Classes",
+      "classitems": [],
+      "plugins": [],
+      "extensions": [],
+      "plugin_for": [],
+      "extension_for": [],
+      "module": "Addon",
+      "file": "addon/routes/api/classes.js",
       "line": 5,
       "description": "Route handles fetching data for an individual class.",
+      "is_constructor": 1,
+      "extends": "Ember.Controller"
+    },
+    "API.Modules": {
+      "name": "API.Modules",
+      "shortname": "API.Modules",
+      "classitems": [],
+      "plugins": [],
+      "extensions": [],
+      "plugin_for": [],
+      "extension_for": [],
+      "module": "Addon",
+      "file": "addon/routes/api/modules.js",
+      "line": 5,
+      "description": "Route to be created for handling modules",
       "is_constructor": 1,
       "extends": "Ember.Controller"
     },
@@ -878,6 +1022,37 @@
         "type": "Boolean"
       }
     },
+    "API.Files": {
+      "name": "API.Files",
+      "shortname": "API.Files",
+      "classitems": [],
+      "plugins": [],
+      "extensions": [],
+      "plugin_for": [],
+      "extension_for": [],
+      "module": "Addon",
+      "file": "addon/routes/api/files.js",
+      "line": 5,
+      "description": "Route handles fetching data for a source file.",
+      "is_constructor": 1,
+      "extends": "Ember.Route"
+    },
+    "Docs.Classes": {
+      "name": "Docs.Classes",
+      "shortname": "Docs.Classes",
+      "classitems": [],
+      "plugins": [],
+      "extensions": [],
+      "plugin_for": [],
+      "extension_for": [],
+      "module": "Addon",
+      "file": "addon/routes/docs/classes.js",
+      "line": 3,
+      "description": "Docs route for classes",
+      "is_constructor": 1,
+      "extends": "Ember.Route",
+      "deprecated": true
+    },
     "Docs.Files": {
       "name": "Docs.Files",
       "shortname": "Docs.Files",
@@ -888,10 +1063,11 @@
       "extension_for": [],
       "module": "Addon",
       "file": "addon/routes/docs/files.js",
-      "line": 5,
-      "description": "Route handles fetching data for a source file.",
+      "line": 3,
+      "description": "Docs route for files",
       "is_constructor": 1,
-      "extends": "Ember.Route"
+      "extends": "Ember.Route",
+      "deprecated": true
     },
     "Docs.Modules": {
       "name": "Docs.Modules",
@@ -903,8 +1079,39 @@
       "extension_for": [],
       "module": "Addon",
       "file": "addon/routes/docs/modules.js",
+      "line": 3,
+      "description": "Docs Route for modules",
+      "is_constructor": 1,
+      "extends": "Ember.Route",
+      "deprecated": true
+    },
+    "API": {
+      "name": "API",
+      "shortname": "API",
+      "classitems": [],
+      "plugins": [],
+      "extensions": [],
+      "plugin_for": [],
+      "extension_for": [],
+      "module": "Addon",
+      "file": "addon/routes/api.js",
       "line": 5,
-      "description": "Route to be created for handling modules",
+      "description": "The `/api` route is the parent route for module and class documentation.",
+      "is_constructor": 1,
+      "extends": "Ember.Route"
+    },
+    "Guides": {
+      "name": "Guides",
+      "shortname": "Guides",
+      "classitems": [],
+      "plugins": [],
+      "extensions": [],
+      "plugin_for": [],
+      "extension_for": [],
+      "module": "Addon",
+      "file": "addon/routes/guides.js",
+      "line": 5,
+      "description": "Fountainhead guides route.",
       "is_constructor": 1,
       "extends": "Ember.Route"
     },
@@ -918,8 +1125,8 @@
       "extension_for": [],
       "module": "Addon",
       "file": "addon/services/fountainhead.js",
-      "line": 7,
-      "description": "Fountainhead application service.",
+      "line": 6,
+      "description": "The Fountainhead service handles fetching the meta data for Fountainhead.\nThis is triggered in the `beforeModel` of either the `docs` or `guides`\nroute.\n\nThe namespace that all API request fire with is defined as `apiNamespace`.\nIf you need to route requests under a different namespace it can be udpated.",
       "is_constructor": 1,
       "extends": "Ember.Service"
     },
@@ -949,8 +1156,8 @@
       "module": "Blueprints",
       "namespace": "",
       "file": "blueprints/ember-fountainhead/index.js",
-      "line": 14,
-      "description": "Fountainhead index blueprint is used to update the consuming application's\n`.gitignore` to ignore the auto generated `vendor/feature-flags.js` file\ncreated by `ember-radical`. This file is used to create global variables if\nthe consuming application has turned off JSUglify code stripping.",
+      "line": 10,
+      "description": "Fountainhead's blueprint prints a friendly hello after install.",
       "is_constructor": 1,
       "extends": "EmberCLI.Blueprint"
     },
@@ -987,6 +1194,47 @@
         "type": "Object"
       }
     },
+    "DataTypes.GenerateSrcFile": {
+      "name": "DataTypes.GenerateSrcFile",
+      "shortname": "DataTypes.GenerateSrcFile",
+      "classitems": [],
+      "plugins": [],
+      "extensions": [],
+      "plugin_for": [],
+      "extension_for": [
+        "generateFountainheadData"
+      ],
+      "module": "Lib",
+      "namespace": "",
+      "file": "lib/data-types/generate-src-file.js",
+      "line": 5,
+      "description": "Handle syntax highlighting and creating meta information for a src file",
+      "is_constructor": 1,
+      "experimental": "",
+      "params": [
+        {
+          "name": "guideOptions",
+          "description": "Options for generating guide data",
+          "type": "Object",
+          "props": [
+            {
+              "name": "fileContents",
+              "description": "Contents of the guide in a string",
+              "type": "String"
+            },
+            {
+              "name": "guidePath",
+              "description": "File path to guide src",
+              "type": "String"
+            }
+          ]
+        }
+      ],
+      "return": {
+        "description": "Return an object with guide data in the form of:\n                 `{ attributes, body }`\n                 With the body parsed for markdown and glimmer contents",
+        "type": "Object"
+      }
+    },
     "DataTypes.GenerateModules": {
       "name": "DataTypes.GenerateModules",
       "shortname": "DataTypes.GenerateModules",
@@ -1013,30 +1261,6 @@
         "description": "Returns object: `{ modulesMeta, modulesDatas }` for saving",
         "type": "Object"
       }
-    },
-    "DataTypes.GenerateSrcFile": {
-      "name": "DataTypes.GenerateSrcFile",
-      "shortname": "DataTypes.GenerateSrcFile",
-      "classitems": [],
-      "plugins": [],
-      "extensions": [],
-      "plugin_for": [],
-      "extension_for": [
-        "generateFountainheadData"
-      ],
-      "module": "Lib",
-      "namespace": "",
-      "file": "lib/data-types/generate-src-file.js",
-      "line": 5,
-      "description": "Handle syntax highlighting and creating meta information for a src file",
-      "is_constructor": 1,
-      "params": [
-        {
-          "name": "filePath",
-          "description": "File filepath from class definition",
-          "type": "String"
-        }
-      ]
     },
     "createDirs": {
       "name": "createDirs",
@@ -1112,7 +1336,7 @@
       "module": "Lib",
       "namespace": "",
       "file": "lib/generate-fountainhead-data.js",
-      "line": 9,
+      "line": 12,
       "description": "This module handles coordinating parsing/reading/saving all of the individual\nFountainhead data files after the configs have been validated and the raw\nYUIDoc data has been generated.\n\nModule should:\n- create and populate `docsMeta` that will be saved as `meta.json`\n- generate decorated modules files\n- generate decorated class files\n- generate decorated src file files\n\nNOTE: When switching doc generation from an executable to a function call\nall file operations had to be changed to a synchronous operation b/c the ember\ncommand finishes before the async file operations are complete and the contents\nare not written to file. This can be switched back to an async method by\nassembling and returning a promise.all for all async file calls",
       "is_constructor": 1,
       "uses": [
@@ -1155,6 +1379,54 @@
         "decorateConfig",
         "createDirs",
         "generateFountainheadData"
+      ],
+      "params": [
+        {
+          "name": "config",
+          "description": "Fountainhead configuration",
+          "type": "Object",
+          "props": [
+            {
+              "name": "env",
+              "description": "Execution environment",
+              "type": "String"
+            }
+          ]
+        }
+      ]
+    },
+    "logger": {
+      "name": "logger",
+      "shortname": "logger",
+      "classitems": [],
+      "plugins": [],
+      "extensions": [],
+      "plugin_for": [],
+      "extension_for": [],
+      "module": "Lib",
+      "namespace": "",
+      "file": "lib/logger.js",
+      "line": 7,
+      "description": "Logger method that takes in YUIDoc warnings array and checks those warnings\nagainst special features that we support. This allows us to use special tags\nfor Ember apps, and still support logging for incorrect tags, but suppress\nwarnings for unknown tags we have added",
+      "is_constructor": 1,
+      "params": [
+        {
+          "name": "options",
+          "description": "Contains logger options and data to handle",
+          "type": "Object",
+          "props": [
+            {
+              "name": "warnings",
+              "description": "YUIDoc generated warnings array of type: `{ message, line }`",
+              "type": "Array"
+            },
+            {
+              "name": "whiteListTags",
+              "description": "Tags whitelisted for support in Ember Fountainhead",
+              "type": "Array"
+            }
+          ]
+        }
       ]
     },
     "parseMarkdown": {
@@ -1168,7 +1440,7 @@
       "module": "Lib",
       "namespace": "",
       "file": "lib/parse-markdown.js",
-      "line": 6,
+      "line": 11,
       "description": "Handle parsing markdown using [Prism](http://prismjs.com/)",
       "is_constructor": 1,
       "params": [
@@ -1182,67 +1454,70 @@
         "description": "HTML string parsed from passed markdown",
         "type": "String"
       }
-    },
-    "readWatchmanConfig": {
-      "name": "readWatchmanConfig",
-      "shortname": "readWatchmanConfig",
-      "classitems": [],
-      "plugins": [],
-      "extensions": [],
-      "plugin_for": [],
-      "extension_for": [],
-      "module": "Lib",
-      "namespace": "",
-      "file": "lib/read-watchman-config.js",
-      "line": 6,
-      "description": "Parses an ember-cli project's .watchmanconfig file and converts to JSON",
-      "is_constructor": 1,
-      "params": [
-        {
-          "name": "watchmanConfigFilepath",
-          "description": "The filepath for a .watchmanconfig file",
-          "type": "String"
-        }
-      ],
-      "return": {
-        "description": "The .watchmanconfig file converted to JSON",
-        "type": "Object"
-      }
-    },
-    "updateWatchmanConfig": {
-      "name": "updateWatchmanConfig",
-      "shortname": "updateWatchmanConfig",
-      "classitems": [],
-      "plugins": [],
-      "extensions": [],
-      "plugin_for": [],
-      "extension_for": [],
-      "module": "Lib",
-      "namespace": "",
-      "file": "lib/update-watchman-config.js",
-      "line": 9,
-      "description": "Adds a new filepath to a ember addon projects .watchmanconfig file to\nprevent live reload from going into an infinite loop when docs are built\ninto an addon's dummy/public folder.",
-      "is_constructor": 1,
-      "params": [
-        {
-          "name": "watchmanConfig",
-          "description": "The .watchmanconfig file object",
-          "type": "Object"
-        },
-        {
-          "name": "watchmanConfigFilepath",
-          "description": "The filepath for a .watchmanconfig file",
-          "type": "String"
-        }
-      ],
-      "return": {
-        "description": "",
-        "type": "Undefined"
-      }
     }
   },
   "elements": {},
   "classitems": [
+    {
+      "file": "addon/components/api-navigation/logo.js",
+      "line": 18,
+      "description": "Path to a custom logo, can be set in your\n[<span class='mono'>fountainhead.js</span>](/guides/configuration) file.",
+      "itemtype": "property",
+      "name": "logo",
+      "type": "{?string}",
+      "passed": "APINavigation",
+      "class": "APINavigation.Logo"
+    },
+    {
+      "file": "addon/components/api-navigation/logo.js",
+      "line": 29,
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "default": "''",
+      "class": "APINavigation.Logo"
+    },
+    {
+      "file": "addon/components/api-navigation/section.js",
+      "line": 18,
+      "description": "Array of documentation items to create links for. Each item should be of\nform:\n```json\n{\n  name: 'Item name - used as text for anchor',\n  type: 'Either classes or modules'\n}\n```",
+      "itemtype": "property",
+      "name": "items",
+      "type": "{Array}",
+      "passed": "APINavigation",
+      "required": 1,
+      "class": "APINavigation.Section"
+    },
+    {
+      "file": "addon/components/api-navigation/section.js",
+      "line": 33,
+      "description": "Section header text content",
+      "itemtype": "property",
+      "name": "title",
+      "type": "{string}",
+      "passed": "",
+      "optional": 1,
+      "default": "''",
+      "class": "APINavigation.Section"
+    },
+    {
+      "file": "addon/components/api-navigation/section.js",
+      "line": 45,
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "default": "['nav-section']",
+      "class": "APINavigation.Section"
+    },
+    {
+      "file": "addon/components/api-navigation/section.js",
+      "line": 51,
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "default": "'section'",
+      "class": "APINavigation.Section"
+    },
     {
       "file": "addon/components/fountainhead-class/header.js",
       "line": 16,
@@ -1309,7 +1584,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 24,
+      "line": 23,
       "description": "Array of *ALL* items for this class. Used to find the type when an item is\nspecified in a query param.",
       "itemtype": "property",
       "name": "classitems",
@@ -1319,7 +1594,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 32,
+      "line": 31,
       "description": "This class' array of event documentation items.",
       "itemtype": "property",
       "name": "event",
@@ -1330,7 +1605,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 40,
+      "line": 39,
       "description": "Item query param passed down from controller. When this property is present,\nor changes handle scrolling to the item. When the specified doc class is\nthe same but the item query param is different the model hooks will not be\ncalled, so we need to handle scrolling to the item when it changes.",
       "itemtype": "property",
       "name": "item",
@@ -1341,7 +1616,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 51,
+      "line": 50,
       "description": "This class' array of method documentation items.",
       "itemtype": "property",
       "name": "method",
@@ -1352,7 +1627,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 59,
+      "line": 58,
       "description": "Name of the class. Is checked in `didUpdateAttrs` to know if the tabs\nshould be reset to the index panel",
       "itemtype": "property",
       "name": "name",
@@ -1362,7 +1637,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 67,
+      "line": 66,
       "description": "This class' array of property documentation items.",
       "itemtype": "property",
       "name": "property",
@@ -1373,7 +1648,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 79,
+      "line": 78,
       "description": "The currently active tab. This is controlled by this component to allow\nus to change the tab whenever a documentation item is clicked in the index\npanel.",
       "itemtype": "property",
       "name": "activeTab",
@@ -1385,7 +1660,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 89,
+      "line": 88,
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
@@ -1394,7 +1669,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 95,
+      "line": 94,
       "description": "The panel that that the tabs should render on creation. The tabs component\ntracks this separately and it needs to be updated separately when a class\npage is loaded with an item query parameter.",
       "itemtype": "property",
       "name": "defaultTab",
@@ -1404,7 +1679,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 108,
+      "line": 107,
       "description": "Internal method to handle selecting a tab panel and then scrolling to an\nitem in that panel.\n\nMethod will:\n- Change to the panel matching the doc item type\n- Scroll to that item using the itemtype and name to construct the DOM id",
       "itemtype": "method",
       "name": "_scrollToItem",
@@ -1433,7 +1708,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 146,
+      "line": 145,
       "description": "Handles finding the classitem model using the `item` query param value.\nIf a classitem is found, initiate a scroll.",
       "itemtype": "method",
       "name": "_scrollToQueryParamItem",
@@ -1450,22 +1725,15 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 176,
+      "line": 175,
       "description": "Handle resetting tabs container to the index panel any time that this\ncomponent's attrs update. The only props passed in to this component are\nthe class items for the container, so we know if they change in any way\nthat this is the right time to update the tabs panel.\n\nNOTE: GUESS WHAT! This hook doens't only get called when passed props\nchange! There is some crazy behavior where this hook will get called ONCE\nand only ONCE when an internal property changes after the props for this\ncomponent has changed. Super weird. For now we're 'fixing' it by also\npassing in the class name and using that as a check to reset the `activeTab`",
       "itemtype": "event",
       "name": "didUpdateAttrs",
-      "params": [
-        {
-          "name": "attrs",
-          "description": "Object with `oldAttrs` and `newAttrs`",
-          "type": "Object"
-        }
-      ],
       "class": "FountainheadClass.ItemsContainer"
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 202,
+      "line": 209,
       "description": "Check for a passed `item` query param. When it exists call\n{{cross-link class='FountainheadClass.ItemsContainer' item='_scrollToQueryParamItem'}}\nto scroll to that cross linked item.",
       "itemtype": "method",
       "name": "init",
@@ -1473,7 +1741,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 218,
+      "line": 225,
       "description": "Action bound to each documentation item in the index panel. Clicking any\nitem will trigger this with the documentation item as an argument. Use\nthe passed doc item to internally call\n{{cross-link class='FountainheadClass.ItemsContainer' item='_scrollToItem'}}\nto scroll to clicked item.",
       "itemtype": "method",
       "name": "goToItem",
@@ -1501,7 +1769,7 @@
     },
     {
       "file": "addon/components/fountainhead-class/items-container.js",
-      "line": 233,
+      "line": 240,
       "description": "Closure action passed into the tab component. This action is called\nwhenever a tab is clicked with the id of the tab. Use this to update the\ncontrolling `activeTab` property for the tabs DDAU style.",
       "itemtype": "method",
       "name": "tabsChanged",
@@ -1530,7 +1798,7 @@
       "name": "access",
       "type": "{string}",
       "default": "''",
-      "class": "FountaineadClass.Meta"
+      "class": "FountainheadClass.Meta"
     },
     {
       "file": "addon/components/fountainhead-class/meta.js",
@@ -1540,7 +1808,7 @@
       "name": "extends",
       "type": "{string}",
       "default": "''",
-      "class": "FountaineadClass.Meta"
+      "class": "FountainheadClass.Meta"
     },
     {
       "file": "addon/components/fountainhead-class/meta.js",
@@ -1550,7 +1818,7 @@
       "name": "file",
       "type": "{string}",
       "default": "''",
-      "class": "FountaineadClass.Meta"
+      "class": "FountainheadClass.Meta"
     },
     {
       "file": "addon/components/fountainhead-class/meta.js",
@@ -1560,7 +1828,7 @@
       "name": "module",
       "type": "{string}",
       "default": "''",
-      "class": "FountaineadClass.Meta"
+      "class": "FountainheadClass.Meta"
     },
     {
       "file": "addon/components/fountainhead-class/meta.js",
@@ -1570,7 +1838,7 @@
       "name": "line",
       "type": "{?number}",
       "default": "null",
-      "class": "FountaineadClass.Meta"
+      "class": "FountainheadClass.Meta"
     },
     {
       "file": "addon/components/fountainhead-class/meta.js",
@@ -1582,7 +1850,7 @@
       "name": "srcFileId",
       "type": "{string}",
       "default": "''",
-      "class": "FountaineadClass.Meta"
+      "class": "FountainheadClass.Meta"
     },
     {
       "file": "addon/components/fountainhead-class/meta.js",
@@ -1592,7 +1860,7 @@
       "name": "submodule",
       "type": "{string}",
       "default": "''",
-      "class": "FountaineadClass.Meta"
+      "class": "FountainheadClass.Meta"
     },
     {
       "file": "addon/components/fountainhead-class/meta.js",
@@ -1602,7 +1870,7 @@
       "name": "uses",
       "type": "{Array}",
       "default": "[]",
-      "class": "FountaineadClass.Meta"
+      "class": "FountainheadClass.Meta"
     },
     {
       "file": "addon/components/fountainhead-class/meta.js",
@@ -1611,7 +1879,7 @@
       "name": "classNames",
       "type": "{Array.<string>}",
       "default": "['fh-class-meta']",
-      "class": "FountaineadClass.Meta"
+      "class": "FountainheadClass.Meta"
     },
     {
       "file": "addon/components/fountainhead-class/meta.js",
@@ -1620,7 +1888,25 @@
       "name": "tagName",
       "type": "{string}",
       "default": "'div'",
-      "class": "FountaineadClass.Meta"
+      "class": "FountainheadClass.Meta"
+    },
+    {
+      "file": "addon/components/fountainhead-pages/api-index.js",
+      "line": 16,
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "default": "''",
+      "class": "FountainheadPages.APIIndex"
+    },
+    {
+      "file": "addon/components/fountainhead-pages/api.js",
+      "line": 31,
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "default": "''",
+      "class": "FountainheadPages.API"
     },
     {
       "file": "addon/components/fountainhead-pages/class.js",
@@ -1644,8 +1930,17 @@
       "class": "FountainheadPages.Class"
     },
     {
+      "file": "addon/components/fountainhead-pages/class.js",
+      "line": 35,
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "default": "''",
+      "class": "FountainheadPages.Class"
+    },
+    {
       "file": "addon/components/fountainhead-pages/file.js",
-      "line": 12,
+      "line": 14,
       "description": "JSON stringified file generated by documentation script.",
       "itemtype": "property",
       "name": "file",
@@ -1654,8 +1949,36 @@
       "class": "FountainheadPages.File"
     },
     {
+      "file": "addon/components/fountainhead-pages/file.js",
+      "line": 24,
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "default": "''",
+      "class": "FountainheadPages.File"
+    },
+    {
+      "file": "addon/components/fountainhead-pages/guide.js",
+      "line": 17,
+      "description": "Guide backing model matching structure:\n```javascript\n{\n  id\n  attributes\n  body,\n}\n```",
+      "itemtype": "property",
+      "name": "file",
+      "type": "{string}",
+      "default": "''",
+      "class": "FountainheadPages.Guide"
+    },
+    {
+      "file": "addon/components/fountainhead-pages/guide.js",
+      "line": 34,
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "default": "''",
+      "class": "FountainheadPages.Guide"
+    },
+    {
       "file": "addon/components/fountainhead-pages/module.js",
-      "line": 13,
+      "line": 15,
       "description": "Module model content",
       "itemtype": "property",
       "name": "module",
@@ -1665,72 +1988,44 @@
     },
     {
       "file": "addon/components/fountainhead-pages/module.js",
-      "line": 24,
+      "line": 25,
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "default": "''",
+      "class": "FountainheadPages.Module"
+    },
+    {
+      "file": "addon/components/fountainhead-pages/module.js",
+      "line": 34,
       "description": "Handle nulling out properties `submodules` and `classes` if they don't have\nany keys.",
       "itemtype": "event",
       "name": "didReceiveAttrs",
       "class": "FountainheadPages.Module"
     },
     {
-      "file": "addon/components/fountainhead-sidebar/sidebar.js",
-      "line": 18,
-      "description": "Fountainhead meta passed from service. Used to calculate `stringForAriaHidden`\nto hide sidebar when there is no data.",
+      "file": "addon/components/api-navigation.js",
+      "line": 16,
+      "description": "Fountainhead meta passed from service",
       "itemtype": "property",
       "name": "meta",
-      "type": "{?Object}",
-      "default": "null",
-      "class": "FountainheadSidebar.Sidebar"
+      "type": "{Object}",
+      "passed": "Fountainhead",
+      "required": 1,
+      "class": "APINavigation"
     },
     {
-      "file": "addon/components/fountainhead-sidebar/sidebar.js",
-      "line": 30,
-      "itemtype": "property",
-      "name": "attributeBindings",
-      "type": "{Array}",
-      "default": "['stringForAriaHidden:aria-hidden']",
-      "class": "FountainheadSidebar.Sidebar"
-    },
-    {
-      "file": "addon/components/fountainhead-sidebar/sidebar.js",
-      "line": 36,
-      "itemtype": "property",
-      "name": "classNames",
-      "type": "{Array}",
-      "default": "['fh-sidebar']",
-      "class": "FountainheadSidebar.Sidebar"
-    },
-    {
-      "file": "addon/components/fountainhead-sidebar/sidebar.js",
-      "line": 42,
+      "file": "addon/components/api-navigation.js",
+      "line": 27,
       "itemtype": "property",
       "name": "tagName",
       "type": "{string}",
-      "default": "'nav'",
-      "class": "FountainheadSidebar.Sidebar"
+      "default": "''",
+      "class": "APINavigation"
     },
     {
-      "file": "addon/components/fountainhead-sidebar/sidebar.js",
-      "line": 52,
-      "description": "Fountainhead meta is passed into the sidebar. When there is no data, then\nwe haven't run the documentation scripts yet, so we need to hide the sidebar\nusing aria-hidden. Convert presence of meta data to string of boolean that\ncan be used for aria-hidden",
-      "itemtype": "property",
-      "name": "stringForAriaHidden",
-      "type": "{string}",
-      "return": {
-        "description": "Returns either string of `true` or `false` dependent on\n                 presence of meta",
-        "type": "String"
-      },
-      "class": "FountainheadSidebar.Sidebar",
-      "subprops": [
-        {
-          "name": "meta",
-          "description": "Fountainhead meta passed from service",
-          "type": "Object"
-        }
-      ]
-    },
-    {
-      "file": "addon/components/fountainhead-sidebar/sidebar.js",
-      "line": 71,
+      "file": "addon/components/api-navigation.js",
+      "line": 37,
       "description": "Method to filter on doc elements for search.",
       "itemtype": "method",
       "name": "doFilter",
@@ -1745,53 +2040,63 @@
         "description": "",
         "type": "Undefined"
       },
-      "class": "FountainheadSidebar.Sidebar"
+      "class": "APINavigation"
     },
     {
       "file": "addon/components/cross-link.js",
-      "line": 43,
+      "line": 71,
       "description": "Documentation Class to crosslink to.",
       "itemtype": "property",
       "name": "class",
-      "type": "{string}",
-      "required": 1,
+      "type": "{?string}",
       "passed": "",
       "class": "CrossLink"
     },
     {
       "file": "addon/components/cross-link.js",
-      "line": 51,
-      "description": "Class item to cross link to.\nas well.",
+      "line": 78,
+      "description": "Optionally specify an item (property/method) to cross link to on a class.",
       "itemtype": "property",
       "name": "item",
-      "type": "{string}",
+      "type": "{?string}",
       "passed": "",
       "class": "CrossLink"
     },
     {
       "file": "addon/components/cross-link.js",
-      "line": 59,
+      "line": 85,
       "description": "Documentation module to crosslink to.",
       "itemtype": "property",
       "name": "module",
-      "type": "{string}",
-      "required": 1,
+      "type": "{?string}",
       "passed": "",
       "class": "CrossLink"
     },
     {
       "file": "addon/components/cross-link.js",
-      "line": 67,
-      "description": "Anchor text for generated `link-to`. You can pass specific text if needed,\notherwise default text is generated:\n\n#### Defaults:\n- if module: _MODULE_NAME Module_\n- if class: _CLASS_NAME Class_\n- if class && item: _CLASS_NAME:ITEM_NAME Class_",
+      "line": 95,
+      "description": "Computed route passed to rendered `link-to` defined in {{c-l 'init'}}",
       "itemtype": "property",
-      "name": "text",
-      "type": "{string}",
-      "passed": "",
+      "name": "_route",
+      "type": "{?string}",
+      "access": "private",
+      "tagname": "",
       "class": "CrossLink"
     },
     {
       "file": "addon/components/cross-link.js",
-      "line": 84,
+      "line": 102,
+      "description": "Computed model ID passed to rendered `link-to` defined in {{c-l 'init'}}",
+      "itemtype": "property",
+      "name": "_modelID",
+      "type": "{?string}",
+      "access": "private",
+      "tagname": "",
+      "class": "CrossLink"
+    },
+    {
+      "file": "addon/components/cross-link.js",
+      "line": 109,
       "itemtype": "property",
       "name": "tagName",
       "type": "{string}",
@@ -1800,8 +2105,8 @@
     },
     {
       "file": "addon/components/cross-link.js",
-      "line": 94,
-      "description": "Validate passed properties during init and warn if they're invalid. This\nprevents the component from creating an invalid `link-to`.\n\nChecks for a passed\n{{cross-link class='Crosslink' item='text'}} and sets default\ntext if unspecified",
+      "line": 118,
+      "description": "Handle picking the link to route and model id based on presence of passed\nproperties. If a module or class is not passed look up the current route\nand model id on the router.",
       "itemtype": "method",
       "name": "init",
       "class": "CrossLink"
@@ -1936,22 +2241,26 @@
       "itemtype": "property",
       "name": "brand",
       "type": "{string}",
+      "passed": "",
+      "optional": 1,
       "default": "''",
       "class": "FountainheadButton"
     },
     {
       "file": "addon/components/fountainhead-button.js",
-      "line": 40,
+      "line": 42,
       "description": "Pass true to create a button that looks and behaves like a link. This is\nuseful for creating accessible interaction targets.",
       "itemtype": "property",
       "name": "link",
       "type": "{Boolean}",
+      "passed": "",
+      "optional": 1,
       "default": "false",
       "class": "FountainheadButton"
     },
     {
       "file": "addon/components/fountainhead-button.js",
-      "line": 52,
+      "line": 56,
       "description": "Computed css class bound to component. Handled by component to allow for\nflexibility in future updates to branding class names",
       "itemtype": "property",
       "name": "brandClass",
@@ -1966,7 +2275,7 @@
     },
     {
       "file": "addon/components/fountainhead-button.js",
-      "line": 66,
+      "line": 70,
       "description": "ALLLLLLLLLLL the attributes you might need.\nNOTE: `role` should not be bound here. You can set the role of a button\nby passing an [ariaRole](http://emberjs.com/api/classes/Ember.Component.html#property_ariaRole) prop.",
       "itemtype": "property",
       "name": "attributeBindings",
@@ -1975,16 +2284,17 @@
     },
     {
       "file": "addon/components/fountainhead-button.js",
-      "line": 84,
-      "description": "Bind standard core classname for component: `core-button`",
+      "line": 88,
+      "description": "Bind standard core classname for component: `fountainhead-button`",
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
+      "default": "['fh-button', 'btn']",
       "class": "FountainheadButton"
     },
     {
       "file": "addon/components/fountainhead-button.js",
-      "line": 93,
+      "line": 98,
       "description": "Handle binding brand and link related css class names",
       "itemtype": "property",
       "name": "classNameBindings",
@@ -1993,7 +2303,7 @@
     },
     {
       "file": "addon/components/fountainhead-button.js",
-      "line": 102,
+      "line": 107,
       "description": "Button DOM element",
       "itemtype": "property",
       "name": "tagName",
@@ -2003,7 +2313,7 @@
     },
     {
       "file": "addon/components/fountainhead-button.js",
-      "line": 109,
+      "line": 114,
       "description": "Include type button for usability.",
       "itemtype": "property",
       "name": "type",
@@ -2013,7 +2323,7 @@
     },
     {
       "file": "addon/components/fountainhead-button.js",
-      "line": 120,
+      "line": 125,
       "description": "The `mouseDown` event is used for some utility/housekeeping methods because\nwe use the `click` event to pass in actions.\n\nHandle setting the outline on this element to `none` because we know this\nevent is only triggered by actual mouse clicks. Keyboard events don't trigger\nit, which is a convenient way to know we're good to hide the outline and\nmaintain usability for keyboard users. A++ accessibility!\n\nHandle checking for a tagging category and if one exists, fire a tag.\n\nIf you need to override this event, be sure to call `this._super();`",
       "itemtype": "event",
       "name": "mouseDown",
@@ -2038,6 +2348,15 @@
       "description": "Repository URL from fountainhead configurations. If a URL has been specified\nin the configs or the `package.json` this github logo will show with a link\nto the repo",
       "itemtype": "property",
       "name": "repository",
+      "type": "{string}",
+      "default": "''",
+      "class": "FountainheadRepoLink"
+    },
+    {
+      "file": "addon/components/fountainhead-repo-link.js",
+      "line": 26,
+      "itemtype": "property",
+      "name": "tagName",
       "type": "{string}",
       "default": "''",
       "class": "FountainheadRepoLink"
@@ -2139,21 +2458,65 @@
       "description": "Whenever attrs are received fire the `_generateDescription` method to\ngenerate a partial that will be rendered.",
       "itemtype": "event",
       "name": "didReceiveAttrs",
+      "class": "FountainheadRuntimeDescription"
+    },
+    {
+      "file": "addon/components/fountainhead-state.js",
+      "line": 52,
+      "description": "Boolean state tracking property. Use this to handle show/hide status.\n{{if state 'state' 'no-state'}}\n{{#fountainhead-button click=stateActions.toggleState}}Click{{/fountainhead-button}}",
+      "itemtype": "property",
+      "name": "active",
+      "type": "{Boolean}",
+      "class": "FountainheadState"
+    },
+    {
+      "file": "addon/components/fountainhead-state.js",
+      "line": 60,
+      "description": "Rad State is a purely functional component with no rendered output of its\nown, so it doesn't need a root element cluttering up the DOM when it's\nbeing used.\n{{if state 'state' 'no-state'}}\n{{#fountainhead-button click=stateActions.toggleState}}Click{{/fountainhead-button}}",
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "class": "FountainheadState"
+    },
+    {
+      "file": "addon/components/fountainhead-state.js",
+      "line": 73,
+      "description": "Actions hash",
+      "itemtype": "property",
+      "name": "actions",
+      "type": "{Object}",
+      "class": "FountainheadState"
+    },
+    {
+      "file": "addon/components/fountainhead-state.js",
+      "line": 79,
+      "description": "Sets the {{c-l 'active'}} property to false.",
+      "itemtype": "method",
+      "name": "closeModal",
+      "class": "FountainheadState"
+    },
+    {
+      "file": "addon/components/fountainhead-state.js",
+      "line": 86,
+      "description": "Sets the {{c-l 'active'}} property to true.",
+      "itemtype": "method",
+      "name": "openModal",
+      "class": "FountainheadState"
+    },
+    {
+      "file": "addon/components/fountainhead-state.js",
+      "line": 93,
+      "description": "Sets the {{c-l 'active'}} property to passed state.",
+      "itemtype": "method",
+      "name": "toggleState",
       "params": [
         {
-          "name": "attrs",
-          "description": "Ember attrs object",
-          "type": "Object",
-          "props": [
-            {
-              "name": "newAttrs",
-              "description": "The new attrs received",
-              "type": "Object"
-            }
-          ]
+          "name": "state",
+          "description": "State to set active to",
+          "type": "Boolean"
         }
       ],
-      "class": "FountainheadRuntimeDescription"
+      "class": "FountainheadState"
     },
     {
       "file": "addon/components/fountainhead-svg.js",
@@ -2162,58 +2525,62 @@
       "itemtype": "property",
       "name": "filePath",
       "type": "{string}",
+      "passed": "",
+      "optional": 1,
       "default": "assets/svg-defs.svg",
       "class": "FountainheadSVG"
     },
     {
       "file": "addon/components/fountainhead-svg.js",
-      "line": 20,
-      "description": "The id of the svg.",
+      "line": 22,
+      "description": "External SVG definitions file reference SVG id.",
       "itemtype": "property",
       "name": "svgId",
       "type": "{string}",
+      "passed": "",
+      "required": 1,
       "class": "FountainheadSVG"
     },
     {
       "file": "addon/components/fountainhead-svg.js",
-      "line": 30,
-      "description": "Allow direct binding of `data-test` attributes so that icons can be\ndirectly targeted in automated testing.",
+      "line": 33,
       "itemtype": "property",
       "name": "attributeBindings",
       "type": "{Array}",
+      "default": "['data-test']",
       "class": "FountainheadSVG"
     },
     {
       "file": "addon/components/fountainhead-svg.js",
-      "line": 38,
-      "description": "Class names: `core-svg`",
+      "line": 39,
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
+      "default": "['fh-svg']",
       "class": "FountainheadSVG"
     },
     {
       "file": "addon/components/fountainhead-svg.js",
-      "line": 44,
-      "description": "Bound classNames: `svgId`",
+      "line": 45,
       "itemtype": "property",
       "name": "classNameBindings",
       "type": "{Array}",
+      "default": "['svgId']",
       "class": "FountainheadSVG"
     },
     {
       "file": "addon/components/fountainhead-svg.js",
-      "line": 50,
-      "description": "SVG DOM element",
+      "line": 51,
       "itemtype": "property",
       "name": "tagName",
       "type": "{string}",
+      "default": "'svg'",
       "class": "FountainheadSVG"
     },
     {
       "file": "addon/components/fountainhead-tabs-content.js",
       "line": 38,
-      "description": "The id of the currently active tab in the scope of the core-tabs component.\nThis is provided privately in the `core-tabs` yield hash.",
+      "description": "The id of the currently active tab in the scope of the\n`fountainhead-tabs` component. This is provided privately in the\n`fountainhead-tabs` yield hash.",
       "itemtype": "property",
       "name": "activeId",
       "type": "{String}",
@@ -2222,7 +2589,7 @@
     },
     {
       "file": "addon/components/fountainhead-tabs-content.js",
-      "line": 46,
+      "line": 47,
       "description": "Whether this tab should be hidden from view. Useful for situations where\na tab needs to exist in a particular place in the tab ordering but may\nnot have the data it needs to display information at the time when\n`registerTab` is invoked. This allows you to make sure your tab can be\nhidden while preserving its place in the list.",
       "itemtype": "property",
       "name": "hidden",
@@ -2231,7 +2598,7 @@
     },
     {
       "file": "addon/components/fountainhead-tabs-content.js",
-      "line": 61,
+      "line": 62,
       "description": "Aria role `tabpanel` is bound for A++ accessibility.",
       "itemtype": "property",
       "name": "ariaRole",
@@ -2241,7 +2608,7 @@
     },
     {
       "file": "addon/components/fountainhead-tabs-content.js",
-      "line": 68,
+      "line": 69,
       "description": "Bound attributes:\n- `data-test`: for precise testing identification\n- `_hidden`: to hide this tab if it is not selected or if prop hidden is true",
       "itemtype": "property",
       "name": "attributeBindings",
@@ -2250,7 +2617,7 @@
     },
     {
       "file": "addon/components/fountainhead-tabs-content.js",
-      "line": 76,
+      "line": 77,
       "description": "Class names: `tabs-content`",
       "itemtype": "property",
       "name": "classNames",
@@ -2259,7 +2626,7 @@
     },
     {
       "file": "addon/components/fountainhead-tabs-content.js",
-      "line": 82,
+      "line": 83,
       "description": "Computed `_hidden` accounts for whether the tab is selected (by checking\n`activeId`) && if this tab has been flagged to be hidden with property\n`hidden`",
       "itemtype": "property",
       "name": "_hidden",
@@ -2283,8 +2650,8 @@
     },
     {
       "file": "addon/components/fountainhead-tabs-content.js",
-      "line": 98,
-      "description": "The button label text of this tab. This will be passed up via a closure\naction to the containing `core-tabs` component.",
+      "line": 99,
+      "description": "The button label text of this tab. This will be passed up via a closure\naction to the containing `fountainhead-tabs` component.",
       "itemtype": "property",
       "name": "label",
       "type": "{String}",
@@ -2293,7 +2660,7 @@
     },
     {
       "file": "addon/components/fountainhead-tabs-content.js",
-      "line": 107,
+      "line": 108,
       "description": "Use this attribute to place a custom data-test attribute on the tab button\nfor this tab. This will allow easier, specific/direct targeting of clicking\nthis tab in automated testing.",
       "itemtype": "property",
       "name": "tabDataTest",
@@ -2302,7 +2669,7 @@
     },
     {
       "file": "addon/components/fountainhead-tabs-content.js",
-      "line": 120,
+      "line": 121,
       "description": "Handle registering with the tabs container on int by firing `registerTab`\nclosure action with this tab's data.",
       "itemtype": "event",
       "name": "init",
@@ -2310,7 +2677,7 @@
     },
     {
       "file": "addon/components/fountainhead-tabs-content.js",
-      "line": 138,
+      "line": 139,
       "description": "Actions Up: When something changes in this component we need to let the\ncontainer tabs know by firing the `updateTab` closure action with this\ntabs changed data.\n\n_(Currently the only change we're notifying on is the `hidden` prop)_",
       "itemtype": "event",
       "name": "didUpdateAttrs",
@@ -2318,7 +2685,7 @@
     },
     {
       "file": "addon/components/fountainhead-tabs.js",
-      "line": 87,
+      "line": 88,
       "description": "The elementId of the currently opened tab. This determines which tab is active and\nwhich tab's content to display. If this is empty, no tabs are open.",
       "itemtype": "property",
       "name": "activeId",
@@ -2328,7 +2695,7 @@
     },
     {
       "file": "addon/components/fountainhead-tabs.js",
-      "line": 95,
+      "line": 96,
       "description": "Pass false to use tab style without primary color tabs.",
       "itemtype": "property",
       "name": "buttonStyle",
@@ -2338,7 +2705,7 @@
     },
     {
       "file": "addon/components/fountainhead-tabs.js",
-      "line": 102,
+      "line": 103,
       "description": "The optional elementId of the tab that should be shown by default. This is\nuseful for cases where the user has come into a page and is expecting one\nof the tabs to be shown by default.",
       "itemtype": "property",
       "name": "defaultTab",
@@ -2348,7 +2715,7 @@
     },
     {
       "file": "addon/components/fountainhead-tabs.js",
-      "line": 111,
+      "line": 112,
       "description": "Optional closure action that will be called whenever a tab is opened with\nthe id of that tab. Use this to create a controlled tabs instance.",
       "itemtype": "property",
       "name": "onChange",
@@ -2358,7 +2725,7 @@
     },
     {
       "file": "addon/components/fountainhead-tabs.js",
-      "line": 119,
+      "line": 120,
       "description": "Whether the page should scroll the tab context back to the top when one of\nthe tabs is clicked. This can be a nice convenience for usabilitee.",
       "itemtype": "property",
       "name": "scrollOnClick",
@@ -2368,8 +2735,8 @@
     },
     {
       "file": "addon/components/fountainhead-tabs.js",
-      "line": 127,
-      "description": "What the target of the `scrollOnClick` behavior should be. By default,\nthe entire page/body scrolls, however if this instance of `core-tabs` is\ncontained within a modal or some other scrollable sub-container, it may\nbe more desirable to execute a scroll against that instead of the entire\npage. Simply pass a standard jQuery-like selector in as a string.",
+      "line": 128,
+      "description": "What the target of the `scrollOnClick` behavior should be. By default,\nthe entire page/body scrolls, however if this instance of\n`fountainhead-tabs` is contained within a modal or some other scrollable\nsub-container, it may be more desirable to execute a scroll against that\ninstead of the entire page. Simply pass a standard jQuery-like selector in\nas a string.",
       "itemtype": "property",
       "name": "scrollTarget",
       "type": "{string}",
@@ -2378,7 +2745,7 @@
     },
     {
       "file": "addon/components/fountainhead-tabs.js",
-      "line": 142,
+      "line": 144,
       "description": "Bound attributes:\n- `data-test`: for precise testing identification",
       "itemtype": "property",
       "name": "attributeBindings",
@@ -2387,8 +2754,8 @@
     },
     {
       "file": "addon/components/fountainhead-tabs.js",
-      "line": 149,
-      "description": "Class names: `core-tabs`",
+      "line": 151,
+      "description": "Class names: `fountainhead-tabs`",
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
@@ -2396,7 +2763,7 @@
     },
     {
       "file": "addon/components/fountainhead-tabs.js",
-      "line": 155,
+      "line": 157,
       "description": "List of tabs to display. This is iterated through in the template to\nrendered the buttons that are used to change tabs.",
       "itemtype": "property",
       "name": "tabList",
@@ -2406,7 +2773,7 @@
     },
     {
       "file": "addon/components/fountainhead-tabs.js",
-      "line": 167,
+      "line": 169,
       "description": "Internal method that can be used with a `run.once` call to only add new tabs\nonce per run loop. Simply iterates through `_tabsToCreate` and pushes them\ninto the `tabList`. This is needed to prevent multiple renders in a single\nrun loop when all of the `content` subcomponents register themselves with\nthe container during init.",
       "itemtype": "method",
       "name": "_createTabsList",
@@ -2414,8 +2781,8 @@
     },
     {
       "file": "addon/components/fountainhead-tabs.js",
-      "line": 185,
-      "description": "When the component initializes, we set the `tabList` property to an array.\nThis prevents multiple instances of core-tabs on a given page from\ninheriting the same tabList array through prototype inheritance.",
+      "line": 187,
+      "description": "When the component initializes, we set the `tabList` property to an array.\nThis prevents multiple instances of `fountainhead-tabs` on a given page\nfrom inheriting the same tabList array through prototype inheritance.",
       "itemtype": "event",
       "name": "init",
       "return": {
@@ -2426,7 +2793,7 @@
     },
     {
       "file": "addon/components/fountainhead-tabs.js",
-      "line": 210,
+      "line": 212,
       "description": "Action to show a tab. Set `activeId` to the passed elementId. `activeId`\nis passed down to children content components",
       "itemtype": "method",
       "name": "showTab",
@@ -2441,7 +2808,7 @@
     },
     {
       "file": "addon/components/fountainhead-tabs.js",
-      "line": 232,
+      "line": 234,
       "description": "Closure action passed to content subcomponents that is called on init.\nEach child tab will register itself with this container. To ensure the\ntabList is only updated once per render, we proxy new tabs to the\n`_tabsToCreate` array and then push all of them to `tabList` using a\n`run.once` call to `_createTabsList`",
       "itemtype": "method",
       "name": "registerTab",
@@ -2456,7 +2823,7 @@
     },
     {
       "file": "addon/components/fountainhead-tabs.js",
-      "line": 246,
+      "line": 248,
       "description": "Closure action passed to content subcomponents that is called whenever\na tab has updated in a way this container needs to know of. Currently\nthis is only when a tab's `hidden` status changes.",
       "itemtype": "method",
       "name": "updateTab",
@@ -2491,26 +2858,64 @@
       "class": "FountainheadWelcome"
     },
     {
-      "file": "addon/controllers/docs/classes.js",
+      "file": "addon/components/guide-navigation.js",
+      "line": 16,
+      "description": "Fountainhead documentation meta. Component uses the `guides` meta to create\nlinks to each guide page.",
+      "itemtype": "property",
+      "name": "meta",
+      "type": "{Object}",
+      "passed": "Fountainhead",
+      "required": 1,
+      "class": "GuideNavigation"
+    },
+    {
+      "file": "addon/components/guide-navigation.js",
+      "line": 28,
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "default": "''",
+      "class": "GuideNavigation"
+    },
+    {
+      "file": "addon/controllers/api/classes.js",
       "line": 11,
       "itemtype": "property",
       "name": "queryParams",
       "type": "{Array}",
       "default": "['item']",
-      "class": "Docs.Classes"
+      "class": "API.Classes"
     },
     {
-      "file": "addon/controllers/docs/classes.js",
+      "file": "addon/controllers/api/classes.js",
       "line": 17,
       "description": "Item query param is available for scrolling to a doc item.",
       "itemtype": "property",
       "name": "item",
       "type": "{?string}",
       "default": "null",
-      "class": "Docs.Classes"
+      "class": "API.Classes"
     },
     {
-      "file": "addon/routes/docs/classes.js",
+      "file": "addon/controllers/api/modules.js",
+      "line": 14,
+      "itemtype": "property",
+      "name": "queryParams",
+      "type": "{Array}",
+      "default": "['item']",
+      "class": "API.Modules"
+    },
+    {
+      "file": "addon/controllers/api/modules.js",
+      "line": 20,
+      "itemtype": "property",
+      "name": "item",
+      "type": "{?string}",
+      "default": "null",
+      "class": "API.Modules"
+    },
+    {
+      "file": "addon/routes/api/classes.js",
       "line": 17,
       "description": "Fetches class' JSON at: `${this.get('fountainhead.apiNamespace')}/classes/${params.class_id}.json`",
       "itemtype": "method",
@@ -2533,10 +2938,10 @@
         "description": "jQuery ajax promise",
         "type": "Promise"
       },
-      "class": "Docs.Classes"
+      "class": "API.Classes"
     },
     {
-      "file": "addon/routes/docs/classes.js",
+      "file": "addon/routes/api/classes.js",
       "line": 27,
       "description": "We don't want the class `item` query param to be sticky. If it is, then you\ncan end up pre-scrolled to some previously crosslinked item when returning\nto a class.\n\nThe `resetController` hook is called anytime a route's model changes or the\nroute is exited, and is the recommended time to reset query param values on\na controller.",
       "itemtype": "method",
@@ -2558,18 +2963,18 @@
           "type": "Object"
         }
       ],
-      "class": "Docs.Classes"
+      "class": "API.Classes"
     },
     {
-      "file": "addon/routes/docs/classes.js",
+      "file": "addon/routes/api/classes.js",
       "line": 47,
       "description": "Reset page scroll on any transition. Note that Fountainhead is inside of\na fake page, so we scroll that instead of the body",
       "itemtype": "event",
       "name": "didTransition",
-      "class": "Docs.Classes"
+      "class": "API.Classes"
     },
     {
-      "file": "addon/routes/docs/files.js",
+      "file": "addon/routes/api/files.js",
       "line": 14,
       "description": "Fetches file's JSON at: `${this.get('fountainhead.apiNamespace')}/files/${params.file_id}.json`",
       "itemtype": "method",
@@ -2592,18 +2997,18 @@
         "description": "jQuery ajax promise",
         "type": "Promise"
       },
-      "class": "Docs.Files"
+      "class": "API.Files"
     },
     {
-      "file": "addon/routes/docs/files.js",
+      "file": "addon/routes/api/files.js",
       "line": 28,
       "description": "Reset page scroll on any transition. Note that Fountainhead is inside of\na fake page, so we scroll that instead of the body",
       "itemtype": "event",
       "name": "didTransition",
-      "class": "Docs.Files"
+      "class": "API.Files"
     },
     {
-      "file": "addon/routes/docs/modules.js",
+      "file": "addon/routes/api/modules.js",
       "line": 14,
       "description": "Fetches modules's JSON at: `${this.get('fountainhead.apiNamespace')}/modules/${params.file_id}.json`",
       "itemtype": "method",
@@ -2626,29 +3031,97 @@
         "description": "jQuery ajax promise",
         "type": "Promise"
       },
-      "class": "Docs.Modules"
+      "class": "API.Modules"
     },
     {
-      "file": "addon/routes/docs/modules.js",
-      "line": 28,
+      "file": "addon/routes/api/modules.js",
+      "line": 29,
       "description": "Reset page scroll on any transition. Note that Fountainhead is inside of\na fake page, so we scroll that instead of the body",
       "itemtype": "event",
       "name": "didTransition",
-      "class": "Docs.Modules"
+      "class": "API.Modules"
+    },
+    {
+      "file": "addon/routes/api.js",
+      "line": 14,
+      "description": "We check for and fetch meta data if needed in the parent routes of\nFountainhead. This lets consumers overwrite the `apiNamespace` if they\nneed before we request the meta data that drives Fountainhead.\n\nNOTE: We only fetch meta data if it isn't present yet.",
+      "itemtype": "method",
+      "name": "beforeModel",
+      "return": {
+        "description": "",
+        "type": "Promise|true"
+      },
+      "class": "API"
+    },
+    {
+      "file": "addon/routes/api.js",
+      "line": 34,
+      "description": "Reset page scroll on any transition. Note that Fountainhead is inside of\na fake page, so we scroll that instead of the body",
+      "itemtype": "event",
+      "name": "didTransition",
+      "class": "API"
+    },
+    {
+      "file": "addon/routes/guides.js",
+      "line": 14,
+      "description": "We check for and fetch meta data if needed in the parent routes of\nFountainhead. This lets consumers overwrite the `apiNamespace` if they\nneed before we request the meta data that drives Fountainhead.\n\nNOTE: We only fetch meta data if it isn't present yet.",
+      "itemtype": "method",
+      "name": "beforeModel",
+      "return": {
+        "description": "",
+        "type": "Promise|true"
+      },
+      "class": "Guides"
+    },
+    {
+      "file": "addon/routes/guides.js",
+      "line": 30,
+      "description": "Fetches modules's JSON at: `${this.get('fountainhead.apiNamespace')}/modules/${params.file_id}.json`",
+      "itemtype": "method",
+      "name": "model",
+      "params": [
+        {
+          "name": "params",
+          "description": "",
+          "type": "Object",
+          "props": [
+            {
+              "name": "guide_id",
+              "description": "Name of this class, use to fetch data",
+              "type": "String"
+            }
+          ]
+        }
+      ],
+      "return": {
+        "description": "jQuery ajax promise",
+        "type": "Promise"
+      },
+      "class": "Guides"
+    },
+    {
+      "file": "addon/routes/guides.js",
+      "line": 51,
+      "description": "Reset page scroll on any transition. Note that Fountainhead is inside of\na fake page, so we scroll that instead of the body",
+      "itemtype": "event",
+      "name": "didTransition",
+      "class": "Guides"
     },
     {
       "file": "addon/services/fountainhead.js",
-      "line": 18,
+      "line": 22,
       "description": "All Fountainhead API requests are prefixed with this namespace. If you\nexport your docs JSON files to a non-default location, or your application\nis served under a namespace you can overwrite this property to match your\nendpoint's root url namespace.",
       "itemtype": "property",
       "name": "apiNamespace",
       "type": "{string}",
+      "access": "public",
+      "tagname": "",
       "default": "'/docs'",
       "class": "Fountainhead"
     },
     {
       "file": "addon/services/fountainhead.js",
-      "line": 28,
+      "line": 33,
       "description": "Documentation meta fetched from `/meta.json`. Contains high level map\nof modules and classes available in documentation. Used for sidebar and\nmapping item and return types.\nThis property is initialized to null so that the sidebar has an explicit\nvalue to bind aria-hidden to. When there is no meta, there is no sidebar.",
       "itemtype": "property",
       "name": "meta",
@@ -2658,20 +3131,28 @@
     },
     {
       "file": "addon/services/fountainhead.js",
-      "line": 39,
+      "line": 44,
       "description": "Flag used by docs route to show getting started instructions if the call for\ndocumentation meta fails.",
       "itemtype": "property",
       "name": "metaError",
       "type": "{Boolean}",
+      "access": "public",
+      "tagname": "",
       "default": "false",
       "class": "Fountainhead"
     },
     {
       "file": "addon/services/fountainhead.js",
-      "line": 51,
-      "description": "When this service is loaded, handle fetching documentation meta data that\ndrives the sidebar && header. If there is an error we know tha we haven't\ngenerated documentation yet. The docs template will pick up the error and\ndisplay the getting started instructions.\n\nNOTE: the meta request needs to be wrapped in a `run.next` so that if a\nconsuming application needs to override the `apiNamespace` the meta call\nis made with the new namespace. Without the run loop, attempting to set\nthe namespace will initialize this service and call for meta before the\nnamespace update is complete and the request will use the default `/docs`\nnamespace.",
+      "line": 57,
+      "description": "Fires request for documentation meta data and returns the promise. This\nmethod is called in the `beforeModel` of either the `docs` or `guides`\nroute, whichever is entered first.\n\nNOTE: If the request fails service property {{cross-link item='metaError'}}\nwill be set to `true`.",
       "itemtype": "method",
-      "name": "init",
+      "name": "fetchMeta",
+      "access": "protected",
+      "tagname": "",
+      "return": {
+        "description": "",
+        "type": "Promise"
+      },
       "class": "Fountainhead"
     },
     {
@@ -2689,20 +3170,16 @@
     },
     {
       "file": "blueprints/ember-fountainhead/index.js",
-      "line": 31,
-      "description": "After install of addon read in consuming application's gitignore. If there\nisn't an entry for `vendor/feature-flags.js`, use node `fs` to append it.",
+      "line": 22,
+      "description": "Say a quick hello.",
       "itemtype": "method",
       "name": "afterInstall",
-      "return": {
-        "description": "",
-        "type": "Undefined"
-      },
       "class": "EmberFountainhead.Index",
       "module": "Blueprints"
     },
     {
       "file": "lib/create-dirs.js",
-      "line": 19,
+      "line": 20,
       "description": "Synchronous mkdir that handles creating a potentially nested directory",
       "itemtype": "method",
       "name": "mkdirSync",
@@ -2722,29 +3199,17 @@
     },
     {
       "file": "lib/decorate-config.js",
-      "line": 21,
-      "description": "Configuration entry should be an array of directory paths (YUIDoc can't\nparse individual files unfortunately). The default entry is `app` when the\nconsumer is an application and `addon` when the consumer is an addon.",
+      "line": 18,
+      "description": "Fountianhead default configurations are targeted at Ember applications and\ninclude a sane default for every option with the goal of being able to\ninstall and use the addon with zero configuration for simple/standard Ember\napps.\nTODO: Document defaults",
       "itemtype": "property",
-      "name": "entry",
-      "type": "{Array}",
-      "default": "['app'] | ['addon']",
-      "class": "decorateConfig",
-      "module": "Lib"
-    },
-    {
-      "file": "lib/decorate-config.js",
-      "line": 29,
-      "description": "Configuration output path should be a directory path. The default is `public/docs`\nwhen the consumer is an application and `tests/dummy/public/docs` when the\nconsumer is an addon (Outputting the docs to `/public` in an addon signals\nEmber CLI to bundle your docs into any consuming applications `/public` dir\nwhich is not the default behavior we want).",
-      "itemtype": "property",
-      "name": "outputPath",
-      "type": "{string}",
-      "default": "'public/docs' | 'tests/dummy/public/docs'",
+      "name": "defaultConfigurations",
+      "type": "{Object}",
       "class": "decorateConfig",
       "module": "Lib"
     },
     {
       "file": "lib/generate-fountainhead-data.js",
-      "line": 38,
+      "line": 41,
       "description": "Call to handle saving data to a file. Requires a file path and data to save.\nIf data is not a string, it will be stringified",
       "itemtype": "method",
       "name": "saveObjectToJSON",
@@ -2769,7 +3234,7 @@
     },
     {
       "file": "lib/generate-fountainhead-data.js",
-      "line": 63,
+      "line": 66,
       "description": "The `docsMeta` object is the guide for the documentation data. It contains\ndescriptions of the project as well as arrays of module and class routing\ninformation",
       "itemtype": "property",
       "name": "docsMeta",
@@ -2779,7 +3244,7 @@
     },
     {
       "file": "lib/index.js",
-      "line": 33,
+      "line": 35,
       "description": "Optional configs pulled from `fountainhead.js`",
       "itemtype": "property",
       "name": "fountainheadConfig",
@@ -2789,7 +3254,7 @@
     },
     {
       "file": "lib/index.js",
-      "line": 38,
+      "line": 40,
       "description": "Package JSON for project. Used to populate project description if not\ndefined in `fountainhead.js` config.",
       "itemtype": "property",
       "name": "packageJSON",
@@ -2799,7 +3264,7 @@
     },
     {
       "file": "lib/index.js",
-      "line": 66,
+      "line": 78,
       "description": "Raw YUIDoc JSON data generated using constructor exported by `yuidocjs`.\nCall new with options from config to pass configs to YUIDoc and call `run`\nto generate JSON",
       "itemtype": "property",
       "name": "yuidocJSON",
@@ -2809,7 +3274,7 @@
     },
     {
       "file": "lib/parse-markdown.js",
-      "line": 37,
+      "line": 43,
       "description": "Scans the description text for instances of markdown code blocks flagged\nas `\"glimmer\"` syntax. If any such instances are found, they are copied,\nstripped of their triple backticks and re-inserted into the\n`templateString` immediately after the original declaration. This allows\nfor functional copies of your code examples to be automatically rendered\ninto the description, without having to duplicate the code block itself.\n\nIf your functional code needs to have different setup to work correctly in\nthe Fountainhead context (for example, if you need to use `core-state` to\nset up sandboxed state and controls), simply use `\"handlebars\"` or no\nsyntax flag, and manually add the code block you want Fountainhead to\nrender after your example. Neato!",
       "itemtype": "method",
       "name": "_renderCodeBlocks",
@@ -2831,31 +3296,43 @@
   "warnings": [
     {
       "message": "unknown tag: passed",
-      "line": " addon/components/fountainhead-class/items-container.js:32"
+      "line": " addon/components/api-navigation/logo.js:18"
     },
     {
       "message": "unknown tag: passed",
-      "line": " addon/components/fountainhead-class/items-container.js:40"
+      "line": " addon/components/api-navigation/section.js:18"
     },
     {
       "message": "unknown tag: passed",
-      "line": " addon/components/fountainhead-class/items-container.js:51"
+      "line": " addon/components/api-navigation/section.js:33"
     },
     {
       "message": "unknown tag: passed",
-      "line": " addon/components/fountainhead-class/items-container.js:59"
+      "line": " addon/components/fountainhead-class/items-container.js:31"
     },
     {
       "message": "unknown tag: passed",
-      "line": " addon/components/fountainhead-class/items-container.js:67"
+      "line": " addon/components/fountainhead-class/items-container.js:39"
+    },
+    {
+      "message": "unknown tag: passed",
+      "line": " addon/components/fountainhead-class/items-container.js:50"
+    },
+    {
+      "message": "unknown tag: passed",
+      "line": " addon/components/fountainhead-class/items-container.js:58"
+    },
+    {
+      "message": "unknown tag: passed",
+      "line": " addon/components/fountainhead-class/items-container.js:66"
     },
     {
       "message": "unknown tag: action",
-      "line": " addon/components/fountainhead-class/items-container.js:218"
+      "line": " addon/components/fountainhead-class/items-container.js:225"
     },
     {
       "message": "unknown tag: action",
-      "line": " addon/components/fountainhead-class/items-container.js:233"
+      "line": " addon/components/fountainhead-class/items-container.js:240"
     },
     {
       "message": "unknown tag: passed",
@@ -2867,19 +3344,39 @@
     },
     {
       "message": "unknown tag: passed",
-      "line": " addon/components/cross-link.js:43"
+      "line": " addon/components/api-navigation.js:16"
     },
     {
       "message": "unknown tag: passed",
-      "line": " addon/components/cross-link.js:51"
+      "line": " addon/components/cross-link.js:71"
     },
     {
       "message": "unknown tag: passed",
-      "line": " addon/components/cross-link.js:59"
+      "line": " addon/components/cross-link.js:78"
     },
     {
       "message": "unknown tag: passed",
-      "line": " addon/components/cross-link.js:67"
+      "line": " addon/components/cross-link.js:85"
+    },
+    {
+      "message": "unknown tag: passed",
+      "line": " addon/components/fountainhead-button.js:33"
+    },
+    {
+      "message": "unknown tag: passed",
+      "line": " addon/components/fountainhead-button.js:42"
+    },
+    {
+      "message": "unknown tag: passed",
+      "line": " addon/components/fountainhead-svg.js:13"
+    },
+    {
+      "message": "unknown tag: passed",
+      "line": " addon/components/fountainhead-svg.js:22"
+    },
+    {
+      "message": "unknown tag: passed",
+      "line": " addon/components/guide-navigation.js:16"
     }
   ]
 }

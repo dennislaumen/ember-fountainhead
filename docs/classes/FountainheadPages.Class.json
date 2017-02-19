@@ -24,6 +24,16 @@
       "passed": "",
       "class": "FountainheadPages.Class",
       "srcFileId": "addon_components_fountainhead-pages_class.js"
+    },
+    {
+      "file": "addon/components/fountainhead-pages/class.js",
+      "line": 35,
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "default": "''",
+      "class": "FountainheadPages.Class",
+      "srcFileId": "addon_components_fountainhead-pages_class.js"
     }
   ],
   "plugins": [],
@@ -33,7 +43,7 @@
   "module": "Addon",
   "file": "addon/components/fountainhead-pages/class.js",
   "line": 4,
-  "description": "<p>Fountainhead <code>/doc/class</code> page component</p>\n",
+  "description": "<p>Fountainhead <code>/api/class</code> page component.</p>\n",
   "is_constructor": 1,
   "extends": "Ember.Component",
   "method": [],
@@ -58,6 +68,16 @@
       "type": "{?string}",
       "default": "null",
       "passed": "",
+      "class": "FountainheadPages.Class",
+      "srcFileId": "addon_components_fountainhead-pages_class.js"
+    },
+    {
+      "file": "addon/components/fountainhead-pages/class.js",
+      "line": 35,
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "default": "''",
       "class": "FountainheadPages.Class",
       "srcFileId": "addon_components_fountainhead-pages_class.js"
     }

@@ -4,7 +4,7 @@
   "classitems": [
     {
       "file": "lib/parse-markdown.js",
-      "line": 37,
+      "line": 43,
       "description": "<p>Scans the description text for instances of markdown code blocks flagged\nas <code>'glimmer'</code> syntax. If any such instances are found, they are copied,\nstripped of their triple backticks and re-inserted into the\n<code>templateString</code> immediately after the original declaration. This allows\nfor functional copies of your code examples to be automatically rendered\ninto the description, without having to duplicate the code block itself.</p>\n<p>If your functional code needs to have different setup to work correctly in\nthe Fountainhead context (for example, if you need to use <code>core-state</code> to\nset up sandboxed state and controls), simply use <code>'handlebars'</code> or no\nsyntax flag, and manually add the code block you want Fountainhead to\nrender after your example. Neato!</p>\n",
       "itemtype": "method",
       "name": "_renderCodeBlocks",
@@ -31,7 +31,7 @@
   "module": "Lib",
   "namespace": "",
   "file": "lib/parse-markdown.js",
-  "line": 6,
+  "line": 11,
   "description": "<p>Handle parsing markdown using <a href=\"http://prismjs.com/\">Prism</a></p>\n",
   "is_constructor": 1,
   "params": [
@@ -48,7 +48,7 @@
   "method": [
     {
       "file": "lib/parse-markdown.js",
-      "line": 37,
+      "line": 43,
       "description": "<p>Scans the description text for instances of markdown code blocks flagged\nas <code>'glimmer'</code> syntax. If any such instances are found, they are copied,\nstripped of their triple backticks and re-inserted into the\n<code>templateString</code> immediately after the original declaration. This allows\nfor functional copies of your code examples to be automatically rendered\ninto the description, without having to duplicate the code block itself.</p>\n<p>If your functional code needs to have different setup to work correctly in\nthe Fountainhead context (for example, if you need to use <code>core-state</code> to\nset up sandboxed state and controls), simply use <code>'handlebars'</code> or no\nsyntax flag, and manually add the code block you want Fountainhead to\nrender after your example. Neato!</p>\n",
       "itemtype": "method",
       "name": "_renderCodeBlocks",
