@@ -55,6 +55,8 @@ export default Component.extend({
    */
   tagName: 'section',
 
+  foo: 'hi',
+
   // Layout
   // ---------------------------------------------------------------------------
   layout: hbs`
@@ -63,11 +65,13 @@ export default Component.extend({
     {{/if}}
     {{! Optional array of links }}
     {{#each items as |item|}}
-      {{link-to
-        item.name
-        (concat 'api.' item.type)
-        item.name
-        classNames='item-link fh-element'}}
+      {{#if item.isVisible}}
+        {{link-to
+          item.name
+          (concat 'api.' item.type)
+          item.name
+          classNames='item-link fh-element'}}
+      {{/if}}
     {{/each}}
     {{! You can use a section in block form if you just need wrapping markup }}
     {{yield}}

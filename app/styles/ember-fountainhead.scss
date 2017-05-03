@@ -4,35 +4,35 @@
 
 // Base Setup
 // ---------------------------------------------------------------------------
-@import 'ember-fountainhead/themes/simple';
-@import 'ember-fountainhead/base/utils';
+@import "ember-fountainhead/themes/simple";
+@import "ember-fountainhead/base/utils";
 
 // Base Styles
 // ---------------------------------------------------------------------------
-@import 'ember-fountainhead/base/application';
-@import 'ember-fountainhead/base/typography';
-@import 'ember-fountainhead/base/code-blocks';
+@import "ember-fountainhead/base/application";
+@import "ember-fountainhead/base/typography";
+@import "ember-fountainhead/base/code-blocks";
 
 // Fountainhead Components
 // ---------------------------------------------------------------------------
-@import 'ember-fountainhead/components/tabs';
-@import 'ember-fountainhead/components/svg';
-@import 'ember-fountainhead/components/alerts';
-@import 'ember-fountainhead/components/fountainhead-header';
-@import 'ember-fountainhead/components/api-nav';
-@import 'ember-fountainhead/components/guide-nav';
-@import 'ember-fountainhead/components/runtime-description';
+@import "ember-fountainhead/components/tabs";
+@import "ember-fountainhead/components/svg";
+@import "ember-fountainhead/components/alerts";
+@import "ember-fountainhead/components/fountainhead-header";
+@import "ember-fountainhead/components/api-nav";
+@import "ember-fountainhead/components/guide-nav";
+@import "ember-fountainhead/components/runtime-description";
 
 // Pages
-@import 'ember-fountainhead/components/guide-page';
-@import 'ember-fountainhead/components/api-page';
-@import 'ember-fountainhead/components/module-page';
+@import "ember-fountainhead/components/guide-page";
+@import "ember-fountainhead/components/api-page";
+@import "ember-fountainhead/components/module-page";
 
 // Class Page
-@import 'ember-fountainhead/components/class/meta';
-@import 'ember-fountainhead/components/class/items-container';
-@import 'ember-fountainhead/components/class/item';
+@import "ember-fountainhead/components/class/meta";
+@import "ember-fountainhead/components/class/items-container";
+@import "ember-fountainhead/components/class/item";
 
 // Prism Panda Syntax Highlighting // TODO: make this optional && configurable
-@import 'ember-fountainhead/prism/prism-panda';
-@import 'ember-fountainhead/prism/prism-line-numbers';
+@import "ember-fountainhead/prism/prism-panda";
+@import "ember-fountainhead/prism/prism-line-numbers";

@@ -1,5 +1,7 @@
 import Component from 'ember-component';
+import Set from 'ember-metal/set';
 import hbs from 'htmlbars-inline-precompile';
+import $ from 'jquery';
 
 /**
  * Parent navigation component for API route. Requires the entire docs meta
@@ -31,17 +33,63 @@ export default Component.extend({
    */
   tagName: '',
 
+  // Methods
+  // ---------------------------------------------------------------------------
+
+  searchClassesAndItems(data, doUpdate) {
+    const checkItems = set => {
+      set.forEach(item => doUpdate(item));
+    };
+
+    checkItems(data.modules);
+    checkItems(data.classes);
+  },
+
+  // Hooks
+  // ---------------------------------------------------------------------------
+
+  didInsertElement() {
+    $('body').on('keyup.sidebarSearch', evt => {
+      if (evt.keyCode === 83) {
+        $('.fh-api-search-input input').focus();
+      }
+    });
+  },
+
+  didReceiveAttrs() {
+    this.send('clearMatches');
+  },
+
+  willDestroyElement() {
+    $('body').off('keyup.sidebarSearch');
+  },
+
   // Actions
   // ---------------------------------------------------------------------------
   actions: {
+    clearMatches() {
+      let data = this.get('meta');
+      const resetItems = items => {
+        items.forEach(thing => {
+          Set(thing, 'isVisible', true);
+        });
+      };
+
+      if (!data || !(data instanceof Object)) { return; }
+
+      resetItems(data.modules);
+      resetItems(data.classes);
+    },
+
     /**
      * Method to filter on doc elements for search.
      * @method doFilter
-     * @param {string} query The search query to filter on
+     * @param {Object} item The item to perform matching on or something I don't know
+     * @param {Boolean} matchFound Whether the item matches or not
      * @return {undefined}
      */
-    doFilter(query) {
-      // @TODO make this do a thing
+    markMatches(item, matchFound) {
+      Set(item, 'isVisible', matchFound);
     }
   },
 
@@ -51,12 +99,19 @@ export default Component.extend({
     <nav role='navigation' class='fh-api-navigation'>
       {{api-navigation/logo logo=meta.logo}}
 
-      {{! TODO: Make these work }}
-      {{!--
       {{#api-navigation/section title='Search'}}
-        {{api-navigation/search-bar onUpdate=(action 'doFilter')}}
+        {{fountainhead-omni-filter
+          classNames='fh-api-search-input'
+          inputClassNames='w-100'
+          dataSet=meta
+          matchOnFields='name'
+          placeholderText='Search API Classes'
+          traverseData=searchClassesAndItems
+          clearAction=(action 'clearMatches')
+          updateAction=(action 'markMatches')}}
       {{/api-navigation/section}}
 
+      {{!--
       {{#if meta.version}}
         {{TODO: This should be a link to this tag OR a version selector! }}
         {{api-navigation/section title=(concat 'tag: ' meta.version)}}

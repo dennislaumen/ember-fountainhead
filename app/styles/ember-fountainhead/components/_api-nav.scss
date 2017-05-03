@@ -12,12 +12,15 @@
   // Project Logo
   .project-logo-wrapper {
     display: flex;
-    justify-content: center;
-    background: $primary;
     margin-bottom: 4px;
+    background: $primary;
+
+    justify-content: center;
   }
 
-  .project-logo { max-width: 100%; }
+  .project-logo {
+    max-width: 100%;
+  }
 
   // Special Fountainhead Logo!!!
   .project-logo.fountainhead-logo {
@@ -27,42 +30,65 @@
 
   // Made with message at bottom
   .made-with {
-    background: $primary;
+    margin-top: auto;
     padding: 2em;
+    background: $primary;
     color: $white;
     text-align: center;
-    margin-top: auto;
   }
 
   // Section Header and Anchors
   // ---------------------------------------------------------------------------
 
   .section-header {
-    background-color: $primary;
-    color: $white;
     margin: 0;
-    text-transform: uppercase;
+    background-color: $primary;
     font-size: 14px;
     font-weight: normal;
+    color: $white;
+    text-transform: uppercase;
   }
 
   // sidebar ul li a
   .item-link {
-    border-bottom: 1px solid $ash;
     display: block;
-    font-size: 13px;
-    padding: 10px 20px 10px 45px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
     overflow: hidden;
+    padding: 10px 20px 10px 45px;
+    border-bottom: 1px solid $ash;
+    font-size: 13px;
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
 
     &:hover {
       background-color: $ash;
     }
 
     &.active {
-      color: $primary;
       font-weight: bold;
+      color: $primary;
+    }
+  }
+
+  // Search Field
+  // ---------------------------------------------------------------------------
+
+  .fh-api-search-input {
+    padding: 0;
+
+    input[type="text"] {
+      padding-left: 15px;
+      background-color: transparent;
+      border: none;
+      border-radius: 0;
+
+      &:focus {
+        background-color: darken($ash, 10%);
+      }
+
+      &::placeholder {
+        font-weight: 200;
+      }
     }
   }
 }
