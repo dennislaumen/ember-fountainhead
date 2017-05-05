@@ -3,6 +3,7 @@
 #### 3.2.0 (5-5-17)
 Updated:
 - Ember + Ember CLI to 2.13
+- test index.html pulling in polyfills from polyfill.io
 
 #### 3.1.0 (4-16-17)
 Added:
