@@ -1,5 +1,9 @@
 # Changelog
 
+#### 3.2.0 (5-5-17)
+Updated:
+- Ember + Ember CLI to 2.13
+
 #### 3.1.0 (4-16-17)
 Added:
 - Community contribution by [@mefeckie](https://github.com/mfeckie): Ability to
