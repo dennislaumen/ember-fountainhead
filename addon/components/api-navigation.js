@@ -1,5 +1,4 @@
 import Component from 'ember-component';
-import Set from 'ember-metal/set';
 import hbs from 'htmlbars-inline-precompile';
 import $ from 'jquery';
 
@@ -33,16 +32,26 @@ export default Component.extend({
    */
   tagName: '',
 
+  isSearching: false,
+
+  matchingResults: [],
+
   // Methods
   // ---------------------------------------------------------------------------
 
   searchClassesAndItems(data, doUpdate) {
+    this.setProperties({
+      isSearching: true,
+      matchingResults: []
+    });
+
     const checkItems = set => {
       set.forEach(item => doUpdate(item));
     };
 
     checkItems(data.modules);
     checkItems(data.classes);
+    checkItems(data.methods);
   },
 
   // Hooks
@@ -68,17 +77,10 @@ export default Component.extend({
   // ---------------------------------------------------------------------------
   actions: {
     clearMatches() {
-      let data = this.get('meta');
-      const resetItems = items => {
-        items.forEach(thing => {
-          Set(thing, 'isVisible', true);
-        });
-      };
-
-      if (!data || !(data instanceof Object)) { return; }
-
-      resetItems(data.modules);
-      resetItems(data.classes);
+      this.setProperties({
+        isSearching: false,
+        matchingResults: []
+      });
     },
 
     /**
@@ -89,7 +91,9 @@ export default Component.extend({
      * @return {undefined}
      */
     markMatches(item, matchFound) {
-      Set(item, 'isVisible', matchFound);
+      if (matchFound) {
+        this.get('matchingResults').push(item);
+      }
     }
   },
 
@@ -106,10 +110,15 @@ export default Component.extend({
           dataSet=meta
           matchOnFields='name'
           placeholderText='Search API Classes'
-          traverseData=searchClassesAndItems
+          traverseData=(action searchClassesAndItems)
           clearAction=(action 'clearMatches')
           updateAction=(action 'markMatches')}}
       {{/api-navigation/section}}
+
+      {{#if isSearching}}
+        {{fountainhead-search-results
+          results=matchingResults}}
+      {{/if}}
 
       {{!--
       {{#if meta.version}}

@@ -65,13 +65,11 @@ export default Component.extend({
     {{/if}}
     {{! Optional array of links }}
     {{#each items as |item|}}
-      {{#if item.isVisible}}
-        {{link-to
-          item.name
-          (concat 'api.' item.type)
-          item.name
-          classNames='item-link fh-element'}}
-      {{/if}}
+      {{link-to
+        item.name
+        (concat 'api.' item.type)
+        item.name
+        classNames='item-link fh-element'}}
     {{/each}}
     {{! You can use a section in block form if you just need wrapping markup }}
     {{yield}}

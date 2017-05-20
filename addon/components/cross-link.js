@@ -191,21 +191,21 @@ const CrossLink = Component.extend({
   layout: hbs`
     {{#if _route}}
       {{#if fountainhead.meta.hashRouting}}
-        {{#link-to _route _model (query-params id=item)}}
+        {{#link-to _route _model (query-params id=item) class=classNames}}
           {{#if hasBlock}}{{yield}}{{else}}{{text}}{{/if}}
         {{/link-to}}
       {{else}}
-        {{#fh-href _route _model fragmentId=item click=(action 'setFragmentOverride')}}
+        {{#fh-href _route _model fragmentId=item click=(action 'setFragmentOverride') class=classNames}}
           {{#if hasBlock}}{{yield}}{{else}}{{text}}{{/if}}
         {{/fh-href}}
       {{/if}}
     {{else}}
       {{#if fountainhead.meta.hashRouting}}
-        {{#link-to (query-params id=item)}}
+        {{#link-to (query-params id=item) class=classNames}}
           {{#if hasBlock}}{{yield}}{{else}}{{text}}{{/if}}
         {{/link-to}}
       {{else}}
-        <a href={{concat '#' item}}>
+        <a href={{concat '#' item}} class="{{classNames}}">
           {{#if hasBlock}}{{yield}}{{else}}{{text}}{{/if}}
         </a>
       {{/if}}

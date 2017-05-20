@@ -181,8 +181,8 @@ export default Ember.Component.extend({
    * via the `updateAction` action.
    *
    * @method checkForMatches
-   * @param {[type]} query [description]
-   * @return {[type]}
+   * @param {String} query [description]
+   * @return {undefined}
    */
   checkForMatches(query) {
     const { dataSet, matchOnFields, traverseData } = this.getProperties('dataSet', 'matchOnFields', 'traverseData');
@@ -204,11 +204,24 @@ export default Ember.Component.extend({
       let matchFound = matchOnFields.find(field => {
         // Make sure the field we're trying to check actually exists
         if (item[field]) {
-          // Hey its time to use that t rad regex filter we created 😎
-          // TELL US IF THERE IS A MATCH OR NOT
-          return item[field].toLowerCase().match(regexFilter);
+          if (item[field] instanceof Array) {
+            return item[field].find(subItem => {
+              if (typeof subItem === 'string') {
+                return subItem.toLowerCase().match(regexFilter);
+              } else {
+                return false;
+              }
+            });
+          } else {
+            // Hey its time to use that t rad regex filter we created 😎
+            // TELL US IF THERE IS A MATCH OR NOT
+            return item[field].toLowerCase().match(regexFilter);
+          }
         }
       });
+      if (matchFound instanceof Array && !matchFound.length) {
+        matchFound = false;
+      }
       this.updateAction(item, !!matchFound, query);
     };
 
