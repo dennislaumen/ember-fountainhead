@@ -9,23 +9,38 @@ export default Component.extend({
 
   results: null,
 
+  query: '',
+
+  // Ember Props
+  // ---------------------------------------------------------------------------
+
+  classNames: ['fh-results-wrapper'],
+
   // Layout
   // ---------------------------------------------------------------------------
   layout: hbs`
-    <section>
-      {{#each results as |result|}}
-        {{#if (eq result.type 'method')}}
-          {{c-l classNames='item-link' class=result.class item=result.name}}
-        {{else}}
-          {{link-to
-            result.name
-            (concat 'api.' result.type)
-            result.name
-            classNames='item-link fh-element'}}
-        {{/if}}
+    <section class="fh-results-content">
+      <h3>Search Results for <span>{{query}}</span></h3>
+      {{#if results.totalResults}}
+        {{#each-in results as |category group|}}
+          {{#if group.items.length}}
+            <strong class="fh-results-group-title">{{group.title}}</strong>
+            {{#each group.items as |result|}}
+              {{#if (eq result.type 'method')}}
+                {{c-l class=result.class classNames='result-item' item=result.name}}
+              {{else}}
+                {{link-to
+                  result.name
+                  (concat 'api.' result.type)
+                  result.name
+                  classNames='result-item'}}
+              {{/if}}
+            {{/each}}
+          {{/if}}
+        {{/each-in}}
       {{else}}
-        <h2>Naw, son.</h2>
-      {{/each}}
+        <strong class="fh-results-group-title">No results were found</strong>
+      {{/if}}
     </section>
   `
 });

@@ -1,5 +1,6 @@
 import Component from 'ember-component';
 import hbs from 'htmlbars-inline-precompile';
+import set from 'ember-metal/set';
 import $ from 'jquery';
 
 /**
@@ -34,7 +35,7 @@ export default Component.extend({
 
   isSearching: false,
 
-  matchingResults: [],
+  matchingResults: {},
 
   // Methods
   // ---------------------------------------------------------------------------
@@ -42,11 +43,29 @@ export default Component.extend({
   searchClassesAndItems(data, doUpdate) {
     this.setProperties({
       isSearching: true,
-      matchingResults: []
+      matchingResults: {
+        modules: {
+          title: 'Modules',
+          items: []
+        },
+        classes: {
+          title: 'Classes',
+          items: []
+        },
+        method: {
+          title: 'Methods',
+          items: []
+        },
+        other: {
+          title: 'Other',
+          items: []
+        },
+        totalResults: 0
+      }
     });
 
-    const checkItems = set => {
-      set.forEach(item => doUpdate(item));
+    const checkItems = dataSet => {
+      dataSet.forEach(item => doUpdate(item));
     };
 
     checkItems(data.modules);
@@ -77,9 +96,19 @@ export default Component.extend({
   // ---------------------------------------------------------------------------
   actions: {
     clearMatches() {
+      let matchingResults = Object.assign({}, this.get('matchingResults'));
+
+      for (let group in matchingResults) {
+        if (matchingResults[group].items) {
+          set(matchingResults[group], 'items', []);
+        }
+      }
+
+      set(matchingResults, 'totalResults', 0);
+
       this.setProperties({
         isSearching: false,
-        matchingResults: []
+        matchingResults
       });
     },
 
@@ -88,11 +117,16 @@ export default Component.extend({
      * @method doFilter
      * @param {Object} item The item to perform matching on or something I don't know
      * @param {Boolean} matchFound Whether the item matches or not
+     * @param {String} query The query string
      * @return {undefined}
      */
-    markMatches(item, matchFound) {
+    markMatches(item, matchFound, query) {
+      this.set('query', query);
       if (matchFound) {
-        this.get('matchingResults').push(item);
+        let itemType = item.type ? item.type : 'other';
+        let itemsList = this.get(`matchingResults.${itemType}.items`).concat([item]);
+        this.set(`matchingResults.${itemType}.items`, itemsList);
+        this.incrementProperty('matchingResults.totalResults');
       }
     }
   },
@@ -117,6 +151,7 @@ export default Component.extend({
 
       {{#if isSearching}}
         {{fountainhead-search-results
+          query=query
           results=matchingResults}}
       {{/if}}
 
