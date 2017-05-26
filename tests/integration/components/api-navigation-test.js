@@ -36,22 +36,49 @@ test('it renders meta logo if present and defaults to fountainhead logo', functi
 test('it renders sections for doc modules and classes', function(assert) {
   this.render(hbs`{{api-navigation meta=meta}}`);
 
-  assert.equal(this.$('.nav-section').length, 2,
-    'A section is created for modules and one for classes');
+  assert.ok(this.$('[data-test="section-modules"]').length,
+    'A section is created for modules');
+  assert.ok(this.$('[data-test="section-classes"]').length,
+    'A section is created for classes');
+  assert.ok(this.$('[data-test="section-search"]').length,
+    'A search section is created');
 });
 
 test('it doesnt render section for modules without data', function(assert) {
   this.set('meta.modules', []);
   this.render(hbs`{{api-navigation meta=meta}}`);
 
-  assert.equal(this.$('.nav-section').length, 1,
+  assert.notOk(this.$('[data-test="section-modules"]').length,
+    'No modules section is created');
+  assert.ok(this.$('[data-test="section-classes"]').length,
     'A section is created for classes but not for modules');
+  assert.ok(this.$('[data-test="section-search"]').length,
+    'A search section is created');
 });
 
 test('it doesnt render section for classes without data', function(assert) {
   this.set('meta.classes', []);
   this.render(hbs`{{api-navigation meta=meta}}`);
 
-  assert.equal(this.$('.nav-section').length, 1,
+  assert.notOk(this.$('[data-test="section-classes"]').length,
+    'No classes section is created');
+  assert.ok(this.$('[data-test="section-modules"]').length,
     'A section is created for modules but not for classes');
+  assert.ok(this.$('[data-test="section-search"]').length,
+    'A search section is created');
+});
+
+test('it doesnt render any sections when no data exists', function(assert) {
+  this.setProperties({
+    'meta.classes': [],
+    'meta.modules': []
+  });
+  this.render(hbs`{{api-navigation meta=meta}}`);
+
+  assert.notOk(this.$('[data-test="section-classes"]').length,
+    'No classes section is created');
+  assert.notOk(this.$('[data-test="section-modules"]').length,
+    'No modules section is created');
+  assert.notOk(this.$('[data-test="section-search"]').length,
+    'The search section is not created without data');
 });

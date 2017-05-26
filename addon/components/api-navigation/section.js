@@ -43,6 +43,12 @@ export default Component.extend({
   // Properties
   // ---------------------------------------------------------------------------
   /**
+   * @property attributeBindings
+   * @type {Array}
+   * @default ['data-test'],
+   */
+  attributeBindings: ['data-test'],
+  /**
    * @property classNames
    * @type {Array}
    * @default ['nav-section']
@@ -54,8 +60,6 @@ export default Component.extend({
    * @default 'section'
    */
   tagName: 'section',
-
-  foo: 'hi',
 
   // Layout
   // ---------------------------------------------------------------------------

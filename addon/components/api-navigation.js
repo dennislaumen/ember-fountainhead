@@ -137,22 +137,26 @@ export default Component.extend({
     <nav role='navigation' class='fh-api-navigation'>
       {{api-navigation/logo logo=meta.logo}}
 
-      {{#api-navigation/section title='Search'}}
-        {{fountainhead-omni-filter
-          classNames='fh-api-search-input'
-          inputClassNames='w-100'
-          dataSet=meta
-          matchOnFields='name'
-          placeholderText='Search API Classes'
-          traverseData=(action searchClassesAndItems)
-          clearAction=(action 'clearMatches')
-          updateAction=(action 'markMatches')}}
-      {{/api-navigation/section}}
+      {{#if (or meta.modules meta.classes)}}
+        {{#api-navigation/section
+          title='Search'
+          data-test='section-search'}}
+          {{fountainhead-omni-filter
+            classNames='fh-api-search-input'
+            inputClassNames='w-100'
+            dataSet=meta
+            matchOnFields='name'
+            placeholderText='Search API Classes'
+            traverseData=(action searchClassesAndItems)
+            clearAction=(action 'clearMatches')
+            updateAction=(action 'markMatches')}}
+        {{/api-navigation/section}}
 
-      {{#if isSearching}}
-        {{fountainhead-search-results
-          query=query
-          results=matchingResults}}
+        {{#if isSearching}}
+          {{fountainhead-search-results
+            query=query
+            results=matchingResults}}
+        {{/if}}
       {{/if}}
 
       {{!--
@@ -165,13 +169,15 @@ export default Component.extend({
       {{#if meta.modules}}
         {{api-navigation/section
           title='Modules'
-          items=meta.modules}}
+          items=meta.modules
+          data-test='section-modules'}}
       {{/if}}
 
       {{#if meta.classes}}
         {{api-navigation/section
           title='Classes'
-          items=meta.classes}}
+          items=meta.classes
+          data-test='section-classes'}}
       {{/if}}
 
       <div class='made-with'>
