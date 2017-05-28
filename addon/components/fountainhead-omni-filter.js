@@ -114,6 +114,8 @@ export default Ember.Component.extend({
    * @default ''
    */
   placeholderText: '',
+
+  query: '',
   /**
    * A custom method for examining/traversing your data structure. This is
    * basically required for situations where your data set contains multiple
@@ -307,6 +309,6 @@ export default Ember.Component.extend({
       class="{{inputClassNames}}"
       onkeyup={{action 'queryDidChange'}}
       placeholder={{placeholderText}}
-      />
+      value={{query}} />
   `
 });

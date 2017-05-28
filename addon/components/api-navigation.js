@@ -1,6 +1,6 @@
 import Component from 'ember-component';
 import hbs from 'htmlbars-inline-precompile';
-import set from 'ember-metal/set';
+import inject from 'ember-service/inject';
 import $ from 'jquery';
 
 /**
@@ -12,6 +12,7 @@ import $ from 'jquery';
  * @extends Ember.Component
  */
 export default Component.extend({
+  fhSearch: inject(),
 
   // Passed Properties
   // ---------------------------------------------------------------------------
@@ -33,46 +34,6 @@ export default Component.extend({
    */
   tagName: '',
 
-  isSearching: false,
-
-  matchingResults: {},
-
-  // Methods
-  // ---------------------------------------------------------------------------
-
-  searchClassesAndItems(data, doUpdate) {
-    this.setProperties({
-      isSearching: true,
-      matchingResults: {
-        modules: {
-          title: 'Modules',
-          items: []
-        },
-        classes: {
-          title: 'Classes',
-          items: []
-        },
-        method: {
-          title: 'Methods',
-          items: []
-        },
-        other: {
-          title: 'Other',
-          items: []
-        },
-        totalResults: 0
-      }
-    });
-
-    const checkItems = dataSet => {
-      dataSet.forEach(item => doUpdate(item));
-    };
-
-    checkItems(data.modules);
-    checkItems(data.classes);
-    checkItems(data.methods);
-  },
-
   // Hooks
   // ---------------------------------------------------------------------------
 
@@ -85,50 +46,11 @@ export default Component.extend({
   },
 
   didReceiveAttrs() {
-    this.send('clearMatches');
+    this.get('fhSearch').send('clearMatches');
   },
 
   willDestroyElement() {
     $('body').off('keyup.sidebarSearch');
-  },
-
-  // Actions
-  // ---------------------------------------------------------------------------
-  actions: {
-    clearMatches() {
-      let matchingResults = Object.assign({}, this.get('matchingResults'));
-
-      for (let group in matchingResults) {
-        if (matchingResults[group].items) {
-          set(matchingResults[group], 'items', []);
-        }
-      }
-
-      set(matchingResults, 'totalResults', 0);
-
-      this.setProperties({
-        isSearching: false,
-        matchingResults
-      });
-    },
-
-    /**
-     * Method to filter on doc elements for search.
-     * @method doFilter
-     * @param {Object} item The item to perform matching on or something I don't know
-     * @param {Boolean} matchFound Whether the item matches or not
-     * @param {String} query The query string
-     * @return {undefined}
-     */
-    markMatches(item, matchFound, query) {
-      this.set('query', query);
-      if (matchFound) {
-        let itemType = item.type ? item.type : 'other';
-        let itemsList = this.get(`matchingResults.${itemType}.items`).concat([item]);
-        this.set(`matchingResults.${itemType}.items`, itemsList);
-        this.incrementProperty('matchingResults.totalResults');
-      }
-    }
   },
 
   // Layout
@@ -141,22 +63,12 @@ export default Component.extend({
         {{#api-navigation/section
           title='Search'
           data-test='section-search'}}
-          {{fountainhead-omni-filter
+          {{fountainhead-search-input
             classNames='fh-api-search-input'
             inputClassNames='w-100'
-            dataSet=meta
-            matchOnFields='name'
-            placeholderText='Search API Classes'
-            traverseData=(action searchClassesAndItems)
-            clearAction=(action 'clearMatches')
-            updateAction=(action 'markMatches')}}
+            meta=meta
+            query=fhSearch.query}}
         {{/api-navigation/section}}
-
-        {{#if isSearching}}
-          {{fountainhead-search-results
-            query=query
-            results=matchingResults}}
-        {{/if}}
       {{/if}}
 
       {{!--

@@ -1,3 +1,9 @@
 {{#fountainhead-pages/api}}
   {{outlet}}
 {{/fountainhead-pages/api}}
+
+{{#if fhSearch.showResults}}
+  {{fountainhead-search-results
+    query=fhSearch.query
+    results=fhSearch.matchingResults}}
+{{/if}}

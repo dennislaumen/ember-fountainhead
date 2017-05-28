@@ -1,8 +1,11 @@
-import Ember from 'ember';
+import Component from 'ember-component';
+import inject from 'ember-service/inject';
 import hbs from 'htmlbars-inline-precompile';
-const { Component } = Ember;
+import $ from 'jquery';
 
 export default Component.extend({
+  fhSearch: inject(),
+  fountainhead: inject(),
 
   // Passed Properties
   // ---------------------------------------------------------------------------
@@ -16,11 +19,54 @@ export default Component.extend({
 
   classNames: ['fh-results-wrapper'],
 
+  // Hooks
+  // ---------------------------------------------------------------------------
+
+  didInsertElement() {
+    $(`#${this.get('elementId')}`).find('.fh-results-input').focus();
+
+    $('body').on('keyup.fhResults', evt => {
+      if (evt.keyCode === 27) {
+        this.send('closeResults');
+      }
+    });
+
+    $('body').on('click.fhResults', '.result-item', evt => {
+      this.send('closeResults');
+    });
+  },
+
+  willDestroyElement() {
+    $('body').off('keyup.fhResults');
+  },
+
+  // Actions
+  // ---------------------------------------------------------------------------
+
+  actions: {
+    closeResults() {
+      this.get('fhSearch').send('clearMatches');
+      this.get('fhSearch').send('closeResults');
+    }
+  },
+
   // Layout
   // ---------------------------------------------------------------------------
   layout: hbs`
     <section class="fh-results-content">
-      <h3>Search Results for <span>{{query}}</span></h3>
+      <h3>
+        {{fountainhead-search-input
+          inputClassNames='w-100 fh-results-input'
+          meta=fountainhead.meta
+          query=fhSearch.query
+          tagName=''}}
+      </h3>
+      {{#fountainhead-button
+        classNames='fh-close-search'
+        link=true
+        click=(action 'closeResults')}}
+        Close
+      {{/fountainhead-button}}
       {{#if results.totalResults}}
         {{#each-in results as |category group|}}
           {{#if group.items.length}}
@@ -38,6 +84,8 @@ export default Component.extend({
             {{/each}}
           {{/if}}
         {{/each-in}}
+      {{else if (not fhSearch.query)}}
+        <strong class="fh-results-group-title">Type to search</strong>
       {{else}}
         <strong class="fh-results-group-title">No results were found</strong>
       {{/if}}
