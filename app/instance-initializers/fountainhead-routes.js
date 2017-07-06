@@ -34,13 +34,6 @@ export function initialize(/* appInstance */) {
       this.route('modules', { path: '/modules/:module_id' });
       this.route('files', { path: '/files/:file_id' });
     });
-
-    // DEPRECATED: route replaced with `api`, will be removed in v4
-    this.route('docs', function() {
-      this.route('classes', { path: '/classes/:class_id' });
-      this.route('modules', { path: '/modules/:module_id' });
-      this.route('files', { path: '/files/:file_id' });
-    });
   });
 }
 

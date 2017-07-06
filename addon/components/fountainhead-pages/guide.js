@@ -41,7 +41,7 @@ export default BasePage.extend({
           {{fountainhead-runtime-description
             description=guide.body}}
         </div>
-        {{guide-navigation meta=fountainhead.meta}}
+        {{navigation-guides meta=fountainhead.meta}}
       </main>
     </div>
   `

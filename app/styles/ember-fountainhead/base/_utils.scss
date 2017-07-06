@@ -12,12 +12,6 @@
     visibility: hidden;
     pointer-events: none;
   }
-
-  *[aria-hidden="false"] {
-    display: block;
-    visibility: visible;
-    pointer-events: auto;
-  }
   *[role="presentation"] {
     display: initial;
     visibility: visible;

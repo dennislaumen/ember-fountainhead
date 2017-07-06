@@ -6,9 +6,9 @@ export default {
   ],
   description: 'Test App Fixture data',
   guides: [
-    { id: 'test-1', linkLabel: 'Test 1' },
-    { id: 'test-2', linkLabel: 'Test 2' },
-    { id: 'test-3', linkLabel: 'Test 3' }
+    { id: 'test-1', attributes: { linkText: 'Test 1' } },
+    { id: 'test-1', attributes: { linkText: 'Test 2' } },
+    { id: 'test-1', attributes: { linkText: 'Test 3' } }
   ],
   logo: '/test-logo.png',
   modules: [

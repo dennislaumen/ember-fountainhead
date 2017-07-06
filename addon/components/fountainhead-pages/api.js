@@ -43,7 +43,7 @@ export default Component.extend({
       {{fountainhead-repo-link repository=fountainhead.meta.repository}}
 
       <main class='fh-container'>
-        {{api-navigation meta=fountainhead.meta}}
+        {{navigation-api meta=fountainhead.meta}}
         <div class='fh-content-container'>
           <div class='fh-content api-documentation'>
             {{! This is where subroutes are rendered through the outlet }}

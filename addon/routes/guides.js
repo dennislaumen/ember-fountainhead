@@ -42,14 +42,7 @@ export default BaseRoute.extend({
    * @param {string} params.guide_id Name of this class, use to fetch data
    * @return {Promise} jQuery ajax promise
    */
-  model(params) {
-    let guideModel = this.get('fountainhead.meta.guides').filter(
-      guide => guide.id === params.guide_id
-    );
-
-    if (!guideModel.length) { return new Error('Guide not found'); }
-    let id = guideModel[0].id;
-
-    return $.ajax(`${this.get('fountainhead.apiNamespace')}/guides/${id}.json`);
+  model({ guide_id }) {
+    return $.ajax(`${this.get('fountainhead.apiNamespace')}/guides/${guide_id}.json`);
   }
 });

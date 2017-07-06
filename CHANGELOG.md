@@ -55,7 +55,7 @@ we're releasing it as a major so there's visibility around those changes.
   to enable env specific builds.
 - Styles have been updated for to be even more totally beautiful and a Fountainhead
   specific logo has been added for the API nav.
-  
+
 #### Breaking Changes
 - The `/docs` route has been deprecated in favor of `/api`. With the addition of
   the `/guide` route we think this is semantically clearer. You can now clearly
@@ -70,8 +70,8 @@ we're releasing it as a major so there's visibility around those changes.
   public directory paths from your `.watchmanconfig` since this directory is not
   watched by CLI.
 - Numerous internal component changes for simplification and better semantics.
-    - All `fountainhead-sidebar` components moved to `api-navigation`
-    - `fountainhead-sidebar/group` component removed, handled by `api-navigation/section`
+    - All `fountainhead-sidebar` components moved to `navigation-api`
+    - `fountainhead-sidebar/group` component removed, handled by `navigation-api/section`
 
 
 ## 2.3.0 (02-6-2017)

@@ -7,12 +7,10 @@ const common = {
   entry: [
     'addon', 'app', 'blueprints', 'lib'
   ],
+  // Include any Architecture guides specificly and then close with /releases
   guides: [
-    'guides/getting-started.md',
-    'guides/configuration.md',
-    'guides/writing-guides.md',
-    'guides/architecture/scroll-targeting.md',
-    'guides/tools.md'
+    'addon/scroll-target.md',
+    'releases'
   ],
   output: {
     filename: 'fountainhead-data.json',

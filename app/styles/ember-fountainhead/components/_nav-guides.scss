@@ -1,0 +1,68 @@
+// ========================================================
+// Guide Page Navigation
+// ========================================================
+
+// The guide navigation parent container
+.fh-guide-navigation {
+  padding-left: 2em;
+
+  // Guide Links && Group Trigger
+  .guide-link,
+  .guide-group-trigger {
+    font-weight: 300;
+    display: flex;
+    font-size: 1.1rem;
+    padding: 0.25rem 0;
+    margin: 0.25rem 0;
+
+    &:focus { text-decoration: none; }
+    &:hover { text-decoration: underline; }
+  }
+
+  // Swanky transitions for selecting a top level guide
+  .guide-link {
+    transition: border 250ms, padding-left 250ms;
+
+    &.active {
+      border-left: 3px solid $ash;
+      padding-left: 7px;
+    }
+  }
+
+  // Wrapper for the set of guide links in a guide group
+  .guide-group {
+    display: none; // starts display none, jahquery height toggles vis
+    padding-top: 0.25rem;
+
+    // Nested guide links only!
+    .guide-link {
+      border-left: 1px solid $ash;
+      font-size: 1rem;
+      margin: 0;
+      padding-left: 1.5rem;
+      transition: border 250ms;
+
+      &.active {
+        border-left: 3px solid $ash;
+      }
+
+      &:hover {
+        border-left: 6px solid $ash;
+      }
+    }
+  }
+
+  // Arrow icon in group triggers
+  .fh-svg {
+    bottom: -0.2rem;
+    height: 0.9rem;
+    margin-right: 3px;
+    transform: rotate(-0.25turn);
+    transition: transform 250ms;
+    width: 0.9rem;
+
+    &.active {
+      transform: rotate(0turn);
+    }
+  }
+}
