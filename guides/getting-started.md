@@ -63,7 +63,7 @@ module.exports = {
 ```
 
 {{#fountainhead-alert brand='info' dismiss=false}}
-{{fountainhead-svg svgId='info'}}See [Configuring Fountainhead](/guides/configuration)
+{{fountainhead-svg svgId='info'}}See [Configuring Fountainhead](/guides/configuration.md)
 for all possible configuration options.
 {{/fountainhead-alert}}
 
